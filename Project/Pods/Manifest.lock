@@ -1,0 +1,50 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BeautyKit (1.1.0):
+    - BeautyKit/Category (= 1.1.0)
+    - BeautyKit/Macros (= 1.1.0)
+    - BeautyKit/SubClass (= 1.1.0)
+  - BeautyKit/Category (1.1.0):
+    - BeautyKit/Category/Foundation (= 1.1.0)
+    - BeautyKit/Category/UIKit (= 1.1.0)
+  - BeautyKit/Category/Foundation (1.1.0)
+  - BeautyKit/Category/UIKit (1.1.0):
+    - BeautyKit/Category/Foundation
+  - BeautyKit/Macros (1.1.0)
+  - BeautyKit/SubClass (1.1.0)
+  - BGAlertView (0.0.1):
+    - BeautyKit (~> 1.1.0)
+    - Masonry (~> 1.1.0)
+  - BGNetwork (0.0.1):
+    - AFNetworking (~> 3.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - BeautyKit (~> 1.1.0)
+  - BGAlertView (~> 0.0.1)
+  - BGNetwork (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BeautyKit: 4d5a0d143498cde7930e0be403bb677063fb4871
+  BGAlertView: fb96cc55e1faa0056cef21764175367e0889a34e
+  BGNetwork: 448b76f6320d540522f9e5712b65932337aaf6d5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: f905678fa92dc4bfcb0da465d8794af88c0c5cd2
+
+COCOAPODS: 1.3.1

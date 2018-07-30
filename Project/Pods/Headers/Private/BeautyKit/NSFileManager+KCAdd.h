@@ -1,0 +1,1 @@
+../../../BeautyKit/BeautyKitDemo/BeautyKitDemo/BeautyKit/Categories/Foundation/NSFileManager+KCAdd.h

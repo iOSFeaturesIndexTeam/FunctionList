@@ -1,0 +1,1 @@
+../../../BeautyKit/BeautyKitDemo/BeautyKitDemo/BeautyKit/BeautyKitHeader.h
