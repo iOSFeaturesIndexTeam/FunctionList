@@ -13,9 +13,9 @@
     NSString *res = @"";
     NSString *vcName = model.vcName;
     
-    if (StrIsEqual(vcName, Responder_VC)) {
-        return @"响应者链式\n First Responder-> 它的视图控制器[如果有]-> 父容器【如果有】->父容器的视图控制器【如果有】->UIWindow-> UIApplication-> 应用程序委托对象[] ";
-    }
+//    if (StrIsEqual(vcName, Responder_VC)) {
+//        return @"响应者链式\n First Responder-> 它的视图控制器[如果有]-> 父容器【如果有】->父容器的视图控制器【如果有】->UIWindow-> UIApplication-> 应用程序委托对象[] ";
+//    }
     
     return res;
 }

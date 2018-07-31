@@ -58,6 +58,8 @@
 		C0569D4720D501E8003BDCF0 /* spec_localProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spec_localProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0569D4B20D501E8003BDCF0 /* spec_localProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spec_localProjectUITests.m; sourceTree = "<group>"; };
 		C0569D4D20D501E8003BDCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C0E5FF6D21109EA600E12A50 /* ListIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListIndex.h; sourceTree = "<group>"; };
 		C0EE284C210E12780077A345 /* BGAlertView+BGAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BGAlertView+BGAdd.h"; sourceTree = "<group>"; };
 		C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BGAlertView+BGAdd.m"; sourceTree = "<group>"; };
 		C0EE2857210E12DF0077A345 /* ResponderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponderViewController.h; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		C0569D2620D501E8003BDCF0 /* spec_localProject */ = {
 			isa = PBXGroup;
 			children = (
+				C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */,
 				C0569D2720D501E8003BDCF0 /* AppDelegate.h */,
 				C0569D2820D501E8003BDCF0 /* AppDelegate.m */,
 				C0569D3520D501E8003BDCF0 /* Info.plist */,
@@ -235,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				C0EE2869210E1B2E0077A345 /* Marco.h */,
+				C0E5FF6D21109EA600E12A50 /* ListIndex.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -603,6 +607,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFW829A9F4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = spec_localProject/PrefixHeader.pch;
 				INFOPLIST_FILE = spec_localProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fun.blackgold.spec-localProject";
@@ -617,6 +624,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFW829A9F4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = spec_localProject/PrefixHeader.pch;
 				INFOPLIST_FILE = spec_localProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fun.blackgold.spec-localProject";

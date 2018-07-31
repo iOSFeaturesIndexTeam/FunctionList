@@ -32,7 +32,7 @@
 static inline DemoIndexModel * CreateDemoModel(NSString *title,NSString *vcName){
     DemoIndexModel *model = [DemoIndexModel new];
     model.title = title;
-    model.vcName = vcName;
+    model.vcName = vcName ? vcName : @"ViewController";
     return model;
 }
 
@@ -42,7 +42,7 @@ static NSString * CELLID = @"cell_Id";
 #pragma mark - ViewController 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableV;
-@property (nonatomic,strong) NSArray <DemoIndexModel *>*data;
+
 @end
 
 @implementation ViewController
@@ -94,7 +94,13 @@ static NSString * CELLID = @"cell_Id";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     Class VC = NSClassFromString(self.data[indexPath.row].vcName);
-    [self.navigationController pushViewController:(UIViewController *)VC.new animated:YES];
+    UIViewController *vc = (UIViewController *)VC.new;
+    if ([vc isKindOfClass:[ViewController class]]) {//说明是索引VC
+        [(ViewController *)vc setData:@[
+                                        CreateDemoModel(CocoTouch_VC, nil)
+                                        ]];
+    }
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UITableView *)tableV {
@@ -108,6 +114,13 @@ static NSString * CELLID = @"cell_Id";
 }
 
 - (NSArray <DemoIndexModel *>*)data{
-    return @[CreateDemoModel(@"UIResponder", Responder_VC)];
+    if (!_data) {
+        return @[
+                 CreateDemoModel(CocoTouch_VC, nil),
+                 CreateDemoModel(DesignPatterns_VC, nil),
+                 CreateDemoModel(PackagedComponent_VC, nil)
+                 ];
+    }
+    return _data;
 }
 @end
