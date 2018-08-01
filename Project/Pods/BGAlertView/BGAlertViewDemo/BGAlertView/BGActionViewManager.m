@@ -7,6 +7,11 @@
 //
 
 #import "BGActionViewManager.h"
+#import "UIView+BTExtension.h"
+#import "UIView+LW_BlockCreate.h"
+#import "BeautyKitMacro.h"
+#import "Masonry.h"
+#import "BTButton.h"
 #import "BGAlertView.h"
 @interface BGActionViewManager(){
     CGFloat _innerSize;

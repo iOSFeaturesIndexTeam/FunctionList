@@ -7,7 +7,12 @@
 //
 
 #import "BGAlertView.h"
-
+#import "UIView+BTExtension.h"
+//#import <BeautyKit/UIView+BTExtension.h>
+#import "UIView+LW_BlockCreate.h"
+#import "BeautyKitMacro.h"
+#import "Masonry.h"
+#import "BTButton.h"
 #define _UIKeyboardFrameEndUserInfoKey (&UIKeyboardFrameEndUserInfoKey != NULL ? UIKeyboardFrameEndUserInfoKey : @"UIKeyboardBoundsUserInfoKey")
 @interface BGAlertView(){
     NSMutableArray *_innerViews;//上层视图栈
@@ -84,14 +89,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHideNotification:) name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShowNotification:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(actionHandlerNotification:) name:BGActionViewHandlerNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(aniBeginCompletion:) name:BGActionViewBeginAnimationCompletionNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(aniBeginCompletion:) name:BGActionViewBeginAnimationCompletionNotification object:nil];
     return self;
 }
 
 #pragma mark - Notification
-- (void)aniBeginCompletion:(NSNotification *)noit{
-    _isAlwaysVisible = NO;
-}
+//- (void)aniBeginCompletion:(NSNotification *)noit{
+//    _isAlwaysVisible = NO;
+//}
 - (void)keyboardWillHideNotification:(NSNotification *)noti{
     _contentView.transform = CGAffineTransformIdentity;
     [_contentView endEditing:YES];
@@ -373,12 +378,16 @@
    /** 展示动画 */
     [self layoutIfNeeded];
     [self setupAnimation];
-    [self autoHideTimer];    
+    [self autoHideTimer];
 }
 #pragma mark - Custom Method
 - (void)setupAnimation{
     if (self.animationBeginHandler) {
-        self.animationBeginHandler(_contentView, _backgroundView);
+        __weak typeof(self) weakSelf = self;
+        self.animationBeginHandler(_contentView, _backgroundView, ^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            strongSelf.isAlwaysVisible = NO;
+        });
     }
     _isAlwaysVisible = YES;
 }
