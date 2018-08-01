@@ -104,7 +104,7 @@
             if (subList && subList.count > 0) {
                NSArray *arr = [DemoIndexModel transformJSON:subList];
                model.subList = arr.mutableCopy;
-            } else {
+            } else if(model.vcName.length == 0){
                model.vcName = nil;
             }
         }
@@ -113,13 +113,6 @@
     return marr.copy;
 }
 @end
-
-static inline DemoIndexModel * CreateDemoModel(NSString *title,NSString *vcName){
-    DemoIndexModel *model = [DemoIndexModel new];
-    model.title = title;
-    model.vcName = vcName ? vcName : @"ViewController";
-    return model;
-}
 
 static NSString * CELLID = @"cell_Id";
 
@@ -182,11 +175,12 @@ static NSString * CELLID = @"cell_Id";
     DemoIndexModel *model = self.data[indexPath.row];
     if (model.vcName) {
         Class VC = NSClassFromString(model.vcName);
-        if ([(UIViewController *)VC.new isKindOfClass:[ViewController class]]) {//说明是索引VC
-            UIViewController *vc = (UIViewController *)VC.new;
+        UIViewController *vc = (UIViewController *)VC.new;
+        if ([vc isKindOfClass:[ViewController class]]) {//说明是索引VC
             [(ViewController *)vc setData:model.subList];
-            [self.navigationController pushViewController:vc animated:YES];
         }
+        //没有走if 表示是 演示VC
+        [self.navigationController pushViewController:vc animated:YES];
     } else {
         [BGAlertView titleTip:@"索引介绍\n\n暂无"];
     }
