@@ -104,8 +104,8 @@
             if (subList && subList.count > 0) {
                NSArray *arr = [DemoIndexModel transformJSON:subList];
                model.subList = arr.mutableCopy;
-            } else if(model.vcName.length == 0){
-               model.vcName = nil;
+            } else if ([model.vcName isEqualToString:@"ViewController"]) {
+                model.vcName = nil;
             }
         }
         [marr addObject:model];
@@ -127,6 +127,7 @@ static NSString * CELLID = @"cell_Id";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self configureSubViews];
 }
 
