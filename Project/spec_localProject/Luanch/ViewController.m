@@ -26,7 +26,7 @@
 }
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self configureSubViews];
         [self configureGesture];
     }
@@ -187,6 +187,8 @@ static NSString * CELLID = @"cell_Id";
             [(ViewController *)vc setData:model.subList];
             [self.navigationController pushViewController:vc animated:YES];
         }
+    } else {
+        [BGAlertView titleTip:@"索引介绍\n\n暂无"];
     }
 }
 
@@ -208,11 +210,6 @@ static NSString * CELLID = @"cell_Id";
         NSDictionary *data = [NSData jsonDataToDic:listData];
         NSArray *temp_data = [DemoIndexModel initListDataWithJSON:data];
         return temp_data;
-//        return @[w
-//                 CreateDemoModel(CocoTouch_VC, nil),
-//                 CreateDemoModel(DesignPatterns_VC, nil),
-//                 CreateDemoModel(PackagedComponent_VC, nil)
-//                 ];
     }
     return _data;
 }
