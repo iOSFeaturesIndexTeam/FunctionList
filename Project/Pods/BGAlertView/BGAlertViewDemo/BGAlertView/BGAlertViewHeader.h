@@ -8,11 +8,7 @@
 
 #ifndef BGAlertViewHeader_h
 #define BGAlertViewHeader_h
-#import <UIView+BTExtension.h>
-#import <UIView+LW_BlockCreate.h>
-#import <BeautyKitMacro.h>
-#import <Masonry.h>
-#import <BTButton.h>
+#import <UIKit/UIKit.h>
 /**
  BGAlertView 内容视图样式
  

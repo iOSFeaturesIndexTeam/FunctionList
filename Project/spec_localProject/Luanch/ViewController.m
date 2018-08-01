@@ -9,15 +9,69 @@
 #import "ViewController.h"
 #import "BGAlertView+BGAdd.h"
 #import "Marco.h"
+#import "NSData+Extend.h"
 /**
  索引描述Cell
  */
 #warning TODO - 18/7/29 索引描述
 #pragma mark - IndexDesCell
-@interface IndexDesCell : UITableViewCell
-
+@interface IndexDesCell : UITableViewCell 
+@property (nonatomic,strong) UILabel *prefixLb;
+@property (nonatomic,strong) UIImageView *help;
+@property (nonatomic,copy) NSString *des;
 @end
 @implementation IndexDesCell
++ (NSString *)cellID{
+    return NSStringFromClass([self class]);
+}
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        
+        [self configureSubViews];
+        [self configureGesture];
+    }
+    return self;
+}
+
+- (void)configureSubViews{
+    _prefixLb = [UILabel lw_createView:^(__kindof UILabel *lb) {
+        lb.textColor = [UIColor blackColor];
+        [self.contentView addSubview:lb];
+        [lb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.contentView);
+            make.left.mas_equalTo(20.);
+        }];
+    }];
+    
+    _help = [UIImageView lw_createView:^(__kindof UIImageView *img) {
+        img.image = [UIImage imageNamed:@"index_help"];
+        [self.contentView addSubview:img];
+        [img mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.mas_equalTo(-20.f);
+            make.centerY.equalTo(self.contentView);
+            make.size.mas_equalTo(CGSizeMake(25, 25));
+        }];
+    }];
+}
+
+- (void)configureGesture{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [_help addGestureRecognizer:tap];
+}
+
+- (void)tap:(UIGestureRecognizer *)sender{
+    NSString *tip = [@"索引介绍\n\n" stringByAppendingString:_des];
+    [BGAlertView titleTip:tip];
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    UIView *view = [super hitTest:point withEvent:event];
+    CGPoint event_clip_point = [self convertPoint:point toView:_help];
+    if ([_help pointInside:event_clip_point withEvent:event]) {
+        view = _help;
+    }
+    return view;
+}
 @end
 
 #pragma mark - DemoIndexModel
@@ -25,7 +79,38 @@
 @end
 @implementation DemoIndexModel
 - (NSString *)vcName{
+    if (!_vcName) {
+        return nil;
+    }
     return [_vcName stringByAppendingString:@"ViewController"];
+}
+
++ (NSArray <DemoIndexModel *>*)initListDataWithJSON:(NSDictionary *)JSONDic{
+    NSArray *arr = [JSONDic valueForKey:@"functionList"];
+    
+    return  [DemoIndexModel transformJSON:arr];
+}
+
++ (NSArray *)transformJSON:(NSArray *)arr{
+    NSMutableArray *marr = [NSMutableArray array];
+    for (NSDictionary *d in arr) {
+        DemoIndexModel *model = [DemoIndexModel new];
+        for (NSString *key in d.allKeys) {
+            NSDictionary *sub = d[key];
+            model.title = sub[@"title"];
+            model.vcName = sub[@"vcName"];
+            model.des = sub[@"des"];
+            NSArray *subList = sub[@"subList"];
+            if (subList && subList.count > 0) {
+               NSArray *arr = [DemoIndexModel transformJSON:subList];
+               model.subList = arr.mutableCopy;
+            } else {
+               model.vcName = nil;
+            }
+        }
+        [marr addObject:model];
+    }
+    return marr.copy;
 }
 @end
 
@@ -87,26 +172,29 @@ static NSString * CELLID = @"cell_Id";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELLID forIndexPath:indexPath];
-    cell.textLabel.text = self.data[indexPath.row].title;
+    IndexDesCell *cell = [tableView dequeueReusableCellWithIdentifier:[IndexDesCell cellID] forIndexPath:indexPath];
+    cell.prefixLb.text = self.data[indexPath.row].title;
+    cell.des = self.data[indexPath.row].des;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Class VC = NSClassFromString(self.data[indexPath.row].vcName);
-    UIViewController *vc = (UIViewController *)VC.new;
-    if ([vc isKindOfClass:[ViewController class]]) {//说明是索引VC
-        [(ViewController *)vc setData:@[
-                                        CreateDemoModel(CocoTouch_VC, nil)
-                                        ]];
+    DemoIndexModel *model = self.data[indexPath.row];
+    if (model.vcName) {
+        Class VC = NSClassFromString(model.vcName);
+        if ([(UIViewController *)VC.new isKindOfClass:[ViewController class]]) {//说明是索引VC
+            UIViewController *vc = (UIViewController *)VC.new;
+            [(ViewController *)vc setData:model.subList];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UITableView *)tableV {
     if (!_tableV) {
         _tableV = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-        [_tableV registerClass:[UITableViewCell class] forCellReuseIdentifier:CELLID];
+        [_tableV registerClass:[IndexDesCell class] forCellReuseIdentifier:[IndexDesCell cellID]];
+        _tableV.rowHeight = 60.f;
         _tableV.delegate = self;
         _tableV.dataSource = self;
     }
@@ -115,11 +203,16 @@ static NSString * CELLID = @"cell_Id";
 
 - (NSArray <DemoIndexModel *>*)data{
     if (!_data) {
-        return @[
-                 CreateDemoModel(CocoTouch_VC, nil),
-                 CreateDemoModel(DesignPatterns_VC, nil),
-                 CreateDemoModel(PackagedComponent_VC, nil)
-                 ];
+        NSURL *list_url = [[NSBundle mainBundle] URLForResource:@"Resource/FoundtionList.json" withExtension:nil];
+        NSData *listData = [NSData dataWithContentsOfURL:list_url];
+        NSDictionary *data = [NSData jsonDataToDic:listData];
+        NSArray *temp_data = [DemoIndexModel initListDataWithJSON:data];
+        return temp_data;
+//        return @[w
+//                 CreateDemoModel(CocoTouch_VC, nil),
+//                 CreateDemoModel(DesignPatterns_VC, nil),
+//                 CreateDemoModel(PackagedComponent_VC, nil)
+//                 ];
     }
     return _data;
 }

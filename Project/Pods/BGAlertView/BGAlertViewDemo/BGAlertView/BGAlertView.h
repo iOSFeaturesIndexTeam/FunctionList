@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "BGActionViewManager.h"
-#import <BTButton.h>
 #import "BGAlertViewHeader.h"
-
+@class BTButton;
 @interface BGAlertView : UIView
 - (instancetype)initWithType:(BGAlertViewType)type;
 - (instancetype)initWithType:(BGAlertViewType)type
@@ -41,7 +40,7 @@
 /** 内容底部外边距 */
 @property (nonatomic,assign) CGFloat paddingBot;
 /** 动画回调 */
-@property (nonatomic,copy) void(^ animationBeginHandler)(UIView *contentView, UIImageView *backgroundView); //开场动画
+@property (nonatomic,copy) void(^ animationBeginHandler)(UIView *contentView, UIImageView *backgroundView,void(^ completionHandler)(void)); //开场动画
 @property (nonatomic,copy) void(^ animationCompletionHandler)(UIView *contentView, UIImageView *backgroundView, void(^ completionHandler)(void)); // 结束动画
 @property (nonatomic,assign) BGRange contentViewWidthRang;
 @property (nonatomic,assign) BGRange contentViewHeightRang;

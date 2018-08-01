@@ -19,4 +19,12 @@
                             actionTapedHandler:(void(^)(NSInteger index))actionTapedHandler;
 + (void)showSheetViewWithEditingChangedHandler:(void (^)(NSString *))editHandler actionTapedHandler:(void (^)(NSInteger))actionTapedHandler;
 + (void)showSheetViewLevelWithEditingChangedHandler:(void (^)(NSString *))editHandler actionTapedHandler:(void (^)(NSInteger))actionTapedHandler;
+
+
+/**
+ 自动隐藏 文本提示窗
+ 
+ @param title 提示
+ */
++ (void)titleTip:(NSString *)title;
 @end

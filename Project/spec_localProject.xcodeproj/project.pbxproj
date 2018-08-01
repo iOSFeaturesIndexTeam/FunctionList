@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C015FC282111862A009C8395 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = C015FC272111862A009C8395 /* Resource */; };
+		C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C015FC2A2111B516009C8395 /* NSData+Extend.m */; };
 		C0569D2F20D501E8003BDCF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0569D2D20D501E8003BDCF0 /* Main.storyboard */; };
 		C0569D3120D501E8003BDCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0569D3020D501E8003BDCF0 /* Assets.xcassets */; };
 		C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0569D3220D501E8003BDCF0 /* LaunchScreen.storyboard */; };
@@ -42,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		A8B1BB9BCE500DE94CC45E19 /* libPods-spec_localProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-spec_localProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C015FC272111862A009C8395 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
+		C015FC292111B516009C8395 /* NSData+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Extend.h"; sourceTree = "<group>"; };
+		C015FC2A2111B516009C8395 /* NSData+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extend.m"; sourceTree = "<group>"; };
 		C0569D2420D501E8003BDCF0 /* spec_localProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spec_localProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0569D2720D501E8003BDCF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0569D2820D501E8003BDCF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +152,7 @@
 				C0569D2720D501E8003BDCF0 /* AppDelegate.h */,
 				C0569D2820D501E8003BDCF0 /* AppDelegate.m */,
 				C0569D3520D501E8003BDCF0 /* Info.plist */,
+				C015FC272111862A009C8395 /* Resource */,
 				C0EE2856210E12C10077A345 /* Luanch */,
 				C0EE284A210E12780077A345 /* Project */,
 			);
@@ -191,6 +197,8 @@
 				C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */,
 				C0EE2865210E19350077A345 /* NSString+Extend.h */,
 				C0EE2866210E19350077A345 /* NSString+Extend.m */,
+				C015FC292111B516009C8395 /* NSData+Extend.h */,
+				C015FC2A2111B516009C8395 /* NSData+Extend.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -357,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C015FC282111862A009C8395 /* Resource in Resources */,
 				C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */,
 				C0569D3120D501E8003BDCF0 /* Assets.xcassets in Resources */,
 				C0569D2F20D501E8003BDCF0 /* Main.storyboard in Resources */,
@@ -441,6 +450,7 @@
 				C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */,
 				C0EE2855210E12BB0077A345 /* ViewController.m in Sources */,
 				C0EE2864210E178E0077A345 /* IndexDesManager.m in Sources */,
+				C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */,
 				C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */,
 				C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */,
 			);
