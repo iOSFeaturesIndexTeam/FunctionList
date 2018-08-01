@@ -183,7 +183,7 @@ static NSString * CELLID = @"cell_Id";
         //没有走if 表示是 演示VC
         [self.navigationController pushViewController:vc animated:YES];
     } else {
-        [BGAlertView titleTip:@"索引介绍\n\n暂无"];
+        [BGAlertView titleTip:@"暂无 内容"];
     }
 }
 
