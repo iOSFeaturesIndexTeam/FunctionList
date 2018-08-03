@@ -16,9 +16,9 @@
  @param preIndex 上级目录
  @return 目录索引
  */
-static inline NSArray <DemoIndexModel *> *getIndexData(NSString *preIndex){
-    return @[DemoIndexModel.new];
-};
+//static inline NSArray <DemoIndexModel *> *getIndexData(NSString *preIndex){
+//    return @[DemoIndexModel.new];
+//};
 
 #pragma mark - 目录索引
 /** 一级目录（1） */
