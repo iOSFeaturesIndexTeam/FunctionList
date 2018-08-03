@@ -10,10 +10,11 @@
 #import "BGAlertView+BGAdd.h"
 #import "Marco.h"
 #import "NSData+Extend.h"
+#import "BaseViewController.h"
 /**
  索引描述Cell
  */
-#warning TODO - 18/7/29 索引描述
+
 #pragma mark - IndexDesCell
 @interface IndexDesCell : UITableViewCell 
 @property (nonatomic,strong) UILabel *prefixLb;
@@ -176,9 +177,11 @@ static NSString * CELLID = @"cell_Id";
     DemoIndexModel *model = self.data[indexPath.row];
     if (model.vcName) {
         Class VC = NSClassFromString(model.vcName);
-        UIViewController *vc = (UIViewController *)VC.new;
+        UIViewController *vc = [VC new];
         if ([vc isKindOfClass:[ViewController class]]) {//说明是索引VC
             [(ViewController *)vc setData:model.subList];
+        } else {
+            [(BaseViewController *)vc setIndexTitle:model.title];
         }
         //没有走if 表示是 演示VC
         [self.navigationController pushViewController:vc animated:YES];
