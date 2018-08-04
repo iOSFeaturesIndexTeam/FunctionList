@@ -14,9 +14,8 @@
 {
     BGAlertView *view = [[BGAlertView alloc] initWithType:BGAlertViewTypeAlert];
     [self commonUpWith:view isLevel:NO editingChangedHandler:editHandler actionTapedHandler:actionTapedHandler];
-
-   
 }
+
 + (void)showSheetViewWithEditingChangedHandler:(void (^)(NSString *))editHandler actionTapedHandler:(void (^)(NSInteger))actionTapedHandler{
     BGAlertView *view = [[BGAlertView alloc] initWithType:BGAlertViewTypeSheet];
     [self commonUpWith:view isLevel:NO editingChangedHandler:editHandler actionTapedHandler:actionTapedHandler];
