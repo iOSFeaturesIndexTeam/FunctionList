@@ -151,12 +151,28 @@
                      "des": "数据结构"
                      }
                      },{
-                     "OpenGLES":{
-                     "title": "OpenGLES",
-                     "vcName": "GL",
-                     "des": "iphone2D/3D图像处理"
+                     "2D/3D ImgDeal":{
+                     "title":"2D/3D imgDeal",
+                     "vcName":"",
+                     "des":"图像学",
+                     "subList":[
+                                {
+                                "OpenGLES":{
+                                "title": "OpenGLES",
+                                "vcName": "GL",
+                                "des": "iphone2D/3D图像处理"
+                                }
+                                },{
+                                "Metal":{
+                                "title": "Metal",
+                                "vcName": "Metal",
+                                "des": "ios 图像和计算"
+                                }
+                                }
+                                ]
                      }
                      }
                      ]
 }
+
 

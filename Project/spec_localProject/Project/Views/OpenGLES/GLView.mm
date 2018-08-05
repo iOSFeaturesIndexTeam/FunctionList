@@ -12,7 +12,7 @@
 #import <OpenGLES/ES2/gl.h>
 
 @interface GLView(){
-
+    CADisplayLink *displayLink;
 }
 @end
 
@@ -23,8 +23,12 @@
 }
 
 - (void)dealloc {
-    if([EAGLContext currentContext] == m_context)
+    if([EAGLContext currentContext] == m_context) {
         [EAGLContext setCurrentContext:nil];
+    }
+    [displayLink invalidate];
+    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -66,14 +70,13 @@
 //        }
         
         [m_context renderbufferStorage:GL_RENDERBUFFER
-                          fromDrawable: eaglLayer];
+                          fromDrawable:eaglLayer];
         
         m_renderingEngine->Initialize(CGRectGetWidth(frame), CGRectGetHeight(frame));
         
-        [self drawView: nil];
+        [self drawView:nil];
         m_timestamp = CACurrentMediaTime();
         
-        CADisplayLink* displayLink;
         displayLink = [CADisplayLink displayLinkWithTarget:self
                                                   selector:@selector(drawView:)];
         
@@ -123,7 +126,8 @@
     glViewport(0,0,CGRectGetWidth(self.frame),CGRectGetHeight(self.frame));
 }
 
-- (void)drawView {
+- (void)drawView
+{
     /**
      这使用OpenGL的“清除”机制用纯色填充缓冲区。首先使用四个值（红色，绿色，蓝色，alpha）将颜色设置为灰色。然后，发出清除操作。最后，EAGLContext告诉对象将渲染缓冲区呈现给屏幕。大多数OpenGL程序不是直接绘制到屏幕上，而是渲染到缓冲区，然后在原子操作中呈现给屏幕，就像我们在这里做的那样。
      */
@@ -133,15 +137,18 @@
     [m_context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
 #else
-- (void)didRotate:(NSNotification*)notification {
+- (void)didRotate:(NSNotification*)notification
+{
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     m_renderingEngine->OnRotate((DeviceOrientation) orientation);
     [self drawView: nil];
 }
 
-- (void) drawView: (CADisplayLink*) displayLink {
+- (void)drawView:(CADisplayLink*)displayLink
+{
     if (displayLink != nil) {
         float elapsedSeconds = displayLink.timestamp - m_timestamp;
+        
         m_timestamp = displayLink.timestamp;
         m_renderingEngine->UpdateAnimation(elapsedSeconds);
     }
