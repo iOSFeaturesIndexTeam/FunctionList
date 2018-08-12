@@ -13,6 +13,9 @@
 		C019C8CA21147EFF00C92750 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C019C8C921147EFF00C92750 /* GLView.mm */; };
 		C019C8D5211496CE00C92750 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C019C8D4211496CE00C92750 /* libc++.tbd */; };
 		C019C8F121153D5100C92750 /* RenderingEngine1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C019C8F021153D5100C92750 /* RenderingEngine1.cpp */; };
+		C0360F442119A226006381AD /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0360F432119A226006381AD /* RenderingEngine2.cpp */; };
+		C0360F482119A329006381AD /* Simple.frag in Resources */ = {isa = PBXBuildFile; fileRef = C0360F462119A329006381AD /* Simple.frag */; };
+		C0360F492119A329006381AD /* Simple.vert in Resources */ = {isa = PBXBuildFile; fileRef = C0360F472119A329006381AD /* Simple.vert */; };
 		C0569D2F20D501E8003BDCF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0569D2D20D501E8003BDCF0 /* Main.storyboard */; };
 		C0569D3120D501E8003BDCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0569D3020D501E8003BDCF0 /* Assets.xcassets */; };
 		C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0569D3220D501E8003BDCF0 /* LaunchScreen.storyboard */; };
@@ -58,6 +61,9 @@
 		C019C8D4211496CE00C92750 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		C019C8EF21153D5100C92750 /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRenderingEngine.hpp; sourceTree = "<group>"; };
 		C019C8F021153D5100C92750 /* RenderingEngine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine1.cpp; sourceTree = "<group>"; };
+		C0360F432119A226006381AD /* RenderingEngine2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine2.cpp; sourceTree = "<group>"; };
+		C0360F462119A329006381AD /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
+		C0360F472119A329006381AD /* Simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.vert; sourceTree = "<group>"; };
 		C0569D2420D501E8003BDCF0 /* spec_localProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spec_localProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0569D2720D501E8003BDCF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0569D2820D501E8003BDCF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -196,8 +202,18 @@
 			children = (
 				C019C8EF21153D5100C92750 /* IRenderingEngine.hpp */,
 				C019C8F021153D5100C92750 /* RenderingEngine1.cpp */,
+				C0360F432119A226006381AD /* RenderingEngine2.cpp */,
 			);
 			path = OpenGLES;
+			sourceTree = "<group>";
+		};
+		C0360F452119A329006381AD /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C0360F462119A329006381AD /* Simple.frag */,
+				C0360F472119A329006381AD /* Simple.vert */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 		C0569D1B20D501E8003BDCF0 = {
@@ -258,6 +274,7 @@
 		C0EE284A210E12780077A345 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				C0360F452119A329006381AD /* Shaders */,
 				C019C8C621147EBD00C92750 /* Cells */,
 				C019C8C421147EBD00C92750 /* Extends */,
 				C019C8C521147EBD00C92750 /* Models */,
@@ -448,9 +465,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0360F482119A329006381AD /* Simple.frag in Resources */,
 				C015FC282111862A009C8395 /* Resource in Resources */,
 				C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */,
 				C0569D3120D501E8003BDCF0 /* Assets.xcassets in Resources */,
+				C0360F492119A329006381AD /* Simple.vert in Resources */,
 				C0569D2F20D501E8003BDCF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +554,7 @@
 				C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */,
 				C0EE2855210E12BB0077A345 /* ViewController.m in Sources */,
 				C0EE2864210E178E0077A345 /* IndexDesManager.m in Sources */,
+				C0360F442119A226006381AD /* RenderingEngine2.cpp in Sources */,
 				C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */,
 				C019C8C121145FB200C92750 /* GLViewController.mm in Sources */,
 				C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */,
