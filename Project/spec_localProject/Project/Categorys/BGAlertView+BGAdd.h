@@ -17,12 +17,17 @@
  */
 + (void)showAlertViewWithEditingChangedHandler:(void(^)(NSString *string))editHandler
                             actionTapedHandler:(void(^)(NSInteger index))actionTapedHandler;
-+ (void)showSheetViewWithEditingChangedHandler:(void (^)(NSString *))editHandler actionTapedHandler:(void (^)(NSInteger))actionTapedHandler;
-+ (void)showSheetViewLevelWithEditingChangedHandler:(void (^)(NSString *))editHandler actionTapedHandler:(void (^)(NSInteger))actionTapedHandler;
+
++ (void)showSheetViewWithEditingChangedHandler:(void (^)(NSString *))editHandler
+                            actionTapedHandler:(void (^)(NSInteger))actionTapedHandler;
+
++ (void)showSheetViewLevelWithEditingChangedHandler:(void (^)(NSString *))editHandler
+                                 actionTapedHandler:(void (^)(NSInteger))actionTapedHandler;
 
 
 /**
  自动隐藏 文本提示窗
+ 换行 请 加入\n 自动适配 提示宽度
  
  @param title 提示
  */

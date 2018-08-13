@@ -32,10 +32,14 @@ PODS:
   - BGNetwork (0.0.1):
     - AFNetworking (~> 3.1.0)
   - Masonry (1.1.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - BGAlertView (~> 0.0.2)
   - BGNetwork (~> 0.0.1)
+  - YYCategories
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -43,7 +47,8 @@ SPEC CHECKSUMS:
   BGAlertView: cbfb49b127311368ce4e8c460336571debbe3361
   BGNetwork: 448b76f6320d540522f9e5712b65932337aaf6d5
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 72aa1326c561eec60a4f2ef70fbe53e401627fd8
+PODFILE CHECKSUM: 8d2c401e5e7af25f13b0b17e735953a1be8f39f4
 
 COCOAPODS: 1.3.1
