@@ -39,33 +39,6 @@ static inline CGFloat kDegreesToRadians(CGFloat degrees) {
     return self;
 }
 
-- (void)configure {
-    switch (_type) {
-        case BGCustomLayerTypeSlider:
-        {
-
-            self.icon = [UIImage imageNamed:@"pic_icon_things"];
-        }
-            break;
-        case BGCustomLayerTypeProgressBar:
-        {
-
-            self.icon = [UIImage imageNamed:@"pic_icon_person"];
-        }
-            break;
-        case BGCustomLayerTypeTag:
-        {
-            self.name = self.info.name;
-            self.icon = [UIImage imageNamed:@"pic_icon_location"];
-        }
-            break;
-        default:
-            break;
-    }
-    
-    self.nameLabel.text = self.name;
-}
-
 - (void)drawRect:(CGRect)rect {
     if (self.info.direction == YES) {
         [self drawRightDirectionView];
@@ -283,6 +256,7 @@ static inline CGFloat kDegreesToRadians(CGFloat degrees) {
     if (size.width > (UNION_SCREEN_WIDTH/3*2 - 70)) {
         size.width = UNION_SCREEN_WIDTH/3*2 - 70;
     }
+    
     if (self.info.direction == YES) {
         self.nameLabel.frame = CGRectMake(14.0f,
                                           (self.bounds.size.height-size.height)/2,
@@ -335,7 +309,34 @@ static inline CGFloat kDegreesToRadians(CGFloat degrees) {
     
     return _nameLabel;
 }
+
+- (void)configure {
+    switch (_type) {
+        case BGCustomLayerTypeSlider:
+        {
+            
+        }
+            break;
+        case BGCustomLayerTypeProgressBar:
+        {
+            
+        }
+            break;
+        case BGCustomLayerTypeTag:
+        {
+            self.name = self.info.name;
+            self.icon = [UIImage imageNamed:@"bro_ic_location"];
+        }
+            break;
+        default:
+            break;
+    }
+    
+    self.nameLabel.text = self.name;
+}
+
 @end
+
 
 
 @implementation BGCustomLayerModel
