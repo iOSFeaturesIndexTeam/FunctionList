@@ -9,13 +9,17 @@
                                {
                                "ImgAnimation":{
                                "title":"ImgAnimation",
-                               "vcNmae":"",
+                               "vcName":"",
                                "des":"图形与动画",
-                               "subLsit":[
-                               {
-                               
-                               }
-                               ]
+                               "subList":[
+                                          {
+                                          "LayerDrawInRect":{
+                                          "title":"LayerDrawInRect",
+                                          "vcName":"LayerDrawInRect",
+                                          "des":"视图绘制自定义样式"
+                                          }
+                                          }
+                                          ]
                                }
                                },
                                {
@@ -185,3 +189,4 @@
                     }
                     ]
 }
+

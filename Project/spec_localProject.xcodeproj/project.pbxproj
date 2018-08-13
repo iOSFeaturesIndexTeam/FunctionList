@@ -22,6 +22,8 @@
 		C0569D3720D501E8003BDCF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D3620D501E8003BDCF0 /* main.m */; };
 		C0569D4120D501E8003BDCF0 /* spec_localProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D4020D501E8003BDCF0 /* spec_localProjectTests.m */; };
 		C0569D4C20D501E8003BDCF0 /* spec_localProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D4B20D501E8003BDCF0 /* spec_localProjectUITests.m */; };
+		C07A099B21215B2E00CD86CD /* LayerDrawInRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */; };
+		C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A09A7212160D200CD86CD /* CustomLayer.m */; };
 		C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */; };
 		C0EE2853210E12970077A345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2820D501E8003BDCF0 /* AppDelegate.m */; };
 		C0EE2855210E12BB0077A345 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2B20D501E8003BDCF0 /* ViewController.m */; };
@@ -80,6 +82,10 @@
 		C0569D4720D501E8003BDCF0 /* spec_localProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spec_localProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0569D4B20D501E8003BDCF0 /* spec_localProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spec_localProjectUITests.m; sourceTree = "<group>"; };
 		C0569D4D20D501E8003BDCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07A099921215B2E00CD86CD /* LayerDrawInRectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerDrawInRectViewController.h; sourceTree = "<group>"; };
+		C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerDrawInRectViewController.m; sourceTree = "<group>"; };
+		C07A09A6212160D200CD86CD /* CustomLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayer.h; sourceTree = "<group>"; };
+		C07A09A7212160D200CD86CD /* CustomLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayer.m; sourceTree = "<group>"; };
 		C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C0E5FF6D21109EA600E12A50 /* ListIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListIndex.h; sourceTree = "<group>"; };
 		C0EE284C210E12780077A345 /* BGAlertView+BGAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BGAlertView+BGAdd.h"; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 		C019C8C321147EBD00C92750 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C07A099C2121606800CD86CD /* Img&Animation */,
 				C019C8C721147ED700C92750 /* OpenGLES */,
 			);
 			path = Views;
@@ -271,6 +278,24 @@
 			path = spec_localProjectUITests;
 			sourceTree = "<group>";
 		};
+		C07A0998212159EB00CD86CD /* Img&Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C07A099921215B2E00CD86CD /* LayerDrawInRectViewController.h */,
+				C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */,
+			);
+			path = "Img&Animation";
+			sourceTree = "<group>";
+		};
+		C07A099C2121606800CD86CD /* Img&Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C07A09A6212160D200CD86CD /* CustomLayer.h */,
+				C07A09A7212160D200CD86CD /* CustomLayer.m */,
+			);
+			path = "Img&Animation";
+			sourceTree = "<group>";
+		};
 		C0EE284A210E12780077A345 /* Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +330,7 @@
 		C0EE284E210E12780077A345 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C07A0998212159EB00CD86CD /* Img&Animation */,
 				C019C8BE21145FA000C92750 /* OpenGLES */,
 				C0EE2857210E12DF0077A345 /* ResponderViewController.h */,
 				C0EE2858210E12DF0077A345 /* ResponderViewController.m */,
@@ -551,12 +577,14 @@
 				C019C8F121153D5100C92750 /* RenderingEngine1.cpp in Sources */,
 				C0EE2860210E164A0077A345 /* BaseViewController.m in Sources */,
 				C0569D3720D501E8003BDCF0 /* main.m in Sources */,
+				C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */,
 				C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */,
 				C0EE2855210E12BB0077A345 /* ViewController.m in Sources */,
 				C0EE2864210E178E0077A345 /* IndexDesManager.m in Sources */,
 				C0360F442119A226006381AD /* RenderingEngine2.cpp in Sources */,
 				C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */,
 				C019C8C121145FB200C92750 /* GLViewController.mm in Sources */,
+				C07A099B21215B2E00CD86CD /* LayerDrawInRectViewController.m in Sources */,
 				C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */,
 				C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */,
 			);

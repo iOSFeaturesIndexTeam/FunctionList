@@ -7,4 +7,5 @@ target 'spec_localProject' do
  
 pod 'BGNetwork', '~> 0.0.1'
 pod 'BGAlertView', '~> 0.0.2’
+pod 'YYCategories'
 end

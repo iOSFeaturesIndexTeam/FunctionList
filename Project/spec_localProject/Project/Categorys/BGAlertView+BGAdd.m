@@ -126,10 +126,19 @@
 }
 
 + (void)titleTip:(NSString *)title{
+    
+    CGSize size = [title union_stringSizeWithFontSize:12
+                                              maxSize:CGSizeMake(
+                                                                 MAXFLOAT,
+                                                                 MAXFLOAT
+                                                                 )];
+    CGFloat h = ceilf(size.height);
+    CGFloat w = ceilf(size.width);
+    CGFloat padding_top = 20.;
     BGAlertView *view = [[BGAlertView alloc] initWithType:BGAlertViewTypeAlert];
-    view.contentViewWidthRang = BGRangeMake(0, 300);
-    view.contentViewHeightRang = BGRangeMake(0, 400);
-    view.autoHideTimeInterval = 0.45;
+    view.contentViewWidthRang = BGRangeMake(0, w + padding_top * 2);
+    view.contentViewHeightRang = BGRangeMake(0, h + padding_top * 2);
+    view.autoHideTimeInterval = 0.45f;
     view.maskKeyboard = NO;
     view.paddingBot = 0;
     [view setupSubviewsWithHandler:^(UIView *contentView, UIImageView *backgroundView) {
@@ -137,10 +146,9 @@
         contentView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.35];
         [contentView union_addCornerRadius:15.0f];
     }];
-    CGFloat max_display_w = 300;
-    CGFloat h = ceilf([title union_stringSizeWithFontSize:12 maxSize:CGSizeMake(max_display_w, MAXFLOAT)].height);
+    
     [view addCustomViewWithHandler:^(BGActionViewManager *action, UIView *customView) {
-        action.bgEdge = BGEdgeMake(0, 0, 0, 20 * 2 + h);
+        action.bgEdge = BGEdgeMake(0, 0, 0, padding_top * 2 + h);
         customView.backgroundColor = [UIColor clearColor];
         [customView union_addCornerRadius:19.5];
         
@@ -164,7 +172,6 @@
 //        button.backgroundColor = [UIColor clearColor];
 //        [button union_addCornerRadius:19.5f];
 //    } tapedOnHandler:nil];
-    
     
     view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
         backgroundView.alpha = 0.0f;

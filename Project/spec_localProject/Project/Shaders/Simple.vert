@@ -3,6 +3,10 @@
  多行字符串在C / C ++中通常很麻烦，但它们可以用一个宏来驯服
  */
 
+
+/**
+ 顶点着色器，形变 传入的 顶点
+ */
 #define STRINGIFY(A) #A
 const char* SimpleVertexShader = STRINGIFY(
 
