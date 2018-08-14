@@ -134,6 +134,7 @@ static inline CGFloat kDegreesToRadians(CGFloat degrees) {
     //从左开始，依次是小圆，两段圆弧，带圆角的矩形
     //图标和文字之间，有两段圆弧，这两段圆弧上下对称
     CGContextRef context = UIGraphicsGetCurrentContext();
+    
     CGContextSetFillColorWithColor(context, [UIColor un_colorWithHex:0x000000 alpha:0.8f].CGColor);
     
     //小圆的半径
@@ -142,6 +143,7 @@ static inline CGFloat kDegreesToRadians(CGFloat degrees) {
     CGFloat xAngle = 44/2;
     //绘制小圆
     CGContextMoveToPoint(context, xR, height/2);
+   
     CGContextAddArc(context, xR, height/2, xR, kDegreesToRadians(xAngle), -kDegreesToRadians(xAngle), NO);
     
     //两段圆弧的半径
@@ -165,6 +167,7 @@ static inline CGFloat kDegreesToRadians(CGFloat degrees) {
     //绘制上圆弧所需的参照点的y坐标
     CGFloat yArcBottom = yCenterTop + yR / cos(asin((distance/2) / yR));
     //从小圆的圆心开始，绘制下半圆弧
+//    https://www.jianshu.com/p/a6e93291cc4c 不理解 api 的看图
     CGContextMoveToPoint(context, xR, height/2);
     CGContextAddLineToPoint(context, xLeft, yBottom);
     CGContextAddArcToPoint(context, xCenter, yArcTop, xRight, yBottom, yR);

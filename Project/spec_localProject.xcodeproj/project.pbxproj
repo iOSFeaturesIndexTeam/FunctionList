@@ -24,6 +24,7 @@
 		C0569D4C20D501E8003BDCF0 /* spec_localProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D4B20D501E8003BDCF0 /* spec_localProjectUITests.m */; };
 		C07A099B21215B2E00CD86CD /* LayerDrawInRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */; };
 		C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A09A7212160D200CD86CD /* CustomLayer.m */; };
+		C07A09AB2122957900CD86CD /* CustomLayerBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */; };
 		C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */; };
 		C0EE2853210E12970077A345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2820D501E8003BDCF0 /* AppDelegate.m */; };
 		C0EE2855210E12BB0077A345 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2B20D501E8003BDCF0 /* ViewController.m */; };
@@ -86,6 +87,8 @@
 		C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerDrawInRectViewController.m; sourceTree = "<group>"; };
 		C07A09A6212160D200CD86CD /* CustomLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayer.h; sourceTree = "<group>"; };
 		C07A09A7212160D200CD86CD /* CustomLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayer.m; sourceTree = "<group>"; };
+		C07A09A92122957900CD86CD /* CustomLayerBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayerBezierPath.h; sourceTree = "<group>"; };
+		C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayerBezierPath.m; sourceTree = "<group>"; };
 		C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C0E5FF6D21109EA600E12A50 /* ListIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListIndex.h; sourceTree = "<group>"; };
 		C0EE284C210E12780077A345 /* BGAlertView+BGAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BGAlertView+BGAdd.h"; sourceTree = "<group>"; };
@@ -292,6 +295,8 @@
 			children = (
 				C07A09A6212160D200CD86CD /* CustomLayer.h */,
 				C07A09A7212160D200CD86CD /* CustomLayer.m */,
+				C07A09A92122957900CD86CD /* CustomLayerBezierPath.h */,
+				C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */,
 			);
 			path = "Img&Animation";
 			sourceTree = "<group>";
@@ -580,6 +585,7 @@
 				C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */,
 				C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */,
 				C0EE2855210E12BB0077A345 /* ViewController.m in Sources */,
+				C07A09AB2122957900CD86CD /* CustomLayerBezierPath.m in Sources */,
 				C0EE2864210E178E0077A345 /* IndexDesManager.m in Sources */,
 				C0360F442119A226006381AD /* RenderingEngine2.cpp in Sources */,
 				C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */,

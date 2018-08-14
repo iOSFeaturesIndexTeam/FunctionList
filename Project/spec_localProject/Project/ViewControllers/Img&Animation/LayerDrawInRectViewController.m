@@ -8,6 +8,7 @@
 
 #import "LayerDrawInRectViewController.h"
 #import "CustomLayer.h"
+#import "CustomLayerBezierPath.h"
 @class BGCustomLayerModel;
 @interface LayerDrawInRectViewController ()
 @property (nonatomic,strong) CustomLayer *customlayer;
@@ -18,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureScreen];
+    {   //BezierPath 绘制图形
+        CustomLayerBezierPath *path = [[CustomLayerBezierPath alloc] initWithFrame:CGRectMake(0, 100, 120, 34)];
+        [self.view addSubview:path];
+    }
 }
 
 - (void)configureScreen {
