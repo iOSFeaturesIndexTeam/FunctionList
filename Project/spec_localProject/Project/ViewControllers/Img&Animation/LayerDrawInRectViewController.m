@@ -9,6 +9,7 @@
 #import "LayerDrawInRectViewController.h"
 #import "CustomLayer.h"
 #import "CustomLayerBezierPath.h"
+static NSString * kLayerDes = @"";
 @class BGCustomLayerModel;
 @interface LayerDrawInRectViewController ()
 @property (nonatomic,strong) CustomLayer *customlayer;
@@ -32,7 +33,8 @@
         [btn setTitle:@"绘制View" forState:UIControlStateNormal];
         [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             BGCustomLayerModel *model = [BGCustomLayerModel new];
-            model.name = @"自己画的视图哦！！";
+            kLayerDes = [kLayerDes stringByAppendingString:@"画-"];
+            model.name = kLayerDes;
             _customlayer = [[CustomLayer alloc] initLayerType:BGCustomLayerTypeTag withInfo:model];
             _customlayer.frame = CGRectMake(0, 64, [_customlayer approximatelySize].width, [_customlayer approximatelySize].height);
             [self.view addSubview:_customlayer];
