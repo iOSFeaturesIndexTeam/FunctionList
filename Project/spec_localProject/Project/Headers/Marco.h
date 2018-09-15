@@ -9,6 +9,11 @@
 #ifndef Marco_h
 #define Marco_h
 
+
+
+#define kBaseTabViewDelegate    UITableViewDelegate,UITableViewDataSource
+#define kBaseCollectionViewDelegate     UICollectionViewDelegate,UICollectionViewDataSource
+
 static inline BOOL StrIsEqual(NSString *front,NSString *empress){
     return [front isEqualToString:empress];
 }
