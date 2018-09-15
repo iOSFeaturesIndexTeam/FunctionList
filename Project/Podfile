@@ -5,7 +5,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'root@jler.vip:wangwenzhen/AutoBaseSpec.git'
 target 'spec_localProject' do
  
+ 
 pod 'BGNetwork', '~> 0.0.1'
 pod 'BGAlertView', '~> 0.0.2’
 pod 'YYCategories'
+pod 'SDWebImage'
+#pod 'Realm'
+pod 'ReactiveObjC'
 end

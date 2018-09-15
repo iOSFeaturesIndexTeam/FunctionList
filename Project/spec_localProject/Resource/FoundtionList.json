@@ -146,8 +146,9 @@
                     {
                     "DesignPatterns":{
                     "title":"DesignPatterns",
-                    "vcName":"",
+                    "vcName":"DesignMode",
                     "des":"设计模式"
+                    
                     }
                     },
                     {
