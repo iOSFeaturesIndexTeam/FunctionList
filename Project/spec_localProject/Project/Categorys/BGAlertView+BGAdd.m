@@ -194,4 +194,70 @@
     
     [view showAlertViewOnKeyWindow];
 }
+
++ (void)normalAlertWithTitle:(NSString *)title subBtnTitle:(NSArray *)btnTitles actionTapedHandler:(void(^)(NSInteger index))actionTapedHandler{
+    BGAlertView *view = [[BGAlertView alloc] initWithType:BGAlertViewTypeAlert];
+    view.actionViewShowType = BGAlertViewShowTypeLevel;
+    view.contentViewWidthRang = BGRangeMake(270, 300);
+    view.contentViewHeightRang = BGRangeMake(120, 150);
+    view.maskKeyboard = NO;
+    view.contentViewBottomKeyboardTop = 25.0f;
+    view.paddingBot = 0;
+    [view setupSubviewsWithHandler:^(UIView *contentView, UIImageView *backgroundView) {
+        backgroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5f];
+        contentView.backgroundColor = [UIColor whiteColor];
+        [contentView union_addCornerRadius:15.0f];
+    }];
+    
+    [view addTitleWithHandle:^(BGActionViewManager *action, UILabel *label) {
+        action.bgEdge = BGEdgeMake(30, 20, 0, 40);
+        label.text = title;
+        label.font = [UIFont boldSystemFontOfSize:16.0f];
+        label.textColor = [UIColor union_colorWithHex:0x333333];
+    }];
+    
+   
+    [view addActionViewIsBTType:NO withHandle:^(BGActionViewManager *action, UIButton *button) {
+        action.bgEdge = BGEdgeMake(80, 20, 100, 40);
+        [button setTitle:btnTitles.firstObject forState:0];
+        [button.titleLabel setFont:[UIFont boldSystemFontOfSize:13.0f]];
+        [button setTitleColor:[UIColor union_colorWithHex:0xffffff] forState:0];
+        button.backgroundColor = [UIColor union_colorWithHex:0xe75887];
+        [button union_addCornerRadius:19.5f];
+    } tapedOnHandler:actionTapedHandler];
+    
+    [view addActionViewIsBTType:NO withHandle:^(BGActionViewManager *manager, UIButton *button) {
+        manager.bgEdge = BGEdgeMake(80, 30, 100, 40);
+        [button setTitle:btnTitles.lastObject forState:0];
+        [button.titleLabel setFont:[UIFont boldSystemFontOfSize:13.0f]];
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        button.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+        [button union_addCornerRadius:19.5f];
+    } tapedOnHandler:actionTapedHandler];
+    
+    
+    view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
+        backgroundView.alpha = 0.0f;
+        contentView.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight(backgroundView.frame) / 2);
+        [UIView animateWithDuration:0.25f
+                         animations:^{
+                             contentView.transform = CGAffineTransformIdentity;
+                             backgroundView.alpha = 1.0f;
+                         } completion:^(BOOL finished) {
+                             completionHandler();
+                         }];
+    };
+    
+    view.animationCompletionHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
+        [UIView animateWithDuration:0.25f
+                         animations:^{
+                             contentView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(backgroundView.frame) / 2);
+                             backgroundView.alpha = 0.0f;
+                         } completion:^(BOOL finished) {
+                             completionHandler();
+                         }];
+    };
+    
+    [view showAlertViewOnKeyWindow];
+}
 @end

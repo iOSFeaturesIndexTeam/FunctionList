@@ -32,4 +32,6 @@
  @param title 提示
  */
 + (void)titleTip:(NSString *)title;
+/** title + 水平按钮左右按钮 */
++ (void)normalAlertWithTitle:(NSString *)title subBtnTitle:(NSArray *)btnTitles actionTapedHandler:(void(^)(NSInteger index))actionTapedHandler;;
 @end

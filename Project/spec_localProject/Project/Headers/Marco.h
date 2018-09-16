@@ -18,6 +18,9 @@ static inline BOOL StrIsEqual(NSString *front,NSString *empress){
     return [front isEqualToString:empress];
 }
 
+static inline NSString * IntToStr(NSInteger i){
+    return [NSString stringWithFormat:@"%ld",(long)i];
+}
 
 
 

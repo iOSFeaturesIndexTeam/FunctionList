@@ -19,7 +19,7 @@
 /** 弹窗响应视图的展示样式 上层内容 */
 @property (nonatomic,assign,readonly) BGAlertViewShowType contentViewShowType;
 /** 弹窗响应视图的展示样式 底部的响应按钮 【暂时不支持 水平 样式】*/
-@property (nonatomic,assign,readonly) BGAlertViewShowType actionViewShowType;
+@property (nonatomic,assign) BGAlertViewShowType actionViewShowType;
 /** 是否一直可见 */
 @property (nonatomic) BOOL isAlwaysVisible;
 /** 单机alertView 关闭弹窗 */
