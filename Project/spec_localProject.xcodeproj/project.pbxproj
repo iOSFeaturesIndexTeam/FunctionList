@@ -47,12 +47,37 @@
 		C0B4109F214E150200124F80 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B41099214E150100124F80 /* File.m */; };
 		C0B410A0214E150200124F80 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B4109A214E150100124F80 /* FileViewController.m */; };
 		C0B410A1214E150200124F80 /* FileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B4109B214E150100124F80 /* FileCell.m */; };
+		C0B410A4214E1DCD00124F80 /* AppDelegate+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410A3214E1DCD00124F80 /* AppDelegate+Extend.m */; };
+		C0B410A6214E248900124F80 /* 24中编程设计模式.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C0B410A5214E248900124F80 /* 24中编程设计模式.pdf */; };
+		C0B410B5214E274F00124F80 /* AirConditioner.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410A9214E274F00124F80 /* AirConditioner.m */; };
+		C0B410B6214E274F00124F80 /* GeliAirConditioner.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410AB214E274F00124F80 /* GeliAirConditioner.m */; };
+		C0B410B7214E274F00124F80 /* HaierAirConditioner.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410AD214E274F00124F80 /* HaierAirConditioner.m */; };
+		C0B410B8214E274F00124F80 /* DirectionRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410B0214E274F00124F80 /* DirectionRemote.m */; };
+		C0B410B9214E274F00124F80 /* Remote.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410B2214E274F00124F80 /* Remote.m */; };
+		C0B410BA214E274F00124F80 /* TemperatureRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410B4214E274F00124F80 /* TemperatureRemote.m */; };
+		C0B410C7214E295000124F80 /* OperationSubStract.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410C0214E295000124F80 /* OperationSubStract.m */; };
+		C0B410C8214E295000124F80 /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410C1214E295000124F80 /* Context.m */; };
+		C0B410C9214E295000124F80 /* OperationMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410C3214E295000124F80 /* OperationMultiply.m */; };
+		C0B410CA214E295000124F80 /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410C4214E295000124F80 /* OperationAdd.m */; };
+		C0B410D4214E2E8E00124F80 /* DarkerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410CC214E2E8D00124F80 /* DarkerCommand.m */; };
+		C0B410D5214E2E8E00124F80 /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410CE214E2E8D00124F80 /* Invoker.m */; };
+		C0B410D6214E2E8E00124F80 /* LighterCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410CF214E2E8D00124F80 /* LighterCommand.m */; };
+		C0B410D7214E2E8E00124F80 /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410D1214E2E8D00124F80 /* Receiver.m */; };
+		C0B410DB214E3D8C00124F80 /* SubscibeCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410DA214E3D8C00124F80 /* SubscibeCenter.m */; };
+		C0B410E4214E432300124F80 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410DC214E432200124F80 /* Mediator.m */; };
+		C0B410E5214E432300124F80 /* ConcreteMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410DD214E432200124F80 /* ConcreteMediator.m */; };
+		C0B410E6214E432300124F80 /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410DF214E432200124F80 /* Colleague.m */; };
+		C0B410E7214E432300124F80 /* ConcreteColleague.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410E3214E432300124F80 /* ConcreteColleague.m */; };
+		C0B410F2214E450700124F80 /* ChairmanHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410E9214E450600124F80 /* ChairmanHandler.m */; };
+		C0B410F3214E450700124F80 /* GroupLeaderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410EB214E450600124F80 /* GroupLeaderHandler.m */; };
+		C0B410F4214E450700124F80 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410EF214E450700124F80 /* Order.m */; };
+		C0B410F5214E450700124F80 /* ManagerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410F0214E450700124F80 /* ManagerHandler.m */; };
+		C0B410F6214E450700124F80 /* Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410F1214E450700124F80 /* Handler.m */; };
 		C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */; };
 		C0EE2853210E12970077A345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2820D501E8003BDCF0 /* AppDelegate.m */; };
 		C0EE2855210E12BB0077A345 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2B20D501E8003BDCF0 /* ViewController.m */; };
 		C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE2858210E12DF0077A345 /* ResponderViewController.m */; };
 		C0EE2860210E164A0077A345 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE285F210E164A0077A345 /* BaseViewController.m */; };
-		C0EE2864210E178E0077A345 /* IndexDesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE2863210E178E0077A345 /* IndexDesManager.m */; };
 		C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE2866210E19350077A345 /* NSString+Extend.m */; };
 		CE6D18ED699D56FF69699D48 /* libPods-spec_localProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B1BB9BCE500DE94CC45E19 /* libPods-spec_localProject.a */; };
 /* End PBXBuildFile section */
@@ -157,6 +182,60 @@
 		C0B4109C214E150100124F80 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
 		C0B4109D214E150100124F80 /* FileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCell.h; sourceTree = "<group>"; };
 		C0B4109E214E150200124F80 /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
+		C0B410A2214E1DCD00124F80 /* AppDelegate+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Extend.h"; sourceTree = "<group>"; };
+		C0B410A3214E1DCD00124F80 /* AppDelegate+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Extend.m"; sourceTree = "<group>"; };
+		C0B410A5214E248900124F80 /* 24中编程设计模式.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "24中编程设计模式.pdf"; sourceTree = "<group>"; };
+		C0B410A8214E274F00124F80 /* AirConditioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirConditioner.h; sourceTree = "<group>"; };
+		C0B410A9214E274F00124F80 /* AirConditioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirConditioner.m; sourceTree = "<group>"; };
+		C0B410AA214E274F00124F80 /* GeliAirConditioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeliAirConditioner.h; sourceTree = "<group>"; };
+		C0B410AB214E274F00124F80 /* GeliAirConditioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeliAirConditioner.m; sourceTree = "<group>"; };
+		C0B410AC214E274F00124F80 /* HaierAirConditioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaierAirConditioner.h; sourceTree = "<group>"; };
+		C0B410AD214E274F00124F80 /* HaierAirConditioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaierAirConditioner.m; sourceTree = "<group>"; };
+		C0B410AF214E274F00124F80 /* DirectionRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionRemote.h; sourceTree = "<group>"; };
+		C0B410B0214E274F00124F80 /* DirectionRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionRemote.m; sourceTree = "<group>"; };
+		C0B410B1214E274F00124F80 /* Remote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remote.h; sourceTree = "<group>"; };
+		C0B410B2214E274F00124F80 /* Remote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remote.m; sourceTree = "<group>"; };
+		C0B410B3214E274F00124F80 /* TemperatureRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureRemote.h; sourceTree = "<group>"; };
+		C0B410B4214E274F00124F80 /* TemperatureRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureRemote.m; sourceTree = "<group>"; };
+		C0B410BB214E294F00124F80 /* OperationSubStract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationSubStract.h; sourceTree = "<group>"; };
+		C0B410BC214E294F00124F80 /* Strategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strategy.h; sourceTree = "<group>"; };
+		C0B410BF214E294F00124F80 /* OperationAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
+		C0B410C0214E295000124F80 /* OperationSubStract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationSubStract.m; sourceTree = "<group>"; };
+		C0B410C1214E295000124F80 /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		C0B410C2214E295000124F80 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		C0B410C3214E295000124F80 /* OperationMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationMultiply.m; sourceTree = "<group>"; };
+		C0B410C4214E295000124F80 /* OperationAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
+		C0B410C5214E295000124F80 /* OperationMultiply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationMultiply.h; sourceTree = "<group>"; };
+		C0B410CB214E2E8D00124F80 /* DarkerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkerCommand.h; sourceTree = "<group>"; };
+		C0B410CC214E2E8D00124F80 /* DarkerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkerCommand.m; sourceTree = "<group>"; };
+		C0B410CD214E2E8D00124F80 /* LighterCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LighterCommand.h; sourceTree = "<group>"; };
+		C0B410CE214E2E8D00124F80 /* Invoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
+		C0B410CF214E2E8D00124F80 /* LighterCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LighterCommand.m; sourceTree = "<group>"; };
+		C0B410D0214E2E8D00124F80 /* Receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		C0B410D1214E2E8D00124F80 /* Receiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
+		C0B410D2214E2E8E00124F80 /* Invoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		C0B410D3214E2E8E00124F80 /* CommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandProtocol.h; sourceTree = "<group>"; };
+		C0B410D8214E3D8C00124F80 /* SubscibeCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscibeCenter.h; sourceTree = "<group>"; };
+		C0B410D9214E3D8C00124F80 /* SubscibeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscibeProtocol.h; sourceTree = "<group>"; };
+		C0B410DA214E3D8C00124F80 /* SubscibeCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscibeCenter.m; sourceTree = "<group>"; };
+		C0B410DC214E432200124F80 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		C0B410DD214E432200124F80 /* ConcreteMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteMediator.m; sourceTree = "<group>"; };
+		C0B410DE214E432200124F80 /* Colleague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colleague.h; sourceTree = "<group>"; };
+		C0B410DF214E432200124F80 /* Colleague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colleague.m; sourceTree = "<group>"; };
+		C0B410E0214E432200124F80 /* ConcreteMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteMediator.h; sourceTree = "<group>"; };
+		C0B410E1214E432200124F80 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		C0B410E2214E432200124F80 /* ConcreteColleague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteColleague.h; sourceTree = "<group>"; };
+		C0B410E3214E432300124F80 /* ConcreteColleague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteColleague.m; sourceTree = "<group>"; };
+		C0B410E8214E450600124F80 /* ChairmanHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChairmanHandler.h; sourceTree = "<group>"; };
+		C0B410E9214E450600124F80 /* ChairmanHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChairmanHandler.m; sourceTree = "<group>"; };
+		C0B410EA214E450600124F80 /* GroupLeaderHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupLeaderHandler.h; sourceTree = "<group>"; };
+		C0B410EB214E450600124F80 /* GroupLeaderHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupLeaderHandler.m; sourceTree = "<group>"; };
+		C0B410EC214E450600124F80 /* Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Handler.h; sourceTree = "<group>"; };
+		C0B410ED214E450600124F80 /* ManagerHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerHandler.h; sourceTree = "<group>"; };
+		C0B410EE214E450700124F80 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		C0B410EF214E450700124F80 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		C0B410F0214E450700124F80 /* ManagerHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerHandler.m; sourceTree = "<group>"; };
+		C0B410F1214E450700124F80 /* Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Handler.m; sourceTree = "<group>"; };
 		C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C0EE284C210E12780077A345 /* BGAlertView+BGAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BGAlertView+BGAdd.h"; sourceTree = "<group>"; };
 		C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BGAlertView+BGAdd.m"; sourceTree = "<group>"; };
@@ -164,8 +243,6 @@
 		C0EE2858210E12DF0077A345 /* ResponderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponderViewController.m; sourceTree = "<group>"; };
 		C0EE285E210E164A0077A345 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		C0EE285F210E164A0077A345 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		C0EE2862210E178E0077A345 /* IndexDesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexDesManager.h; sourceTree = "<group>"; };
-		C0EE2863210E178E0077A345 /* IndexDesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexDesManager.m; sourceTree = "<group>"; };
 		C0EE2865210E19350077A345 /* NSString+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
 		C0EE2866210E19350077A345 /* NSString+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		C0EE2869210E1B2E0077A345 /* Marco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco.h; sourceTree = "<group>"; };
@@ -350,6 +427,7 @@
 		C073DC48214CAB5C00BE32B2 /* DesignMode 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				C0B410A5214E248900124F80 /* 24中编程设计模式.pdf */,
 				C073DC49214CABC800BE32B2 /* DesignModeViewController.h */,
 				C073DC4A214CABC800BE32B2 /* DesignModeViewController.m */,
 				C073DC56214D49FF00BE32B2 /* 创建型模式 */,
@@ -468,6 +546,8 @@
 		C073DC60214D4A7600BE32B2 /* 桥接模式 */ = {
 			isa = PBXGroup;
 			children = (
+				C0B410A7214E274F00124F80 /* 空调 */,
+				C0B410AE214E274F00124F80 /* 遥控器 */,
 			);
 			path = "桥接模式";
 			sourceTree = "<group>";
@@ -515,14 +595,14 @@
 				C073DC65214D4AE000BE32B2 /* 中介者模式 */,
 				C073DC66214D4AE000BE32B2 /* 命令模式 */,
 				C073DC67214D4AE000BE32B2 /* 备忘录模式 */,
-				C073DC68214D4AE000BE32B2 /* 模板模式 */,
-				C073DC69214D4AE000BE32B2 /* 状态模式 */,
+				C073DC68214D4AE000BE32B2 /* 模板模式 一个基类，多个子类重写基类方法 */,
+				C073DC69214D4AE000BE32B2 /* 状态模式 没看出和策略模式的不同 */,
 				C073DC6A214D4AE000BE32B2 /* 策略模式 */,
 				C073DC6B214D4AE000BE32B2 /* 观察者模式 */,
 				C073DC6C214D4AE000BE32B2 /* 解释器模式 */,
 				C073DC6D214D4AE000BE32B2 /* 访问者模式 */,
 				C073DC6E214D4AE000BE32B2 /* 责任链模式 */,
-				C073DC6F214D4AE000BE32B2 /* 迭代器模式 */,
+				C073DC6F214D4AE000BE32B2 /* 迭代器模式 单向链表遍历 */,
 			);
 			path = "行为型模式";
 			sourceTree = "<group>";
@@ -530,6 +610,14 @@
 		C073DC65214D4AE000BE32B2 /* 中介者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				C0B410DE214E432200124F80 /* Colleague.h */,
+				C0B410DF214E432200124F80 /* Colleague.m */,
+				C0B410E2214E432200124F80 /* ConcreteColleague.h */,
+				C0B410E3214E432300124F80 /* ConcreteColleague.m */,
+				C0B410E0214E432200124F80 /* ConcreteMediator.h */,
+				C0B410DD214E432200124F80 /* ConcreteMediator.m */,
+				C0B410E1214E432200124F80 /* Mediator.h */,
+				C0B410DC214E432200124F80 /* Mediator.m */,
 			);
 			path = "中介者模式";
 			sourceTree = "<group>";
@@ -537,6 +625,15 @@
 		C073DC66214D4AE000BE32B2 /* 命令模式 */ = {
 			isa = PBXGroup;
 			children = (
+				C0B410D3214E2E8E00124F80 /* CommandProtocol.h */,
+				C0B410CB214E2E8D00124F80 /* DarkerCommand.h */,
+				C0B410CC214E2E8D00124F80 /* DarkerCommand.m */,
+				C0B410D2214E2E8E00124F80 /* Invoker.h */,
+				C0B410CE214E2E8D00124F80 /* Invoker.m */,
+				C0B410CD214E2E8D00124F80 /* LighterCommand.h */,
+				C0B410CF214E2E8D00124F80 /* LighterCommand.m */,
+				C0B410D0214E2E8D00124F80 /* Receiver.h */,
+				C0B410D1214E2E8D00124F80 /* Receiver.m */,
 			);
 			path = "命令模式";
 			sourceTree = "<group>";
@@ -548,23 +645,32 @@
 			path = "备忘录模式";
 			sourceTree = "<group>";
 		};
-		C073DC68214D4AE000BE32B2 /* 模板模式 */ = {
+		C073DC68214D4AE000BE32B2 /* 模板模式 一个基类，多个子类重写基类方法 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "模板模式";
+			path = "模板模式 一个基类，多个子类重写基类方法";
 			sourceTree = "<group>";
 		};
-		C073DC69214D4AE000BE32B2 /* 状态模式 */ = {
+		C073DC69214D4AE000BE32B2 /* 状态模式 没看出和策略模式的不同 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "状态模式";
+			path = "状态模式 没看出和策略模式的不同";
 			sourceTree = "<group>";
 		};
 		C073DC6A214D4AE000BE32B2 /* 策略模式 */ = {
 			isa = PBXGroup;
 			children = (
+				C0B410C2214E295000124F80 /* Context.h */,
+				C0B410C1214E295000124F80 /* Context.m */,
+				C0B410BF214E294F00124F80 /* OperationAdd.h */,
+				C0B410C4214E295000124F80 /* OperationAdd.m */,
+				C0B410C5214E295000124F80 /* OperationMultiply.h */,
+				C0B410C3214E295000124F80 /* OperationMultiply.m */,
+				C0B410BB214E294F00124F80 /* OperationSubStract.h */,
+				C0B410C0214E295000124F80 /* OperationSubStract.m */,
+				C0B410BC214E294F00124F80 /* Strategy.h */,
 			);
 			path = "策略模式";
 			sourceTree = "<group>";
@@ -572,6 +678,9 @@
 		C073DC6B214D4AE000BE32B2 /* 观察者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				C0B410D8214E3D8C00124F80 /* SubscibeCenter.h */,
+				C0B410DA214E3D8C00124F80 /* SubscibeCenter.m */,
+				C0B410D9214E3D8C00124F80 /* SubscibeProtocol.h */,
 			);
 			path = "观察者模式";
 			sourceTree = "<group>";
@@ -593,15 +702,25 @@
 		C073DC6E214D4AE000BE32B2 /* 责任链模式 */ = {
 			isa = PBXGroup;
 			children = (
+				C0B410E8214E450600124F80 /* ChairmanHandler.h */,
+				C0B410E9214E450600124F80 /* ChairmanHandler.m */,
+				C0B410EA214E450600124F80 /* GroupLeaderHandler.h */,
+				C0B410EB214E450600124F80 /* GroupLeaderHandler.m */,
+				C0B410EC214E450600124F80 /* Handler.h */,
+				C0B410F1214E450700124F80 /* Handler.m */,
+				C0B410ED214E450600124F80 /* ManagerHandler.h */,
+				C0B410F0214E450700124F80 /* ManagerHandler.m */,
+				C0B410EE214E450700124F80 /* Order.h */,
+				C0B410EF214E450700124F80 /* Order.m */,
 			);
 			path = "责任链模式";
 			sourceTree = "<group>";
 		};
-		C073DC6F214D4AE000BE32B2 /* 迭代器模式 */ = {
+		C073DC6F214D4AE000BE32B2 /* 迭代器模式 单向链表遍历 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "迭代器模式";
+			path = "迭代器模式 单向链表遍历";
 			sourceTree = "<group>";
 		};
 		C07A0998212159EB00CD86CD /* Img&Animation 图形与动画 */ = {
@@ -622,6 +741,32 @@
 				C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */,
 			);
 			path = "Img&Animation";
+			sourceTree = "<group>";
+		};
+		C0B410A7214E274F00124F80 /* 空调 */ = {
+			isa = PBXGroup;
+			children = (
+				C0B410A8214E274F00124F80 /* AirConditioner.h */,
+				C0B410A9214E274F00124F80 /* AirConditioner.m */,
+				C0B410AA214E274F00124F80 /* GeliAirConditioner.h */,
+				C0B410AB214E274F00124F80 /* GeliAirConditioner.m */,
+				C0B410AC214E274F00124F80 /* HaierAirConditioner.h */,
+				C0B410AD214E274F00124F80 /* HaierAirConditioner.m */,
+			);
+			path = "空调";
+			sourceTree = "<group>";
+		};
+		C0B410AE214E274F00124F80 /* 遥控器 */ = {
+			isa = PBXGroup;
+			children = (
+				C0B410AF214E274F00124F80 /* DirectionRemote.h */,
+				C0B410B0214E274F00124F80 /* DirectionRemote.m */,
+				C0B410B1214E274F00124F80 /* Remote.h */,
+				C0B410B2214E274F00124F80 /* Remote.m */,
+				C0B410B3214E274F00124F80 /* TemperatureRemote.h */,
+				C0B410B4214E274F00124F80 /* TemperatureRemote.m */,
+			);
+			path = "遥控器";
 			sourceTree = "<group>";
 		};
 		C0EE284A210E12780077A345 /* Project */ = {
@@ -655,6 +800,8 @@
 				C073DC54214D463700BE32B2 /* UITableView+Extend.m */,
 				C073DC8E214D756100BE32B2 /* DesignModeViewController+Extend.h */,
 				C073DC8F214D756100BE32B2 /* DesignModeViewController+Extend.m */,
+				C0B410A2214E1DCD00124F80 /* AppDelegate+Extend.h */,
+				C0B410A3214E1DCD00124F80 /* AppDelegate+Extend.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -695,8 +842,6 @@
 		C0EE2861210E177C0077A345 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C0EE2862210E178E0077A345 /* IndexDesManager.h */,
-				C0EE2863210E178E0077A345 /* IndexDesManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -828,6 +973,7 @@
 				C015FC282111862A009C8395 /* Resource in Resources */,
 				C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */,
 				C0360F492119A329006381AD /* Simple.vert in Resources */,
+				C0B410A6214E248900124F80 /* 24中编程设计模式.pdf in Resources */,
 				C0569D2F20D501E8003BDCF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -904,45 +1050,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B410D5214E2E8E00124F80 /* Invoker.m in Sources */,
 				C073DC75214D642F00BE32B2 /* Factory.m in Sources */,
 				C0EE2853210E12970077A345 /* AppDelegate.m in Sources */,
 				C0B410A0214E150200124F80 /* FileViewController.m in Sources */,
 				C073DC84214D6D8E00BE32B2 /* AbstractFactory.m in Sources */,
 				C073DC55214D463700BE32B2 /* UITableView+Extend.m in Sources */,
+				C0B410F5214E450700124F80 /* ManagerHandler.m in Sources */,
 				C019C8CA21147EFF00C92750 /* GLView.mm in Sources */,
 				C073DC4B214CABC800BE32B2 /* DesignModeViewController.m in Sources */,
 				C019C8F121153D5100C92750 /* RenderingEngine1.cpp in Sources */,
+				C0B410CA214E295000124F80 /* OperationAdd.m in Sources */,
 				C073DC93214DE75F00BE32B2 /* BaseCopyObj.m in Sources */,
 				C0B410A1214E150200124F80 /* FileCell.m in Sources */,
 				C073DC7B214D652800BE32B2 /* Pencil.m in Sources */,
 				C0B41095214E102F00124F80 /* Flower.m in Sources */,
 				C073DC78214D64A600BE32B2 /* Pen.m in Sources */,
+				C0B410B6214E274F00124F80 /* GeliAirConditioner.m in Sources */,
+				C0B410B5214E274F00124F80 /* AirConditioner.m in Sources */,
+				C0B410F2214E450700124F80 /* ChairmanHandler.m in Sources */,
+				C0B410B9214E274F00124F80 /* Remote.m in Sources */,
 				C073DCAB214DF05B00BE32B2 /* BigView.m in Sources */,
+				C0B410F4214E450700124F80 /* Order.m in Sources */,
 				C0EE2860210E164A0077A345 /* BaseViewController.m in Sources */,
 				C073DC9C214DE8F600BE32B2 /* ClassModel.m in Sources */,
 				C073DC96214DE89400BE32B2 /* Student.m in Sources */,
+				C0B410F3214E450700124F80 /* GroupLeaderHandler.m in Sources */,
+				C0B410C7214E295000124F80 /* OperationSubStract.m in Sources */,
 				C073DC90214D756100BE32B2 /* DesignModeViewController+Extend.m in Sources */,
+				C0B410E7214E432300124F80 /* ConcreteColleague.m in Sources */,
 				C0B4109F214E150200124F80 /* File.m in Sources */,
 				C0569D3720D501E8003BDCF0 /* main.m in Sources */,
+				C0B410C8214E295000124F80 /* Context.m in Sources */,
 				C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */,
+				C0B410DB214E3D8C00124F80 /* SubscibeCenter.m in Sources */,
 				C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */,
 				C0EE2855210E12BB0077A345 /* ViewController.m in Sources */,
 				C0B41092214E102500124F80 /* FlowerFactory.m in Sources */,
 				C073DC87214D6E9000BE32B2 /* RefrigeratorFactory.m in Sources */,
+				C0B410E6214E432300124F80 /* Colleague.m in Sources */,
 				C0B41098214E14D100124F80 /* CompositePatternViewController.m in Sources */,
+				C0B410D6214E2E8E00124F80 /* LighterCommand.m in Sources */,
 				C073DCAE214DF28500BE32B2 /* SmallView.m in Sources */,
+				C0B410B7214E274F00124F80 /* HaierAirConditioner.m in Sources */,
 				C07A09AB2122957900CD86CD /* CustomLayerBezierPath.m in Sources */,
-				C0EE2864210E178E0077A345 /* IndexDesManager.m in Sources */,
 				C073DC7E214D653800BE32B2 /* BallpointPen.m in Sources */,
+				C0B410D4214E2E8E00124F80 /* DarkerCommand.m in Sources */,
+				C0B410A4214E1DCD00124F80 /* AppDelegate+Extend.m in Sources */,
 				C0360F442119A226006381AD /* RenderingEngine2.cpp in Sources */,
 				C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */,
+				C0B410BA214E274F00124F80 /* TemperatureRemote.m in Sources */,
+				C0B410C9214E295000124F80 /* OperationMultiply.m in Sources */,
+				C0B410E5214E432300124F80 /* ConcreteMediator.m in Sources */,
+				C0B410E4214E432300124F80 /* Mediator.m in Sources */,
 				C019C8C121145FB200C92750 /* GLViewController.mm in Sources */,
+				C0B410B8214E274F00124F80 /* DirectionRemote.m in Sources */,
 				C07A099B21215B2E00CD86CD /* LayerDrawInRectViewController.m in Sources */,
 				C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */,
 				C073DCA5214DED6E00BE32B2 /* extModel.m in Sources */,
 				C073DC8A214D6EBD00BE32B2 /* MobilephoneFactory.m in Sources */,
 				C073DC9F214DED2600BE32B2 /* ViewAdapter.m in Sources */,
+				C0B410F6214E450700124F80 /* Handler.m in Sources */,
 				C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */,
+				C0B410D7214E2E8E00124F80 /* Receiver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

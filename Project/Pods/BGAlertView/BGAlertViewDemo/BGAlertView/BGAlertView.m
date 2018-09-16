@@ -382,11 +382,12 @@
 }
 #pragma mark - Custom Method
 - (void)setupAnimation{
+    BOOL temp = _isAlwaysVisible;
     if (self.animationBeginHandler) {
         __weak typeof(self) weakSelf = self;
         self.animationBeginHandler(_contentView, _backgroundView, ^{
             __strong typeof(weakSelf) strongSelf = weakSelf;
-            strongSelf.isAlwaysVisible = NO;
+            strongSelf.isAlwaysVisible = temp;
         });
     }
     _isAlwaysVisible = YES;

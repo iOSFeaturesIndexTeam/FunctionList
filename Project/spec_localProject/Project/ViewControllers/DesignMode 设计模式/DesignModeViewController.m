@@ -9,14 +9,18 @@
 #import "DesignModeViewController.h"
 #import "UITableView+Extend.h"
 #import "DesignModeViewController+Extend.h"
-
+#import "SubscibeProtocol.h"
+#import "SubscibeCenter.h"
 NSString * const CELL_ID = @"cellId";
-@interface DesignModeViewController ()<kBaseTabViewDelegate>
+@interface DesignModeViewController ()<kBaseTabViewDelegate,SubscibeProtocol>
 @property (nonatomic,strong) NSArray *designModeArray;
 @property (nonatomic,strong) UITableView *tabV;
 @end
 
 @implementation DesignModeViewController
+- (void)dealloc{
+    [SubscibeCenter removeUser:self withNumber:@"订阅号-美食"];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,17 +54,19 @@ NSString * const CELL_ID = @"cellId";
     
     [DesignModeViewController runDesignModeType:indexPath.row];
 }
-
+#pragma mark - SubscibeProtocol
+- (void)sendMessage:(NSString *)message withSubscibeNum:(NSString *)subscibeNum {
+    NSLog(@"message is : %@ , number is : %@",message,subscibeNum);
+}
 #pragma mark - getter
 - (NSArray *)designModeArray {
     if (!_designModeArray) {
         _designModeArray = @[@"工厂方法模式",@"抽象工厂模式",@"单例模式 太常用不介绍了",@"构建者模式",@"原型模式",
                              
-                             @"适配器模式",@"装饰器模式 就是objc中的分类不介绍了",@"代理模式 常用不讲",@"外观模式 暴露一个接口输出目标，过程隐藏",@"桥接模式",@"组合模式",
-                             @"享元模式",
+                             @"适配器模式",@"装饰器模式 就是objc中的分类不介绍了",@"代理模式 常用不讲",@"外观模式 暴露一个接口输出目标，过程隐藏",@"桥接模式",@"组合模式",@"享元模式",
                              
-                             @"策略模式",@"模板模式",@"观察者模式",@"中介者模式",@"迭代器模式",@"责任链模式",
-                             @"命令模式",@"备忘录模式",@"状态模式",@"访问者模式",@"解释器模式"];
+                             @"策略模式",@"模板模式 一个基类，多个子类重写基类方法",@"观察者模式",@"中介者模式",@"迭代器模式 迭代器模式 单向链表遍历不讲",@"责任链模式",
+                             @"命令模式",@"备忘录模式",@"状态模式 没看出和策略模式的不同不讲",@"访问者模式",@"解释器模式"];
     }
     return _designModeArray;
 }

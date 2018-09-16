@@ -260,4 +260,80 @@
     
     [view showAlertViewOnKeyWindow];
 }
++ (void)alertTitle:(NSString *)title actionTitles:(NSArray *)titles actionTapedHandler:(void(^)(NSInteger index))actionTapedHandler closeOption:(void (^)())option{
+    
+    CGFloat Vright_Lwidth = -10.f;
+    BGAlertView *view = [[BGAlertView alloc] initWithType:BGAlertViewTypeAlert];
+    view.contentViewHeightRang = BGRangeMake(85 * titles.count, 85 * titles.count + 40);
+    view.isAlwaysVisible = YES;
+    view.maskKeyboard = NO;
+    view.contentViewBottomKeyboardTop = 25.0f;
+    view.paddingBot = 0;
+    @weakify(view)
+    [view setupSubviewsWithHandler:^(UIView *contentView, UIImageView *backgroundView) {
+        backgroundView.backgroundColor = [UIColor clearColor];
+        [contentView union_addCornerRadius:15.0f];
+        
+        @strongify(view)
+        contentView.backgroundColor = [UIColor whiteColor];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+            [view closeAlertView];
+            if (option) {
+                option();
+            }
+        }];
+        [backgroundView addGestureRecognizer:tap];
+        
+    }];
+    
+    
+    [view addTitleWithHandle:^(BGActionViewManager *action, UILabel *label) {
+        //        action.size = 66.0f;
+        action.bgEdge = BGEdgeMake(20, 20, -(Vright_Lwidth + 10), 40);
+        label.text = title;
+        label.font = [UIFont boldSystemFontOfSize:16.0f];
+        label.textColor = [UIColor union_colorWithHex:0x333333];
+    }];
+    
+    [titles enumerateObjectsUsingBlock:^(NSString * obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [view addActionViewIsBTType:NO withHandle:^(BGActionViewManager *action, UIButton *button) {
+            action.bgEdge = BGEdgeMake(20, 10, -10, 40);
+            
+            [button setTitle:obj forState:0];
+            [button.titleLabel setFont:[UIFont boldSystemFontOfSize:13.0f]];
+            [button setTitleColor:[UIColor union_colorWithHex:0xffffff] forState:0];
+            button.backgroundColor = [UIColor union_colorWithHex:0xe75887];
+            [button union_addCornerRadius:19.5f];
+        } tapedOnHandler:actionTapedHandler];
+    }];
+    
+    
+    
+    view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
+        backgroundView.alpha = 0.0f;
+        contentView.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight(backgroundView.frame) / 2);
+        [UIView animateWithDuration:0.25f
+                         animations:^{
+                             contentView.transform = CGAffineTransformIdentity;
+                             backgroundView.alpha = 1.0f;
+                         } completion:^(BOOL finished) {
+                             completionHandler();
+                         }];
+    };
+    
+    
+    
+    view.animationCompletionHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
+        [UIView animateWithDuration:0.25f
+                         animations:^{
+                             contentView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(backgroundView.frame) / 2);
+                             backgroundView.alpha = 0.0f;
+                         } completion:^(BOOL finished) {
+                             completionHandler();
+                         }];
+    };
+    
+    [view showAlertViewOnKeyWindow];
+    
+}
 @end

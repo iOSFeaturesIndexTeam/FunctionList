@@ -12,4 +12,5 @@ pod 'YYCategories'
 pod 'SDWebImage'
 #pod 'Realm'
 pod 'ReactiveObjC'
+pod 'FDFullscreenPopGesture'
 end
