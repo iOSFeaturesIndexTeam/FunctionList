@@ -12,7 +12,7 @@
 #import "SubscibeProtocol.h"
 #import "SubscibeCenter.h"
 NSString * const CELL_ID = @"cellId";
-@interface DesignModeViewController ()<kBaseTabViewDelegate,SubscibeProtocol>
+@interface DesignModeViewController ()
 @property (nonatomic,strong) NSArray *designModeArray;
 @property (nonatomic,strong) UITableView *tabV;
 @end

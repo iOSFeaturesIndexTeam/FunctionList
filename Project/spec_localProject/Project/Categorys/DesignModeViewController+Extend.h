@@ -7,6 +7,7 @@
 //
 
 #import "DesignModeViewController.h"
+
 /**  @"工厂方法模式":@"FactoryPatternViewController",
  @"抽象工厂模式":@"AbstractFactoryPatternViewController",
  @"单例模式":@"SingletonPatternViewController",

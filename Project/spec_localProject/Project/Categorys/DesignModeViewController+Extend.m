@@ -217,12 +217,15 @@ static Receiver * receiver = nil;
 
 + (void)Observer{
     
-    [SubscibeCenter addUser:self withNumber:@"订阅号-美食"];
-    //收不到这个消息
-    [SubscibeCenter sendMessage:@"有新书啦" withNumber:@"订阅号-书记"];
+    [AppDelegate currentVC:[self class] Exec:^(UIViewController * vc) {
+        [SubscibeCenter addUser:(DesignModeViewController *)vc withNumber:@"订阅号-美食"];
+        //收不到这个消息
+        [SubscibeCenter sendMessage:@"有新书啦" withNumber:@"订阅号-书记"];
+        
+        //可以收到这条消息
+        [SubscibeCenter sendMessage:@"簋街牛蛙贼好吃" withNumber:@"订阅号-美食"];
+    }];
     
-    //可以收到这条消息
-    [SubscibeCenter sendMessage:@"簋街牛蛙贼好吃" withNumber:@"订阅号-美食"];
 }
 + (void)Mediator{
     //中介报价
