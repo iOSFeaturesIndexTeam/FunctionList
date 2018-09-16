@@ -14,9 +14,8 @@
 {
     BGAlertView *view = [[BGAlertView alloc] initWithType:BGAlertViewTypeAlert];
     [self commonUpWith:view isLevel:NO editingChangedHandler:editHandler actionTapedHandler:actionTapedHandler];
-
-   
 }
+
 + (void)showSheetViewWithEditingChangedHandler:(void (^)(NSString *))editHandler actionTapedHandler:(void (^)(NSInteger))actionTapedHandler{
     BGAlertView *view = [[BGAlertView alloc] initWithType:BGAlertViewTypeSheet];
     [self commonUpWith:view isLevel:NO editingChangedHandler:editHandler actionTapedHandler:actionTapedHandler];
@@ -99,7 +98,7 @@
     } tapedOnHandler:actionTapedHandler];
     
     
-    view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView) {
+    view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
         backgroundView.alpha = 0.0f;
         contentView.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight(backgroundView.frame) / 2);
         [UIView animateWithDuration:0.25f
@@ -107,9 +106,11 @@
                              contentView.transform = CGAffineTransformIdentity;
                              backgroundView.alpha = 1.0f;
                          } completion:^(BOOL finished) {
-                             [[NSNotificationCenter defaultCenter] postNotificationName:BGActionViewBeginAnimationCompletionNotification object:nil];
+                             completionHandler();
                          }];
     };
+    
+        
     
     view.animationCompletionHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
         [UIView animateWithDuration:0.25f
@@ -124,4 +125,73 @@
     [view showAlertViewOnKeyWindow];
 }
 
++ (void)titleTip:(NSString *)title{
+    
+    CGSize size = [title union_stringSizeWithFontSize:12
+                                              maxSize:CGSizeMake(
+                                                                 MAXFLOAT,
+                                                                 MAXFLOAT
+                                                                 )];
+    CGFloat h = ceilf(size.height);
+    CGFloat w = ceilf(size.width);
+    CGFloat padding_top = 20.;
+    BGAlertView *view = [[BGAlertView alloc] initWithType:BGAlertViewTypeAlert];
+    view.contentViewWidthRang = BGRangeMake(0, w + padding_top * 2);
+    view.contentViewHeightRang = BGRangeMake(0, h + padding_top * 2);
+    view.autoHideTimeInterval = 0.45f;
+    view.maskKeyboard = NO;
+    view.paddingBot = 0;
+    [view setupSubviewsWithHandler:^(UIView *contentView, UIImageView *backgroundView) {
+        backgroundView.backgroundColor = [UIColor clearColor];
+        contentView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.35];
+        [contentView union_addCornerRadius:15.0f];
+    }];
+    
+    [view addCustomViewWithHandler:^(BGActionViewManager *action, UIView *customView) {
+        action.bgEdge = BGEdgeMake(0, 0, 0, padding_top * 2 + h);
+        customView.backgroundColor = [UIColor clearColor];
+        [customView union_addCornerRadius:19.5];
+        
+        [UILabel lw_createView:^(__kindof UILabel *lb) {
+            lb.numberOfLines = 0;
+            lb.text = title;
+            lb.backgroundColor = [UIColor clearColor];
+            lb.textAlignment = NSTextAlignmentCenter;
+            [customView addSubview:lb];
+            [lb mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.edges.mas_equalTo(0);
+            }];
+        }];
+    }];
+//    [view addActionViewIsBTType:NO withHandle:^(BGActionViewManager *action, UIButton *button) {
+//        action.bgEdge = BGEdgeMake(0, 0, 0, 80);
+//        //        action.size = 39.0f;
+//        [button setTitle:title forState:0];
+//        [button.titleLabel setFont:[UIFont boldSystemFontOfSize:13.0f]];
+//        [button setTitleColor:[UIColor union_colorWithHex:0xffffff] forState:0];
+//        button.backgroundColor = [UIColor clearColor];
+//        [button union_addCornerRadius:19.5f];
+//    } tapedOnHandler:nil];
+    
+    view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
+        backgroundView.alpha = 0.0f;
+        [UIView animateWithDuration:0.3f
+                         animations:^{
+                             backgroundView.alpha = 1.0f;
+                         } completion:^(BOOL finished) {
+                             completionHandler();
+                         }];
+    };
+    
+    view.animationCompletionHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
+        [UIView animateWithDuration:0.25f
+                         animations:^{
+                             backgroundView.alpha = 0.0f;
+                         } completion:^(BOOL finished) {
+                             completionHandler();
+                         }];
+    };
+    
+    [view showAlertViewOnKeyWindow];
+}
 @end
