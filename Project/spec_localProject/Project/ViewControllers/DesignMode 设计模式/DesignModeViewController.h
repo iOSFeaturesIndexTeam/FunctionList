@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-
-@interface DesignModeViewController : BaseViewController
+#import "SubscibeProtocol.h"
+@interface DesignModeViewController : BaseViewController <kBaseTabViewDelegate,SubscibeProtocol>
 
 @end

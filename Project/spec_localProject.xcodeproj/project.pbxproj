@@ -769,9 +769,17 @@
 			path = "遥控器";
 			sourceTree = "<group>";
 		};
+		C0B410F7214E49B000124F80 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		C0EE284A210E12780077A345 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				C0B410F7214E49B000124F80 /* Manager */,
 				C0360F452119A329006381AD /* Shaders */,
 				C019C8C621147EBD00C92750 /* Cells */,
 				C019C8C421147EBD00C92750 /* Extends */,
@@ -779,7 +787,6 @@
 				C019C8C221147EBD00C92750 /* ViewModels */,
 				C019C8C321147EBD00C92750 /* Views */,
 				C0EE2868210E1B250077A345 /* Headers */,
-				C0EE2861210E177C0077A345 /* Managers */,
 				C0EE285A210E16360077A345 /* Bases */,
 				C0EE284B210E12780077A345 /* Categorys */,
 				C0EE284E210E12780077A345 /* ViewControllers */,
@@ -837,13 +844,6 @@
 				C0EE285F210E164A0077A345 /* BaseViewController.m */,
 			);
 			path = Bases;
-			sourceTree = "<group>";
-		};
-		C0EE2861210E177C0077A345 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		C0EE2868210E1B250077A345 /* Headers */ = {
