@@ -200,7 +200,7 @@ static Receiver * receiver = nil;
         [receiver setReceiverView:mask_v];
     }];
     
-    [BGAlertView alertTitle:@"命令模式" actionTitles:@[@"加黑",@"变量",@"撤销"] actionTapedHandler:^(NSInteger index) {
+    [BGAlertView alertTitle:@"命令模式" actionTitles:@[@"加黑",@"变亮",@"撤销"] actionTapedHandler:^(NSInteger index) {
         if (index == 1000) {
             DarkerCommand *command = [[DarkerCommand alloc] initWithReceiver:receiver paramter:0.1];
             [[Invoker sharedInstance] addAndExcute:command];

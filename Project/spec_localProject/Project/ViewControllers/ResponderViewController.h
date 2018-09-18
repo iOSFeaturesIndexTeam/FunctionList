@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
+#warning 啥也默写
 @interface ResponderViewController : BaseViewController
 
 @end

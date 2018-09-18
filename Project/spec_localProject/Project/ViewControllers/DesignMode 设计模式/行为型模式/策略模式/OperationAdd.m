@@ -9,7 +9,7 @@
 #import "OperationAdd.h"
 
 @implementation OperationAdd
--(int)doOperation:(int)num1 and:(int)num2{
+-(int)doOperationNum1:(int)num1 andNum2:(int)num2{
     NSLog(@"当前算法加法");
     return num2 + num1;
 }
