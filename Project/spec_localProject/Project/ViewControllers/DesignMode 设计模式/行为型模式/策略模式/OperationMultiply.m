@@ -9,7 +9,7 @@
 #import "OperationMultiply.h"
 
 @implementation OperationMultiply
--(int)doOperation:(int)num1 and:(int)num2{
+-(int)doOperationNum1:(int)num1 andNum2:(int)num2 {
     NSLog(@"当前算法乘法");
     return num1 * num2;
 }

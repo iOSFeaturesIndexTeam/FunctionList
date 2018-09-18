@@ -97,30 +97,7 @@
         [button setTitleColor:[UIColor union_colorWithHex:0x999999] forState:0];
     } tapedOnHandler:actionTapedHandler];
     
-    
-    view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
-        backgroundView.alpha = 0.0f;
-        contentView.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight(backgroundView.frame) / 2);
-        [UIView animateWithDuration:0.25f
-                         animations:^{
-                             contentView.transform = CGAffineTransformIdentity;
-                             backgroundView.alpha = 1.0f;
-                         } completion:^(BOOL finished) {
-                             completionHandler();
-                         }];
-    };
-    
-        
-    
-    view.animationCompletionHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
-        [UIView animateWithDuration:0.25f
-                         animations:^{
-                             contentView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(backgroundView.frame) / 2);
-                             backgroundView.alpha = 0.0f;
-                         } completion:^(BOOL finished) {
-                             completionHandler();
-                         }];
-    };
+    [self alertDefaultAni:view];
     
     [view showAlertViewOnKeyWindow];
 }
@@ -173,24 +150,7 @@
 //        [button union_addCornerRadius:19.5f];
 //    } tapedOnHandler:nil];
     
-    view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
-        backgroundView.alpha = 0.0f;
-        [UIView animateWithDuration:0.3f
-                         animations:^{
-                             backgroundView.alpha = 1.0f;
-                         } completion:^(BOOL finished) {
-                             completionHandler();
-                         }];
-    };
-    
-    view.animationCompletionHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
-        [UIView animateWithDuration:0.25f
-                         animations:^{
-                             backgroundView.alpha = 0.0f;
-                         } completion:^(BOOL finished) {
-                             completionHandler();
-                         }];
-    };
+    [self alertDefaultAni:view];
     
     [view showAlertViewOnKeyWindow];
 }
@@ -236,27 +196,7 @@
     } tapedOnHandler:actionTapedHandler];
     
     
-    view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
-        backgroundView.alpha = 0.0f;
-        contentView.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight(backgroundView.frame) / 2);
-        [UIView animateWithDuration:0.25f
-                         animations:^{
-                             contentView.transform = CGAffineTransformIdentity;
-                             backgroundView.alpha = 1.0f;
-                         } completion:^(BOOL finished) {
-                             completionHandler();
-                         }];
-    };
-    
-    view.animationCompletionHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
-        [UIView animateWithDuration:0.25f
-                         animations:^{
-                             contentView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(backgroundView.frame) / 2);
-                             backgroundView.alpha = 0.0f;
-                         } completion:^(BOOL finished) {
-                             completionHandler();
-                         }];
-    };
+    [self alertDefaultAni:view];
     
     [view showAlertViewOnKeyWindow];
 }
@@ -307,8 +247,13 @@
         } tapedOnHandler:actionTapedHandler];
     }];
     
+    [self alertDefaultAni:view];
     
+    [view showAlertViewOnKeyWindow];
     
+}
+
++ (void)alertDefaultAni:(BGAlertView *)view {
     view.animationBeginHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
         backgroundView.alpha = 0.0f;
         contentView.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight(backgroundView.frame) / 2);
@@ -332,8 +277,5 @@
                              completionHandler();
                          }];
     };
-    
-    [view showAlertViewOnKeyWindow];
-    
 }
 @end

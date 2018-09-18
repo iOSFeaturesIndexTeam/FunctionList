@@ -776,6 +776,24 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		C0B410F8214E4DDF00124F80 /* BGAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C0EE284C210E12780077A345 /* BGAlertView+BGAdd.h */,
+				C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */,
+			);
+			path = BGAlertView;
+			sourceTree = "<group>";
+		};
+		C0B410F9214E4DF000124F80 /* 设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				C073DC8E214D756100BE32B2 /* DesignModeViewController+Extend.h */,
+				C073DC8F214D756100BE32B2 /* DesignModeViewController+Extend.m */,
+			);
+			path = "设计模式";
+			sourceTree = "<group>";
+		};
 		C0EE284A210E12780077A345 /* Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -797,16 +815,14 @@
 		C0EE284B210E12780077A345 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
-				C0EE284C210E12780077A345 /* BGAlertView+BGAdd.h */,
-				C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */,
+				C0B410F9214E4DF000124F80 /* 设计模式 */,
+				C0B410F8214E4DDF00124F80 /* BGAlertView */,
 				C0EE2865210E19350077A345 /* NSString+Extend.h */,
 				C0EE2866210E19350077A345 /* NSString+Extend.m */,
 				C015FC292111B516009C8395 /* NSData+Extend.h */,
 				C015FC2A2111B516009C8395 /* NSData+Extend.m */,
 				C073DC53214D463700BE32B2 /* UITableView+Extend.h */,
 				C073DC54214D463700BE32B2 /* UITableView+Extend.m */,
-				C073DC8E214D756100BE32B2 /* DesignModeViewController+Extend.h */,
-				C073DC8F214D756100BE32B2 /* DesignModeViewController+Extend.m */,
 				C0B410A2214E1DCD00124F80 /* AppDelegate+Extend.h */,
 				C0B410A3214E1DCD00124F80 /* AppDelegate+Extend.m */,
 			);
