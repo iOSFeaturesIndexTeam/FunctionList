@@ -35,6 +35,6 @@
 /** title + 水平按钮左右按钮 */
 + (void)normalAlertWithTitle:(NSString *)title subBtnTitle:(NSArray *)btnTitles actionTapedHandler:(void(^)(NSInteger index))actionTapedHandler;
 
-/** 常在任务弹窗 */
+/** 常在任务弹窗 垂直布局*/
 + (void)alertTitle:(NSString *)title actionTitles:(NSArray *)titles actionTapedHandler:(void(^)(NSInteger index))actionTapedHandler closeOption:(void (^)())option;
 @end

@@ -41,6 +41,8 @@
 		C07A099B21215B2E00CD86CD /* LayerDrawInRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */; };
 		C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A09A7212160D200CD86CD /* CustomLayer.m */; };
 		C07A09AB2122957900CD86CD /* CustomLayerBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */; };
+		C0AA93B721514CEE0090D5CC /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = C0AA93B521514CEE0090D5CC /* test1.html */; };
+		C0AA93B821514CEE0090D5CC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C0AA93B621514CEE0090D5CC /* test.html */; };
 		C0B41092214E102500124F80 /* FlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B41091214E102500124F80 /* FlowerFactory.m */; };
 		C0B41095214E102F00124F80 /* Flower.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B41094214E102F00124F80 /* Flower.m */; };
 		C0B41098214E14D100124F80 /* CompositePatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B41096214E14D100124F80 /* CompositePatternViewController.m */; };
@@ -73,6 +75,8 @@
 		C0B410F4214E450700124F80 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410EF214E450700124F80 /* Order.m */; };
 		C0B410F5214E450700124F80 /* ManagerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410F0214E450700124F80 /* ManagerHandler.m */; };
 		C0B410F6214E450700124F80 /* Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410F1214E450700124F80 /* Handler.m */; };
+		C0EB10FA2150ABE70086A4F9 /* WebBrigdeObjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EB10F92150ABE70086A4F9 /* WebBrigdeObjcViewController.m */; };
+		C0EB10FE2150B19F0086A4F9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EB10FD2150B19F0086A4F9 /* JavaScriptCore.framework */; };
 		C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */; };
 		C0EE2853210E12970077A345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2820D501E8003BDCF0 /* AppDelegate.m */; };
 		C0EE2855210E12BB0077A345 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2B20D501E8003BDCF0 /* ViewController.m */; };
@@ -170,6 +174,8 @@
 		C07A09A7212160D200CD86CD /* CustomLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayer.m; sourceTree = "<group>"; };
 		C07A09A92122957900CD86CD /* CustomLayerBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayerBezierPath.h; sourceTree = "<group>"; };
 		C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayerBezierPath.m; sourceTree = "<group>"; };
+		C0AA93B521514CEE0090D5CC /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
+		C0AA93B621514CEE0090D5CC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		C0B41090214E102500124F80 /* FlowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerFactory.h; sourceTree = "<group>"; };
 		C0B41091214E102500124F80 /* FlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerFactory.m; sourceTree = "<group>"; };
 		C0B41093214E102E00124F80 /* Flower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flower.h; sourceTree = "<group>"; };
@@ -237,6 +243,9 @@
 		C0B410F0214E450700124F80 /* ManagerHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerHandler.m; sourceTree = "<group>"; };
 		C0B410F1214E450700124F80 /* Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Handler.m; sourceTree = "<group>"; };
 		C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C0EB10F82150ABE70086A4F9 /* WebBrigdeObjcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrigdeObjcViewController.h; sourceTree = "<group>"; };
+		C0EB10F92150ABE70086A4F9 /* WebBrigdeObjcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrigdeObjcViewController.m; sourceTree = "<group>"; };
+		C0EB10FD2150B19F0086A4F9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C0EE284C210E12780077A345 /* BGAlertView+BGAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BGAlertView+BGAdd.h"; sourceTree = "<group>"; };
 		C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BGAlertView+BGAdd.m"; sourceTree = "<group>"; };
 		C0EE2857210E12DF0077A345 /* ResponderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponderViewController.h; sourceTree = "<group>"; };
@@ -255,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0EB10FE2150B19F0086A4F9 /* JavaScriptCore.framework in Frameworks */,
 				C019C8D5211496CE00C92750 /* libc++.tbd in Frameworks */,
 				CE6D18ED699D56FF69699D48 /* libPods-spec_localProject.a in Frameworks */,
 			);
@@ -289,6 +299,7 @@
 		37BA428183F0D93B062D9409 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0EB10FD2150B19F0086A4F9 /* JavaScriptCore.framework */,
 				C019C8D4211496CE00C92750 /* libc++.tbd */,
 				A8B1BB9BCE500DE94CC45E19 /* libPods-spec_localProject.a */,
 			);
@@ -794,6 +805,17 @@
 			path = "设计模式";
 			sourceTree = "<group>";
 		};
+		C0EB10F72150ABD40086A4F9 /* WebBrigdeObjc */ = {
+			isa = PBXGroup;
+			children = (
+				C0AA93B621514CEE0090D5CC /* test.html */,
+				C0AA93B521514CEE0090D5CC /* test1.html */,
+				C0EB10F82150ABE70086A4F9 /* WebBrigdeObjcViewController.h */,
+				C0EB10F92150ABE70086A4F9 /* WebBrigdeObjcViewController.m */,
+			);
+			path = WebBrigdeObjc;
+			sourceTree = "<group>";
+		};
 		C0EE284A210E12780077A345 /* Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -832,6 +854,7 @@
 		C0EE284E210E12780077A345 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C0EB10F72150ABD40086A4F9 /* WebBrigdeObjc */,
 				C073DC48214CAB5C00BE32B2 /* DesignMode 设计模式 */,
 				C07A0998212159EB00CD86CD /* Img&Animation 图形与动画 */,
 				C019C8BE21145FA000C92750 /* OpenGLES */,
@@ -988,6 +1011,8 @@
 				C0360F482119A329006381AD /* Simple.frag in Resources */,
 				C015FC282111862A009C8395 /* Resource in Resources */,
 				C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */,
+				C0AA93B721514CEE0090D5CC /* test1.html in Resources */,
+				C0AA93B821514CEE0090D5CC /* test.html in Resources */,
 				C0360F492119A329006381AD /* Simple.vert in Resources */,
 				C0B410A6214E248900124F80 /* 24中编程设计模式.pdf in Resources */,
 				C0569D2F20D501E8003BDCF0 /* Main.storyboard in Resources */,
@@ -1098,6 +1123,7 @@
 				C0B4109F214E150200124F80 /* File.m in Sources */,
 				C0569D3720D501E8003BDCF0 /* main.m in Sources */,
 				C0B410C8214E295000124F80 /* Context.m in Sources */,
+				C0EB10FA2150ABE70086A4F9 /* WebBrigdeObjcViewController.m in Sources */,
 				C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */,
 				C0B410DB214E3D8C00124F80 /* SubscibeCenter.m in Sources */,
 				C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */,

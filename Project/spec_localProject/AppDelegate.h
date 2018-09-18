@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+@property (nonatomic, assign) BOOL _webviewIsShow;
+@property (nonatomic, assign) BOOL webViewIsFront;
 @end
 
