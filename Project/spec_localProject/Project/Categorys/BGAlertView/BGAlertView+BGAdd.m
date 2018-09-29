@@ -223,9 +223,7 @@
             }
         }];
         [backgroundView addGestureRecognizer:tap];
-        
     }];
-    
     
     [view addTitleWithHandle:^(BGActionViewManager *action, UILabel *label) {
         //        action.size = 66.0f;
@@ -250,7 +248,6 @@
     [self alertDefaultAni:view];
     
     [view showAlertViewOnKeyWindow];
-    
 }
 
 + (void)alertDefaultAni:(BGAlertView *)view {
@@ -265,8 +262,6 @@
                              completionHandler();
                          }];
     };
-    
-    
     
     view.animationCompletionHandler = ^(UIView *contentView, UIImageView *backgroundView, void (^completionHandler)(void)) {
         [UIView animateWithDuration:0.25f

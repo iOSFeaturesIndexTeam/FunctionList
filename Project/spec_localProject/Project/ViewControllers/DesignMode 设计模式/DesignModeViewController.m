@@ -37,9 +37,9 @@ NSString * const CELL_ID = @"cellId";
     cell.textLabel.text = [self.designModeArray objectAtIndex:indexPath.row];
     if (indexPath.row < 5) {
         cell.backgroundColor = [UIColor redColor];
-    }else if(indexPath.row < 12){
+    } else if(indexPath.row < 12) {
         cell.backgroundColor = [UIColor greenColor];
-    }else{
+    } else {
         cell.backgroundColor = [UIColor orangeColor];
     }
     return cell;
@@ -54,10 +54,12 @@ NSString * const CELL_ID = @"cellId";
     
     [DesignModeViewController runDesignModeType:indexPath.row];
 }
+
 #pragma mark - SubscibeProtocol
 - (void)sendMessage:(NSString *)message withSubscibeNum:(NSString *)subscibeNum {
     NSLog(@"message is : %@ , number is : %@",message,subscibeNum);
 }
+
 #pragma mark - getter
 - (NSArray *)designModeArray {
     if (!_designModeArray) {

@@ -33,8 +33,8 @@ NSString * const JSOcModel = @"OCModel";
     //  // 也可以通过下标的方式获取到方法
     //  JSValue *squareFunc = self.jsContext[@"squareFunc"];
     //  JSValue *value = [squareFunc callWithArguments:@[@"20"]];
-    //  NSLog(@"%@", square.toNumber);
-    //  NSLog(@"%@", value.toNumber);
+    //  KCLog(@"%@", square.toNumber);
+    //  KCLog(@"%@", value.toNumber);
 }
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidFinishLoad:(UIWebView *)webView {

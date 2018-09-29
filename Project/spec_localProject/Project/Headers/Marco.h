@@ -9,8 +9,6 @@
 #ifndef Marco_h
 #define Marco_h
 
-
-
 #define kBaseTabViewDelegate    UITableViewDelegate,UITableViewDataSource
 #define kBaseCollectionViewDelegate     UICollectionViewDelegate,UICollectionViewDataSource
 
