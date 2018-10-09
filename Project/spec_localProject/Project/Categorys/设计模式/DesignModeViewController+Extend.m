@@ -39,42 +39,18 @@ static Receiver * receiver = nil;
 @implementation DesignModeViewController (Extend)
 + (void)runDesignModeType:(DesignMode)mode{
     switch (mode) {
-        case DesignModeFactory:
-            [DesignModeViewController Factory];
-            break;
-        case DesignModeAbstractFactory:
-            [DesignModeViewController AbstractFactory];
-            break;
-        case DesignModePrototype:
-            [DesignModeViewController Prototype];
-            break;
-        case DesignModeAdapter:
-            [DesignModeViewController Adapter:[UIApplication sharedApplication].keyWindow];
-            break;
-        case DesignModeFlyweight:
-            [DesignModeViewController Flyweight];
-            break;
-        case DesignModeComposite:
-            [DesignModeViewController Composite];
-            break;
-        case DesignModeBridge:
-            [DesignModeViewController Bridge];
-            break;
-        case DesignModeStrategy:
-            [DesignModeViewController Strategy];
-            break;
-        case DesignModeCommand:
-            [DesignModeViewController Command];
-            break;
-        case DesignModeObserver:
-            [DesignModeViewController Observer];
-            break;
-        case DesignModeMediator:
-            [DesignModeViewController Mediator];
-            break;
-        case DesignModeChainOfResponsibility:
-            [DesignModeViewController ChainOfResponsibility];
-            break;
+        case DesignModeFactory: [DesignModeViewController Factory]; break;
+        case DesignModeAbstractFactory: [DesignModeViewController AbstractFactory]; break;
+        case DesignModePrototype: [DesignModeViewController Prototype]; break;
+        case DesignModeAdapter: [DesignModeViewController Adapter:[UIApplication sharedApplication].keyWindow]; break;
+        case DesignModeFlyweight: [DesignModeViewController Flyweight]; break;
+        case DesignModeComposite: [DesignModeViewController Composite]; break;
+        case DesignModeBridge: [DesignModeViewController Bridge]; break;
+        case DesignModeStrategy: [DesignModeViewController Strategy]; break;
+        case DesignModeCommand: [DesignModeViewController Command]; break;
+        case DesignModeObserver: [DesignModeViewController Observer]; break;
+        case DesignModeMediator: [DesignModeViewController Mediator]; break;
+        case DesignModeChainOfResponsibility: [DesignModeViewController ChainOfResponsibility]; break;
         default:
             break;
     }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C012F0F9216C9CBB00E30DF5 /* ComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F0F8216C9CBB00E30DF5 /* ComponentViewController.m */; };
+		C012F104216CAC5C00E30DF5 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C012F0FD216CAC5C00E30DF5 /* test.html */; };
+		C012F105216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F0FE216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m */; };
+		C012F106216CAC5C00E30DF5 /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = C012F0FF216CAC5C00E30DF5 /* test1.html */; };
+		C012F107216CAC5C00E30DF5 /* LayerDrawInRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F103216CAC5C00E30DF5 /* LayerDrawInRectViewController.m */; };
+		C012F10A216CAC7500E30DF5 /* MultithreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F109216CAC7500E30DF5 /* MultithreadViewController.m */; };
+		C012F10E216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F10D216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m */; };
 		C015FC282111862A009C8395 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = C015FC272111862A009C8395 /* Resource */; };
 		C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C015FC2A2111B516009C8395 /* NSData+Extend.m */; };
 		C019C8C121145FB200C92750 /* GLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C019C8C021145FB200C92750 /* GLViewController.mm */; };
@@ -38,11 +45,9 @@
 		C073DCA5214DED6E00BE32B2 /* extModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DCA4214DED6E00BE32B2 /* extModel.m */; };
 		C073DCAB214DF05B00BE32B2 /* BigView.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DCAA214DF05B00BE32B2 /* BigView.m */; };
 		C073DCAE214DF28500BE32B2 /* SmallView.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DCAD214DF28500BE32B2 /* SmallView.m */; };
-		C07A099B21215B2E00CD86CD /* LayerDrawInRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */; };
 		C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A09A7212160D200CD86CD /* CustomLayer.m */; };
 		C07A09AB2122957900CD86CD /* CustomLayerBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */; };
-		C0AA93B721514CEE0090D5CC /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = C0AA93B521514CEE0090D5CC /* test1.html */; };
-		C0AA93B821514CEE0090D5CC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C0AA93B621514CEE0090D5CC /* test.html */; };
+		C095DF7B216C58880027A425 /* LWPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C095DF7A216C58880027A425 /* LWPageControl.m */; };
 		C0B41092214E102500124F80 /* FlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B41091214E102500124F80 /* FlowerFactory.m */; };
 		C0B41095214E102F00124F80 /* Flower.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B41094214E102F00124F80 /* Flower.m */; };
 		C0B41098214E14D100124F80 /* CompositePatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B41096214E14D100124F80 /* CompositePatternViewController.m */; };
@@ -75,7 +80,6 @@
 		C0B410F4214E450700124F80 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410EF214E450700124F80 /* Order.m */; };
 		C0B410F5214E450700124F80 /* ManagerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410F0214E450700124F80 /* ManagerHandler.m */; };
 		C0B410F6214E450700124F80 /* Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B410F1214E450700124F80 /* Handler.m */; };
-		C0EB10FA2150ABE70086A4F9 /* WebBrigdeObjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EB10F92150ABE70086A4F9 /* WebBrigdeObjcViewController.m */; };
 		C0EB10FE2150B19F0086A4F9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EB10FD2150B19F0086A4F9 /* JavaScriptCore.framework */; };
 		C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */; };
 		C0EE2853210E12970077A345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D2820D501E8003BDCF0 /* AppDelegate.m */; };
@@ -105,6 +109,18 @@
 
 /* Begin PBXFileReference section */
 		A8B1BB9BCE500DE94CC45E19 /* libPods-spec_localProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-spec_localProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C012F0F7216C9CBB00E30DF5 /* ComponentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentViewController.h; sourceTree = "<group>"; };
+		C012F0F8216C9CBB00E30DF5 /* ComponentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
+		C012F0FC216CAC5C00E30DF5 /* WebBrigdeObjcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrigdeObjcViewController.h; sourceTree = "<group>"; };
+		C012F0FD216CAC5C00E30DF5 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		C012F0FE216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrigdeObjcViewController.m; sourceTree = "<group>"; };
+		C012F0FF216CAC5C00E30DF5 /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
+		C012F102216CAC5C00E30DF5 /* LayerDrawInRectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerDrawInRectViewController.h; sourceTree = "<group>"; };
+		C012F103216CAC5C00E30DF5 /* LayerDrawInRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerDrawInRectViewController.m; sourceTree = "<group>"; };
+		C012F108216CAC7500E30DF5 /* MultithreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadViewController.h; sourceTree = "<group>"; };
+		C012F109216CAC7500E30DF5 /* MultithreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadViewController.m; sourceTree = "<group>"; };
+		C012F10C216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWAsynSerialQueueWaitsTask.h; sourceTree = "<group>"; };
+		C012F10D216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWAsynSerialQueueWaitsTask.m; sourceTree = "<group>"; };
 		C015FC272111862A009C8395 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
 		C015FC292111B516009C8395 /* NSData+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Extend.h"; sourceTree = "<group>"; };
 		C015FC2A2111B516009C8395 /* NSData+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extend.m"; sourceTree = "<group>"; };
@@ -168,14 +184,12 @@
 		C073DCAA214DF05B00BE32B2 /* BigView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BigView.m; sourceTree = "<group>"; };
 		C073DCAC214DF28500BE32B2 /* SmallView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmallView.h; sourceTree = "<group>"; };
 		C073DCAD214DF28500BE32B2 /* SmallView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallView.m; sourceTree = "<group>"; };
-		C07A099921215B2E00CD86CD /* LayerDrawInRectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerDrawInRectViewController.h; sourceTree = "<group>"; };
-		C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerDrawInRectViewController.m; sourceTree = "<group>"; };
 		C07A09A6212160D200CD86CD /* CustomLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayer.h; sourceTree = "<group>"; };
 		C07A09A7212160D200CD86CD /* CustomLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayer.m; sourceTree = "<group>"; };
 		C07A09A92122957900CD86CD /* CustomLayerBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayerBezierPath.h; sourceTree = "<group>"; };
 		C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayerBezierPath.m; sourceTree = "<group>"; };
-		C0AA93B521514CEE0090D5CC /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
-		C0AA93B621514CEE0090D5CC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		C095DF79216C58880027A425 /* LWPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWPageControl.h; sourceTree = "<group>"; };
+		C095DF7A216C58880027A425 /* LWPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWPageControl.m; sourceTree = "<group>"; };
 		C0B41090214E102500124F80 /* FlowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerFactory.h; sourceTree = "<group>"; };
 		C0B41091214E102500124F80 /* FlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerFactory.m; sourceTree = "<group>"; };
 		C0B41093214E102E00124F80 /* Flower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flower.h; sourceTree = "<group>"; };
@@ -243,8 +257,6 @@
 		C0B410F0214E450700124F80 /* ManagerHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerHandler.m; sourceTree = "<group>"; };
 		C0B410F1214E450700124F80 /* Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Handler.m; sourceTree = "<group>"; };
 		C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		C0EB10F82150ABE70086A4F9 /* WebBrigdeObjcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrigdeObjcViewController.h; sourceTree = "<group>"; };
-		C0EB10F92150ABE70086A4F9 /* WebBrigdeObjcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrigdeObjcViewController.m; sourceTree = "<group>"; };
 		C0EB10FD2150B19F0086A4F9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C0EE284C210E12780077A345 /* BGAlertView+BGAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BGAlertView+BGAdd.h"; sourceTree = "<group>"; };
 		C0EE284D210E12780077A345 /* BGAlertView+BGAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BGAlertView+BGAdd.m"; sourceTree = "<group>"; };
@@ -306,6 +318,63 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C012F0F6216C9C7800E30DF5 /* Component 自定义组件 */ = {
+			isa = PBXGroup;
+			children = (
+				C012F0F7216C9CBB00E30DF5 /* ComponentViewController.h */,
+				C012F0F8216C9CBB00E30DF5 /* ComponentViewController.m */,
+			);
+			path = "Component 自定义组件";
+			sourceTree = "<group>";
+		};
+		C012F0FA216CAC5C00E30DF5 /* CocoaTouch */ = {
+			isa = PBXGroup;
+			children = (
+				C012F0FB216CAC5C00E30DF5 /* WebBrigdeObjc 网页和OC交互 */,
+				C012F100216CAC5C00E30DF5 /* Multithread 多线程设计 */,
+				C012F101216CAC5C00E30DF5 /* Img&Animation 图形与动画 */,
+			);
+			path = CocoaTouch;
+			sourceTree = "<group>";
+		};
+		C012F0FB216CAC5C00E30DF5 /* WebBrigdeObjc 网页和OC交互 */ = {
+			isa = PBXGroup;
+			children = (
+				C012F0FC216CAC5C00E30DF5 /* WebBrigdeObjcViewController.h */,
+				C012F0FD216CAC5C00E30DF5 /* test.html */,
+				C012F0FE216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m */,
+				C012F0FF216CAC5C00E30DF5 /* test1.html */,
+			);
+			path = "WebBrigdeObjc 网页和OC交互";
+			sourceTree = "<group>";
+		};
+		C012F100216CAC5C00E30DF5 /* Multithread 多线程设计 */ = {
+			isa = PBXGroup;
+			children = (
+				C012F108216CAC7500E30DF5 /* MultithreadViewController.h */,
+				C012F109216CAC7500E30DF5 /* MultithreadViewController.m */,
+			);
+			path = "Multithread 多线程设计";
+			sourceTree = "<group>";
+		};
+		C012F101216CAC5C00E30DF5 /* Img&Animation 图形与动画 */ = {
+			isa = PBXGroup;
+			children = (
+				C012F102216CAC5C00E30DF5 /* LayerDrawInRectViewController.h */,
+				C012F103216CAC5C00E30DF5 /* LayerDrawInRectViewController.m */,
+			);
+			path = "Img&Animation 图形与动画";
+			sourceTree = "<group>";
+		};
+		C012F10B216CAD6E00E30DF5 /* Multithread */ = {
+			isa = PBXGroup;
+			children = (
+				C012F10C216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.h */,
+				C012F10D216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m */,
+			);
+			path = Multithread;
+			sourceTree = "<group>";
+		};
 		C019C8BE21145FA000C92750 /* OpenGLES */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +403,8 @@
 		C019C8C421147EBD00C92750 /* Extends */ = {
 			isa = PBXGroup;
 			children = (
+				C012F10B216CAD6E00E30DF5 /* Multithread */,
+				C095DF78216C586F0027A425 /* LWPageControl */,
 				C019C8EE21153D5100C92750 /* OpenGLES */,
 			);
 			path = Extends;
@@ -734,15 +805,6 @@
 			path = "迭代器模式 单向链表遍历";
 			sourceTree = "<group>";
 		};
-		C07A0998212159EB00CD86CD /* Img&Animation 图形与动画 */ = {
-			isa = PBXGroup;
-			children = (
-				C07A099921215B2E00CD86CD /* LayerDrawInRectViewController.h */,
-				C07A099A21215B2E00CD86CD /* LayerDrawInRectViewController.m */,
-			);
-			path = "Img&Animation 图形与动画";
-			sourceTree = "<group>";
-		};
 		C07A099C2121606800CD86CD /* Img&Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +814,15 @@
 				C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */,
 			);
 			path = "Img&Animation";
+			sourceTree = "<group>";
+		};
+		C095DF78216C586F0027A425 /* LWPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				C095DF79216C58880027A425 /* LWPageControl.h */,
+				C095DF7A216C58880027A425 /* LWPageControl.m */,
+			);
+			path = LWPageControl;
 			sourceTree = "<group>";
 		};
 		C0B410A7214E274F00124F80 /* 空调 */ = {
@@ -805,17 +876,6 @@
 			path = "设计模式";
 			sourceTree = "<group>";
 		};
-		C0EB10F72150ABD40086A4F9 /* WebBrigdeObjc */ = {
-			isa = PBXGroup;
-			children = (
-				C0AA93B621514CEE0090D5CC /* test.html */,
-				C0AA93B521514CEE0090D5CC /* test1.html */,
-				C0EB10F82150ABE70086A4F9 /* WebBrigdeObjcViewController.h */,
-				C0EB10F92150ABE70086A4F9 /* WebBrigdeObjcViewController.m */,
-			);
-			path = WebBrigdeObjc;
-			sourceTree = "<group>";
-		};
 		C0EE284A210E12780077A345 /* Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -854,9 +914,9 @@
 		C0EE284E210E12780077A345 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C0EB10F72150ABD40086A4F9 /* WebBrigdeObjc */,
+				C012F0FA216CAC5C00E30DF5 /* CocoaTouch */,
+				C012F0F6216C9C7800E30DF5 /* Component 自定义组件 */,
 				C073DC48214CAB5C00BE32B2 /* DesignMode 设计模式 */,
-				C07A0998212159EB00CD86CD /* Img&Animation 图形与动画 */,
 				C019C8BE21145FA000C92750 /* OpenGLES */,
 				C0EE2857210E12DF0077A345 /* ResponderViewController.h */,
 				C0EE2858210E12DF0077A345 /* ResponderViewController.m */,
@@ -1008,13 +1068,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C012F104216CAC5C00E30DF5 /* test.html in Resources */,
 				C0360F482119A329006381AD /* Simple.frag in Resources */,
 				C015FC282111862A009C8395 /* Resource in Resources */,
 				C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */,
-				C0AA93B721514CEE0090D5CC /* test1.html in Resources */,
-				C0AA93B821514CEE0090D5CC /* test.html in Resources */,
 				C0360F492119A329006381AD /* Simple.vert in Resources */,
 				C0B410A6214E248900124F80 /* 24中编程设计模式.pdf in Resources */,
+				C012F106216CAC5C00E30DF5 /* test1.html in Resources */,
 				C0569D2F20D501E8003BDCF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1098,9 +1158,11 @@
 				C073DC84214D6D8E00BE32B2 /* AbstractFactory.m in Sources */,
 				C073DC55214D463700BE32B2 /* UITableView+Extend.m in Sources */,
 				C0B410F5214E450700124F80 /* ManagerHandler.m in Sources */,
+				C095DF7B216C58880027A425 /* LWPageControl.m in Sources */,
 				C019C8CA21147EFF00C92750 /* GLView.mm in Sources */,
 				C073DC4B214CABC800BE32B2 /* DesignModeViewController.m in Sources */,
 				C019C8F121153D5100C92750 /* RenderingEngine1.cpp in Sources */,
+				C012F107216CAC5C00E30DF5 /* LayerDrawInRectViewController.m in Sources */,
 				C0B410CA214E295000124F80 /* OperationAdd.m in Sources */,
 				C073DC93214DE75F00BE32B2 /* BaseCopyObj.m in Sources */,
 				C0B410A1214E150200124F80 /* FileCell.m in Sources */,
@@ -1115,6 +1177,7 @@
 				C0B410F4214E450700124F80 /* Order.m in Sources */,
 				C0EE2860210E164A0077A345 /* BaseViewController.m in Sources */,
 				C073DC9C214DE8F600BE32B2 /* ClassModel.m in Sources */,
+				C012F10A216CAC7500E30DF5 /* MultithreadViewController.m in Sources */,
 				C073DC96214DE89400BE32B2 /* Student.m in Sources */,
 				C0B410F3214E450700124F80 /* GroupLeaderHandler.m in Sources */,
 				C0B410C7214E295000124F80 /* OperationSubStract.m in Sources */,
@@ -1123,13 +1186,13 @@
 				C0B4109F214E150200124F80 /* File.m in Sources */,
 				C0569D3720D501E8003BDCF0 /* main.m in Sources */,
 				C0B410C8214E295000124F80 /* Context.m in Sources */,
-				C0EB10FA2150ABE70086A4F9 /* WebBrigdeObjcViewController.m in Sources */,
 				C07A09A8212160D200CD86CD /* CustomLayer.m in Sources */,
 				C0B410DB214E3D8C00124F80 /* SubscibeCenter.m in Sources */,
 				C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */,
 				C0EE2855210E12BB0077A345 /* ViewController.m in Sources */,
 				C0B41092214E102500124F80 /* FlowerFactory.m in Sources */,
 				C073DC87214D6E9000BE32B2 /* RefrigeratorFactory.m in Sources */,
+				C012F0F9216C9CBB00E30DF5 /* ComponentViewController.m in Sources */,
 				C0B410E6214E432300124F80 /* Colleague.m in Sources */,
 				C0B41098214E14D100124F80 /* CompositePatternViewController.m in Sources */,
 				C0B410D6214E2E8E00124F80 /* LighterCommand.m in Sources */,
@@ -1147,14 +1210,15 @@
 				C0B410E4214E432300124F80 /* Mediator.m in Sources */,
 				C019C8C121145FB200C92750 /* GLViewController.mm in Sources */,
 				C0B410B8214E274F00124F80 /* DirectionRemote.m in Sources */,
-				C07A099B21215B2E00CD86CD /* LayerDrawInRectViewController.m in Sources */,
 				C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */,
 				C073DCA5214DED6E00BE32B2 /* extModel.m in Sources */,
 				C073DC8A214D6EBD00BE32B2 /* MobilephoneFactory.m in Sources */,
 				C073DC9F214DED2600BE32B2 /* ViewAdapter.m in Sources */,
 				C0B410F6214E450700124F80 /* Handler.m in Sources */,
 				C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */,
+				C012F10E216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m in Sources */,
 				C0B410D7214E2E8E00124F80 /* Receiver.m in Sources */,
+				C012F105216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

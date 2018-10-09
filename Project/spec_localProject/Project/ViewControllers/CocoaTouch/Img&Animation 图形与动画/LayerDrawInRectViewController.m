@@ -23,6 +23,7 @@ static NSString * kLayerDes = @"";
     {   //BezierPath 绘制图形
         CustomLayerBezierPath *path = [[CustomLayerBezierPath alloc] initWithFrame:CGRectMake(0, 100, 120, 34)];
         [self.view addSubview:path];
+        UIButton *btn;
     }
 }
 
