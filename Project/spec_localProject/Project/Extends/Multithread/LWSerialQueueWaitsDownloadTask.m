@@ -6,20 +6,20 @@
 //  Copyright © 2018 Little.Daddly. All rights reserved.
 //
 
-#import "LWAsynSerialQueueWaitsTask.h"
+#import "LWSerialQueueWaitsDownloadTask.h"
 
-@interface LWAsynSerialQueueWaitsTask ()
+@interface LWSerialQueueWaitsDownloadTask ()
 @property (nonatomic,strong) NSMutableDictionary <NSURL *,NSBlockOperation *>*requestTasks;
 @property (nonatomic,strong) NSOperationQueue *queue;
 @property (nonatomic, strong) AFURLSessionManager *sessionManager;
 @end
 
-@implementation LWAsynSerialQueueWaitsTask
-+ (LWAsynSerialQueueWaitsTask *)manager {
-    static LWAsynSerialQueueWaitsTask *m = nil;
+@implementation LWSerialQueueWaitsDownloadTask
++ (LWSerialQueueWaitsDownloadTask *)manager {
+    static LWSerialQueueWaitsDownloadTask *m = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        m = [[LWAsynSerialQueueWaitsTask alloc] init];
+        m = [[LWSerialQueueWaitsDownloadTask alloc] init];
     });
     return m;
 }

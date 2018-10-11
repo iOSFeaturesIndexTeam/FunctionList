@@ -53,6 +53,7 @@
             make.size.mas_equalTo(CGSizeMake(25, 25));
         }];
     }];
+    _help.image = [UIImage imageNamed:@"index_help"];
 }
 
 - (void)configureGesture{
@@ -121,7 +122,6 @@ static NSString * CELLID = @"cell_Id";
 #pragma mark - ViewController 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableV;
-
 @end
 
 @implementation ViewController
@@ -206,6 +206,7 @@ static NSString * CELLID = @"cell_Id";
         NSURL *list_url = [[NSBundle mainBundle] URLForResource:@"Resource/FoundtionList.json" withExtension:nil];
         NSData *listData = [NSData dataWithContentsOfURL:list_url];
         NSDictionary *data = [NSData jsonDataToDic:listData];
+      
         NSArray *temp_data = [DemoIndexModel initListDataWithJSON:data];
         return temp_data;
     }

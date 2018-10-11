@@ -13,7 +13,7 @@
 		C012F106216CAC5C00E30DF5 /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = C012F0FF216CAC5C00E30DF5 /* test1.html */; };
 		C012F107216CAC5C00E30DF5 /* LayerDrawInRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F103216CAC5C00E30DF5 /* LayerDrawInRectViewController.m */; };
 		C012F10A216CAC7500E30DF5 /* MultithreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F109216CAC7500E30DF5 /* MultithreadViewController.m */; };
-		C012F10E216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F10D216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m */; };
+		C012F10E216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F10D216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.m */; };
 		C015FC282111862A009C8395 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = C015FC272111862A009C8395 /* Resource */; };
 		C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C015FC2A2111B516009C8395 /* NSData+Extend.m */; };
 		C019C8C121145FB200C92750 /* GLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C019C8C021145FB200C92750 /* GLViewController.mm */; };
@@ -28,6 +28,7 @@
 		C0569D3720D501E8003BDCF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D3620D501E8003BDCF0 /* main.m */; };
 		C0569D4120D501E8003BDCF0 /* spec_localProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D4020D501E8003BDCF0 /* spec_localProjectTests.m */; };
 		C0569D4C20D501E8003BDCF0 /* spec_localProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D4B20D501E8003BDCF0 /* spec_localProjectUITests.m */; };
+		C064F0C8216E05A8005BAB1B /* ProjectAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C064F0C7216E05A7005BAB1B /* ProjectAssets.xcassets */; };
 		C073DC4B214CABC800BE32B2 /* DesignModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DC4A214CABC800BE32B2 /* DesignModeViewController.m */; };
 		C073DC55214D463700BE32B2 /* UITableView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DC54214D463700BE32B2 /* UITableView+Extend.m */; };
 		C073DC75214D642F00BE32B2 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DC74214D642F00BE32B2 /* Factory.m */; };
@@ -87,6 +88,7 @@
 		C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE2858210E12DF0077A345 /* ResponderViewController.m */; };
 		C0EE2860210E164A0077A345 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE285F210E164A0077A345 /* BaseViewController.m */; };
 		C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE2866210E19350077A345 /* NSString+Extend.m */; };
+		C0F4FD5C216F0A5900CEABC4 /* NSObject+extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F4FD5B216F0A5900CEABC4 /* NSObject+extend.m */; };
 		CE6D18ED699D56FF69699D48 /* libPods-spec_localProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B1BB9BCE500DE94CC45E19 /* libPods-spec_localProject.a */; };
 /* End PBXBuildFile section */
 
@@ -119,8 +121,8 @@
 		C012F103216CAC5C00E30DF5 /* LayerDrawInRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerDrawInRectViewController.m; sourceTree = "<group>"; };
 		C012F108216CAC7500E30DF5 /* MultithreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadViewController.h; sourceTree = "<group>"; };
 		C012F109216CAC7500E30DF5 /* MultithreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadViewController.m; sourceTree = "<group>"; };
-		C012F10C216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWAsynSerialQueueWaitsTask.h; sourceTree = "<group>"; };
-		C012F10D216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWAsynSerialQueueWaitsTask.m; sourceTree = "<group>"; };
+		C012F10C216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSerialQueueWaitsDownloadTask.h; sourceTree = "<group>"; };
+		C012F10D216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSerialQueueWaitsDownloadTask.m; sourceTree = "<group>"; };
 		C015FC272111862A009C8395 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
 		C015FC292111B516009C8395 /* NSData+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Extend.h"; sourceTree = "<group>"; };
 		C015FC2A2111B516009C8395 /* NSData+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extend.m"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		C0569D4720D501E8003BDCF0 /* spec_localProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spec_localProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0569D4B20D501E8003BDCF0 /* spec_localProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spec_localProjectUITests.m; sourceTree = "<group>"; };
 		C0569D4D20D501E8003BDCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C064F0C7216E05A7005BAB1B /* ProjectAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProjectAssets.xcassets; sourceTree = "<group>"; };
 		C073DC49214CABC800BE32B2 /* DesignModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignModeViewController.h; sourceTree = "<group>"; };
 		C073DC4A214CABC800BE32B2 /* DesignModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignModeViewController.m; sourceTree = "<group>"; };
 		C073DC4C214CACF700BE32B2 /* BaseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDelegate.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 		C0EE2865210E19350077A345 /* NSString+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
 		C0EE2866210E19350077A345 /* NSString+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		C0EE2869210E1B2E0077A345 /* Marco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco.h; sourceTree = "<group>"; };
+		C0F4FD5A216F0A5900CEABC4 /* NSObject+extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+extend.h"; sourceTree = "<group>"; };
+		C0F4FD5B216F0A5900CEABC4 /* NSObject+extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+extend.m"; sourceTree = "<group>"; };
 		F36132919D7EEE3B4F3057CD /* Pods-spec_localProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spec_localProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-spec_localProject/Pods-spec_localProject.release.xcconfig"; sourceTree = "<group>"; };
 		FEB47D5885EDEC15DEEFDBBD /* Pods-spec_localProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spec_localProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spec_localProject/Pods-spec_localProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -369,8 +374,8 @@
 		C012F10B216CAD6E00E30DF5 /* Multithread */ = {
 			isa = PBXGroup;
 			children = (
-				C012F10C216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.h */,
-				C012F10D216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m */,
+				C012F10C216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.h */,
+				C012F10D216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.m */,
 			);
 			path = Multithread;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 				C0569D2720D501E8003BDCF0 /* AppDelegate.h */,
 				C0569D2820D501E8003BDCF0 /* AppDelegate.m */,
 				C0569D3520D501E8003BDCF0 /* Info.plist */,
+				C064F0C7216E05A7005BAB1B /* ProjectAssets.xcassets */,
 				C015FC272111862A009C8395 /* Resource */,
 				C0EE2856210E12C10077A345 /* Luanch */,
 				C0EE284A210E12780077A345 /* Project */,
@@ -903,6 +909,8 @@
 				C0EE2866210E19350077A345 /* NSString+Extend.m */,
 				C015FC292111B516009C8395 /* NSData+Extend.h */,
 				C015FC2A2111B516009C8395 /* NSData+Extend.m */,
+				C0F4FD5A216F0A5900CEABC4 /* NSObject+extend.h */,
+				C0F4FD5B216F0A5900CEABC4 /* NSObject+extend.m */,
 				C073DC53214D463700BE32B2 /* UITableView+Extend.h */,
 				C073DC54214D463700BE32B2 /* UITableView+Extend.m */,
 				C0B410A2214E1DCD00124F80 /* AppDelegate+Extend.h */,
@@ -1069,6 +1077,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C012F104216CAC5C00E30DF5 /* test.html in Resources */,
+				C064F0C8216E05A8005BAB1B /* ProjectAssets.xcassets in Resources */,
 				C0360F482119A329006381AD /* Simple.frag in Resources */,
 				C015FC282111862A009C8395 /* Resource in Resources */,
 				C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */,
@@ -1216,9 +1225,10 @@
 				C073DC9F214DED2600BE32B2 /* ViewAdapter.m in Sources */,
 				C0B410F6214E450700124F80 /* Handler.m in Sources */,
 				C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */,
-				C012F10E216CB06F00E30DF5 /* LWAsynSerialQueueWaitsTask.m in Sources */,
+				C012F10E216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.m in Sources */,
 				C0B410D7214E2E8E00124F80 /* Receiver.m in Sources */,
 				C012F105216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m in Sources */,
+				C0F4FD5C216F0A5900CEABC4 /* NSObject+extend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
