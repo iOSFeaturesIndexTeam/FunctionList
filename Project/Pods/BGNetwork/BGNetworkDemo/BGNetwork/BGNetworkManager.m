@@ -341,7 +341,7 @@
     }
 }
 
-- (void)cancelAllRequests{
+- (void)cancelAllTask{
     for (NSString *requestId in self.taskTable.allKeys) {
         [self cancelTaskWithUnionId:requestId];
     }

@@ -206,7 +206,6 @@ static NSString * CELLID = @"cell_Id";
         NSURL *list_url = [[NSBundle mainBundle] URLForResource:@"Resource/FoundtionList.json" withExtension:nil];
         NSData *listData = [NSData dataWithContentsOfURL:list_url];
         NSDictionary *data = [NSData jsonDataToDic:listData];
-      
         NSArray *temp_data = [DemoIndexModel initListDataWithJSON:data];
         return temp_data;
     }
