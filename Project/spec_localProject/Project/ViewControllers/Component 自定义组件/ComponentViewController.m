@@ -8,8 +8,11 @@
 
 #import "ComponentViewController.h"
 #import "LWPageControl.h"
-@interface ComponentViewController ()
+#import "SUTableView.h"
+#import "LiveCell.h"
 
+@interface ComponentViewController ()<kBaseTabViewDelegate>
+@property (nonatomic, strong) UITableView * tableView;
 @end
 
 @implementation ComponentViewController
@@ -28,6 +31,48 @@
             make.size.mas_equalTo(CGSizeMake(100, 20));
         }];
     }];
+    
+    [UIButton lw_createView:^(__kindof UIButton *btn) {
+        [btn setTitle:@"无限滚动TabV" forState:UIControlStateNormal];
+        [UIButton defaultType:btn];
+        [self.view addSubview:btn];
+        [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(100, 40));
+            make.centerX.mas_equalTo(0);
+            make.centerY.equalTo(self.view.mas_top).offset(20);
+        }];
+        [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            btn.selected = !btn.selected;
+            if (btn.isSelected) {
+                [self displayForeverScroTableView];
+                [self.view insertSubview:btn aboveSubview:self.tableView];
+            } else {
+                [self.tableView removeFromSuperview];
+            }
+        }];
+    }];
 }
 
+#pragma mark - custome Method
+- (void)displayForeverScroTableView{
+    _tableView = [[SUTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.showsVerticalScrollIndicator = NO;
+    _tableView.rowHeight = 150.0;
+    [_tableView registerNib:[UINib nibWithNibName:@"LiveCell" bundle:nil] forCellReuseIdentifier:[LiveCell cellID]];
+    [self.view addSubview:_tableView];
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LiveCell * cell = [self.tableView dequeueReusableCellWithIdentifier:[LiveCell cellID]];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.descLabel.text = [NSString stringWithFormat:@"第 %ld 个主播频道", indexPath.row + 1];
+    return cell;
+}
 @end

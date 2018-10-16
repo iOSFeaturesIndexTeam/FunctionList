@@ -16,7 +16,7 @@
 #import <UIView+LW_BlockCreate.h>
 #import <Masonry/Masonry.h>
 #import <BeautyKit/BeautyKitCategoryHeader.h>
-
+#import "UIButton+Add.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <ReactiveObjC/RACEXTScope.h>
 #endif /* PrefixHeader_pch */
