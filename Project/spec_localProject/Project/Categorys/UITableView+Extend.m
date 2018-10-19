@@ -18,6 +18,8 @@
     tabV.dataSource = target;
     tabV.tableFooterView = [[UIView alloc] init];
     tabV.tableHeaderView = [[UIView alloc] init];
+    tabV.showsVerticalScrollIndicator = NO;
+    tabV.showsHorizontalScrollIndicator = NO;
     tabV.sectionHeaderHeight = 0.1;
     tabV.sectionFooterHeight = 0.1;
     tabV.separatorStyle = UITableViewCellSeparatorStyleNone;

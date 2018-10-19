@@ -13,7 +13,7 @@
     NSError *error = nil;
     NSDictionary *res = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
     if (error) {
-        NSLog(@"jsonDataToDic ERROR - %@",error);
+        KCLog(@"jsonDataToDic ERROR - %@",error);
     }
     return res;
 }

@@ -10,7 +10,7 @@
 #import "LWPageControl.h"
 #import "SUTableView.h"
 #import "LiveCell.h"
-
+#import "UITableView+Extend.h"
 @interface ComponentViewController ()<kBaseTabViewDelegate>
 @property (nonatomic, strong) UITableView * tableView;
 @end
@@ -55,13 +55,13 @@
 
 #pragma mark - custome Method
 - (void)displayForeverScroTableView{
-    _tableView = [[SUTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    _tableView.showsVerticalScrollIndicator = NO;
+    _tableView = [UITableView tabvWithTarget:self];
     _tableView.rowHeight = 150.0;
     [_tableView registerNib:[UINib nibWithNibName:@"LiveCell" bundle:nil] forCellReuseIdentifier:[LiveCell cellID]];
     [self.view addSubview:_tableView];
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
 }
 
 #pragma mark - UITableViewDataSource

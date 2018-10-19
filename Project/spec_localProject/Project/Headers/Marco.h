@@ -21,6 +21,5 @@ static inline NSString * IntToStr(NSInteger i){
 }
 
 
-
-//static NSString * const Responder_VC = @"Responder";
+//static NSString * const aaa = @"Responder";
 #endif /* Marco_h */

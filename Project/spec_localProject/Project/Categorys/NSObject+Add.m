@@ -1,14 +1,16 @@
 //
-//  NSObject+extend.m
+//  NSObject+Add.m
 //  spec_localProject
 //
-//  Created by Little.Daddly on 2018/10/11.
+//  Created by Little.Daddly on 2018/10/16.
 //  Copyright © 2018 Little.Daddly. All rights reserved.
 //
 
-#import "NSObject+extend.h"
+#import "NSObject+Add.h"
 #import <objc/runtime.h>
-@implementation NSObject (extend)
+@implementation NSObject (Add)
+
+
 + (NSDictionary *)dicFromObject:(NSObject *)object{
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     unsigned int count;
@@ -19,7 +21,6 @@
         const char *cName = property_getName(property);
         NSString *name = [NSString stringWithUTF8String:cName];
         NSObject *value = [object valueForKey:name];//valueForKey返回的数字和字符串都是对象
-        
         if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]]) {
             //string , bool, int ,NSinteger
             [dic setObject:value forKey:name];
@@ -31,7 +32,6 @@
         } else if (value == nil) {
             //null
             //[dic setObject:[NSNull null] forKey:name];//这行可以注释掉?????
-            
         } else {
             //model
             [dic setObject:[self dicFromObject:value] forKey:name];

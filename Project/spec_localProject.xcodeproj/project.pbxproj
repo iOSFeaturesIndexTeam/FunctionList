@@ -12,6 +12,14 @@
 		C00E91342175E3F90004ED9F /* SUTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E912F2175E3F90004ED9F /* SUTableView.m */; };
 		C00E91352175E3F90004ED9F /* SUTableViewInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E91312175E3F90004ED9F /* SUTableViewInterceptor.m */; };
 		C00E913B2175EE5C0004ED9F /* UIButton+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E913A2175EE5C0004ED9F /* UIButton+Add.m */; };
+		C00E913E2175F6510004ED9F /* NSObject+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E913D2175F6510004ED9F /* NSObject+Add.m */; };
+		C00E914E2176E7790004ED9F /* UIDevice+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E914D2176E7790004ED9F /* UIDevice+Type.m */; };
+		C010995B2179DCEA0039BD1D /* LWRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C010995A2179DCEA0039BD1D /* LWRoute.m */; };
+		C010995E2179DD0F0039BD1D /* LWRouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C010995D2179DD0F0039BD1D /* LWRouteRequest.m */; };
+		C010996A217A386C0039BD1D /* PresntViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0109969217A386C0039BD1D /* PresntViewController.m */; };
+		C010996D217A38750039BD1D /* PushAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C010996C217A38750039BD1D /* PushAViewController.m */; };
+		C0109970217A387E0039BD1D /* PushBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C010996F217A387E0039BD1D /* PushBViewController.m */; };
+		C0109973217A38950039BD1D /* RouteDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0109972217A38950039BD1D /* RouteDisplayViewController.m */; };
 		C012F0F9216C9CBB00E30DF5 /* ComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F0F8216C9CBB00E30DF5 /* ComponentViewController.m */; };
 		C012F104216CAC5C00E30DF5 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C012F0FD216CAC5C00E30DF5 /* test.html */; };
 		C012F105216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C012F0FE216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m */; };
@@ -93,7 +101,6 @@
 		C0EE2859210E12DF0077A345 /* ResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE2858210E12DF0077A345 /* ResponderViewController.m */; };
 		C0EE2860210E164A0077A345 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE285F210E164A0077A345 /* BaseViewController.m */; };
 		C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EE2866210E19350077A345 /* NSString+Extend.m */; };
-		C0F4FD5C216F0A5900CEABC4 /* NSObject+extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F4FD5B216F0A5900CEABC4 /* NSObject+extend.m */; };
 		CE6D18ED699D56FF69699D48 /* libPods-spec_localProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B1BB9BCE500DE94CC45E19 /* libPods-spec_localProject.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +132,24 @@
 		C00E91312175E3F90004ED9F /* SUTableViewInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTableViewInterceptor.m; sourceTree = "<group>"; };
 		C00E91392175EE5C0004ED9F /* UIButton+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Add.h"; sourceTree = "<group>"; };
 		C00E913A2175EE5C0004ED9F /* UIButton+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Add.m"; sourceTree = "<group>"; };
+		C00E913C2175F6510004ED9F /* NSObject+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Add.h"; sourceTree = "<group>"; };
+		C00E913D2175F6510004ED9F /* NSObject+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Add.m"; sourceTree = "<group>"; };
+		C00E914C2176E7790004ED9F /* UIDevice+Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Type.h"; sourceTree = "<group>"; };
+		C00E914D2176E7790004ED9F /* UIDevice+Type.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Type.m"; sourceTree = "<group>"; };
+		C01099592179DCEA0039BD1D /* LWRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRoute.h; sourceTree = "<group>"; };
+		C010995A2179DCEA0039BD1D /* LWRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRoute.m; sourceTree = "<group>"; };
+		C010995C2179DD0F0039BD1D /* LWRouteRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRouteRequest.h; sourceTree = "<group>"; };
+		C010995D2179DD0F0039BD1D /* LWRouteRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRouteRequest.m; sourceTree = "<group>"; };
+		C010995F2179DF150039BD1D /* LWRouteHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRouteHandle.h; sourceTree = "<group>"; };
+		C0109963217A37090039BD1D /* LWJSONRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWJSONRoute.h; sourceTree = "<group>"; };
+		C0109968217A386C0039BD1D /* PresntViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresntViewController.h; sourceTree = "<group>"; };
+		C0109969217A386C0039BD1D /* PresntViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresntViewController.m; sourceTree = "<group>"; };
+		C010996B217A38750039BD1D /* PushAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushAViewController.h; sourceTree = "<group>"; };
+		C010996C217A38750039BD1D /* PushAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushAViewController.m; sourceTree = "<group>"; };
+		C010996E217A387E0039BD1D /* PushBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushBViewController.h; sourceTree = "<group>"; };
+		C010996F217A387E0039BD1D /* PushBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushBViewController.m; sourceTree = "<group>"; };
+		C0109971217A38950039BD1D /* RouteDisplayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteDisplayViewController.h; sourceTree = "<group>"; };
+		C0109972217A38950039BD1D /* RouteDisplayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteDisplayViewController.m; sourceTree = "<group>"; };
 		C012F0F7216C9CBB00E30DF5 /* ComponentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentViewController.h; sourceTree = "<group>"; };
 		C012F0F8216C9CBB00E30DF5 /* ComponentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		C012F0FC216CAC5C00E30DF5 /* WebBrigdeObjcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrigdeObjcViewController.h; sourceTree = "<group>"; };
@@ -284,8 +309,6 @@
 		C0EE2865210E19350077A345 /* NSString+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
 		C0EE2866210E19350077A345 /* NSString+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		C0EE2869210E1B2E0077A345 /* Marco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco.h; sourceTree = "<group>"; };
-		C0F4FD5A216F0A5900CEABC4 /* NSObject+extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+extend.h"; sourceTree = "<group>"; };
-		C0F4FD5B216F0A5900CEABC4 /* NSObject+extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+extend.m"; sourceTree = "<group>"; };
 		F36132919D7EEE3B4F3057CD /* Pods-spec_localProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spec_localProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-spec_localProject/Pods-spec_localProject.release.xcconfig"; sourceTree = "<group>"; };
 		FEB47D5885EDEC15DEEFDBBD /* Pods-spec_localProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spec_localProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spec_localProject/Pods-spec_localProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -372,6 +395,33 @@
 			path = SUTableView;
 			sourceTree = "<group>";
 		};
+		C01099582179DCBB0039BD1D /* LWRouter */ = {
+			isa = PBXGroup;
+			children = (
+				C01099592179DCEA0039BD1D /* LWRoute.h */,
+				C010995A2179DCEA0039BD1D /* LWRoute.m */,
+				C010995C2179DD0F0039BD1D /* LWRouteRequest.h */,
+				C010995D2179DD0F0039BD1D /* LWRouteRequest.m */,
+				C010995F2179DF150039BD1D /* LWRouteHandle.h */,
+			);
+			path = LWRouter;
+			sourceTree = "<group>";
+		};
+		C0109964217A383B0039BD1D /* 路由器模式 24种模式外，简化页面之间的耦合度 */ = {
+			isa = PBXGroup;
+			children = (
+				C010996B217A38750039BD1D /* PushAViewController.h */,
+				C010996C217A38750039BD1D /* PushAViewController.m */,
+				C010996E217A387E0039BD1D /* PushBViewController.h */,
+				C010996F217A387E0039BD1D /* PushBViewController.m */,
+				C0109968217A386C0039BD1D /* PresntViewController.h */,
+				C0109969217A386C0039BD1D /* PresntViewController.m */,
+				C0109971217A38950039BD1D /* RouteDisplayViewController.h */,
+				C0109972217A38950039BD1D /* RouteDisplayViewController.m */,
+			);
+			path = "路由器模式 24种模式外，简化页面之间的耦合度";
+			sourceTree = "<group>";
+		};
 		C012F0F6216C9C7800E30DF5 /* Component 自定义组件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +500,7 @@
 		C019C8C421147EBD00C92750 /* Extends */ = {
 			isa = PBXGroup;
 			children = (
+				C01099582179DCBB0039BD1D /* LWRouter */,
 				C00E912A2175E3F90004ED9F /* SUTableView */,
 				C012F10B216CAD6E00E30DF5 /* Multithread */,
 				C095DF78216C586F0027A425 /* LWPageControl */,
@@ -544,6 +595,7 @@
 		C073DC48214CAB5C00BE32B2 /* DesignMode 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				C0109964217A383B0039BD1D /* 路由器模式 24种模式外，简化页面之间的耦合度 */,
 				C0B410A5214E248900124F80 /* 24中编程设计模式.pdf */,
 				C073DC49214CABC800BE32B2 /* DesignModeViewController.h */,
 				C073DC4A214CABC800BE32B2 /* DesignModeViewController.m */,
@@ -938,14 +990,16 @@
 				C0EE2866210E19350077A345 /* NSString+Extend.m */,
 				C015FC292111B516009C8395 /* NSData+Extend.h */,
 				C015FC2A2111B516009C8395 /* NSData+Extend.m */,
-				C0F4FD5A216F0A5900CEABC4 /* NSObject+extend.h */,
-				C0F4FD5B216F0A5900CEABC4 /* NSObject+extend.m */,
+				C00E913C2175F6510004ED9F /* NSObject+Add.h */,
+				C00E913D2175F6510004ED9F /* NSObject+Add.m */,
 				C073DC53214D463700BE32B2 /* UITableView+Extend.h */,
 				C073DC54214D463700BE32B2 /* UITableView+Extend.m */,
 				C0B410A2214E1DCD00124F80 /* AppDelegate+Extend.h */,
 				C0B410A3214E1DCD00124F80 /* AppDelegate+Extend.m */,
 				C00E91392175EE5C0004ED9F /* UIButton+Add.h */,
 				C00E913A2175EE5C0004ED9F /* UIButton+Add.m */,
+				C00E914C2176E7790004ED9F /* UIDevice+Type.h */,
+				C00E914D2176E7790004ED9F /* UIDevice+Type.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -989,6 +1043,7 @@
 			children = (
 				C0EE2869210E1B2E0077A345 /* Marco.h */,
 				C073DC4C214CACF700BE32B2 /* BaseDelegate.h */,
+				C0109963217A37090039BD1D /* LWJSONRoute.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -1193,6 +1248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B410D5214E2E8E00124F80 /* Invoker.m in Sources */,
+				C0109970217A387E0039BD1D /* PushBViewController.m in Sources */,
 				C073DC75214D642F00BE32B2 /* Factory.m in Sources */,
 				C0EE2853210E12970077A345 /* AppDelegate.m in Sources */,
 				C00E913B2175EE5C0004ED9F /* UIButton+Add.m in Sources */,
@@ -1210,11 +1266,13 @@
 				C0B410A1214E150200124F80 /* FileCell.m in Sources */,
 				C073DC7B214D652800BE32B2 /* Pencil.m in Sources */,
 				C0B41095214E102F00124F80 /* Flower.m in Sources */,
+				C010996A217A386C0039BD1D /* PresntViewController.m in Sources */,
 				C073DC78214D64A600BE32B2 /* Pen.m in Sources */,
 				C0B410B6214E274F00124F80 /* GeliAirConditioner.m in Sources */,
 				C0B410B5214E274F00124F80 /* AirConditioner.m in Sources */,
 				C0B410F2214E450700124F80 /* ChairmanHandler.m in Sources */,
 				C0B410B9214E274F00124F80 /* Remote.m in Sources */,
+				C00E913E2175F6510004ED9F /* NSObject+Add.m in Sources */,
 				C073DCAB214DF05B00BE32B2 /* BigView.m in Sources */,
 				C0B410F4214E450700124F80 /* Order.m in Sources */,
 				C0EE2860210E164A0077A345 /* BaseViewController.m in Sources */,
@@ -1246,8 +1304,10 @@
 				C0B410D4214E2E8E00124F80 /* DarkerCommand.m in Sources */,
 				C0B410A4214E1DCD00124F80 /* AppDelegate+Extend.m in Sources */,
 				C0360F442119A226006381AD /* RenderingEngine2.cpp in Sources */,
+				C010996D217A38750039BD1D /* PushAViewController.m in Sources */,
 				C00E91352175E3F90004ED9F /* SUTableViewInterceptor.m in Sources */,
 				C015FC2B2111B516009C8395 /* NSData+Extend.m in Sources */,
+				C00E914E2176E7790004ED9F /* UIDevice+Type.m in Sources */,
 				C0B410BA214E274F00124F80 /* TemperatureRemote.m in Sources */,
 				C0B410C9214E295000124F80 /* OperationMultiply.m in Sources */,
 				C0B410E5214E432300124F80 /* ConcreteMediator.m in Sources */,
@@ -1255,16 +1315,18 @@
 				C019C8C121145FB200C92750 /* GLViewController.mm in Sources */,
 				C0B410B8214E274F00124F80 /* DirectionRemote.m in Sources */,
 				C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */,
+				C010995B2179DCEA0039BD1D /* LWRoute.m in Sources */,
 				C073DCA5214DED6E00BE32B2 /* extModel.m in Sources */,
 				C073DC8A214D6EBD00BE32B2 /* MobilephoneFactory.m in Sources */,
 				C073DC9F214DED2600BE32B2 /* ViewAdapter.m in Sources */,
 				C0B410F6214E450700124F80 /* Handler.m in Sources */,
 				C00E91342175E3F90004ED9F /* SUTableView.m in Sources */,
 				C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */,
+				C0109973217A38950039BD1D /* RouteDisplayViewController.m in Sources */,
 				C012F10E216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.m in Sources */,
+				C010995E2179DD0F0039BD1D /* LWRouteRequest.m in Sources */,
 				C0B410D7214E2E8E00124F80 /* Receiver.m in Sources */,
 				C012F105216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m in Sources */,
-				C0F4FD5C216F0A5900CEABC4 /* NSObject+extend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
