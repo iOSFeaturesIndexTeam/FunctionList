@@ -46,4 +46,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
++ (void)handleRequest:(LWParameters)parameters topViewController:(UIViewController *)topViewController optionHandle:(LWRouteHandler)optionHandle {}
+
++ (NSString *)routePath { return @"";}
 @end

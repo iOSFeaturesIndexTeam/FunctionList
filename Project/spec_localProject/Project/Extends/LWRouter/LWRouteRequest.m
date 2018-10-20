@@ -18,6 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
     }
     return self;
 }
+
++ (LWRouteRequest *)requestWithPath:(NSString *)routePath
+                           andParam:(LWParameters)param{
+    return [[LWRouteRequest alloc] initWithPath:routePath paramters:param];
+}
+
 @end
 
 @implementation LWRouteRequest(CreateByURL)

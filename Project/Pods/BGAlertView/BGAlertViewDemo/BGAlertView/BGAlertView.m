@@ -548,7 +548,6 @@
             __strong typeof(weakSelf) strongSelf = weakSelf;
             [strongSelf closeAlertView];
         }];
-        
     }
     return _autoHideTimer;
 }

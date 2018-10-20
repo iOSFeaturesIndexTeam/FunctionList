@@ -10,5 +10,5 @@
 
 @interface AppDelegate (Extend)
 + (UINavigationController *)appRootVC;
-+ (void)currentVC:(Class)currentVC Exec:(void (^)(UIViewController *vc))option;
++ (void)currentVC:(Class)currentVC exec:(void (^)(UIViewController *vc))option;
 @end

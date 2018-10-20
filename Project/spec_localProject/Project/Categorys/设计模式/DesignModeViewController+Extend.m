@@ -35,6 +35,9 @@
 #import "GroupLeaderHandler.h"
 #import "ManagerHandler.h"
 #import "ChairmanHandler.h"
+
+#import "RouteDisplayViewController.h"
+
 static Receiver * receiver = nil;
 @implementation DesignModeViewController (Extend)
 + (void)runDesignModeType:(DesignMode)mode{
@@ -51,6 +54,9 @@ static Receiver * receiver = nil;
         case DesignModeObserver: [DesignModeViewController Observer]; break;
         case DesignModeMediator: [DesignModeViewController Mediator]; break;
         case DesignModeChainOfResponsibility: [DesignModeViewController ChainOfResponsibility]; break;
+        case RouteDisplayMode:
+            [DesignModeViewController RouteDisplay];
+            break;
         default:
             break;
     }
@@ -126,7 +132,7 @@ static Receiver * receiver = nil;
     树状结构
  */
 + (void)Composite{
-    [AppDelegate currentVC:[self class] Exec:^(UIViewController *vc) {
+    [AppDelegate currentVC:[self class] exec:^(UIViewController *vc) {
         [vc.navigationController pushViewController:[CompositePatternViewController new] animated:YES];
     }];
 }
@@ -169,7 +175,7 @@ static Receiver * receiver = nil;
 + (void)Command{
     receiver = [Receiver new];
     __block UIView *mask_v = nil;
-    [AppDelegate currentVC:[self class] Exec:^(UIViewController *vc) {
+    [AppDelegate currentVC:[self class] exec:^(UIViewController *vc) {
         mask_v = [[UIView alloc] initWithFrame:vc.view.bounds];
         mask_v.backgroundColor = [UIColor blackColor];
         [vc.view addSubview:mask_v];
@@ -193,7 +199,7 @@ static Receiver * receiver = nil;
 
 + (void)Observer{
     
-    [AppDelegate currentVC:[self class] Exec:^(UIViewController * vc) {
+    [AppDelegate currentVC:[self class] exec:^(UIViewController * vc) {
         [SubscibeCenter addUser:(DesignModeViewController *)vc withNumber:@"订阅号-美食"];
         //收不到这个消息
         [SubscibeCenter sendMessage:@"有新书啦" withNumber:@"订阅号-书记"];
@@ -248,5 +254,11 @@ static Receiver * receiver = nil;
     order.orderMoney = 500000;
     [handler1 handlerOrder:order];
 }
-
+/** 路由器效果演示*/
++ (void)RouteDisplay{
+    RouteDisplayViewController *routeVC = [RouteDisplayViewController new];
+    [AppDelegate currentVC:[self class] exec:^(UIViewController *vc) {
+        [vc.navigationController pushViewController:routeVC animated:nil];
+    }];
+}
 @end

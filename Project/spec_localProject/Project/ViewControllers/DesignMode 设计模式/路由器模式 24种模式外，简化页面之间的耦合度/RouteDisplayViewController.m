@@ -16,22 +16,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initSubviews];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initSubviews{
+    for (int i = 0; i < self.btnData.count; i++) {
+        [UIButton lw_createView:^(__kindof UIButton *btn) {
+            [UIButton defaultType:btn];
+            NSString *key = self.btnData[i];
+            [btn setTitle:key forState:UIControlStateNormal];
+            
+            [self.view addSubview:btn];
+            [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.centerY.mas_equalTo(0);
+                make.centerX.equalTo(self.view).offset((130 * i) - 130);
+                make.size.mas_equalTo(CGSizeMake(100, 40));
+            }];
+            
+            [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                [LWRoute.manager handlerRequest:[LWRouteRequest requestWithPath:key andParam:self.btnDic[key]] optionHandle:^(id result, NSError *error) {
+                    KCLog(@"%@",result);
+                }];
+            }];
+        }];
+    }
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSArray <NSString *>*)btnData{
+    return @[_JOSN_A,_JOSN_Present];
 }
-*/
 
+- (NSDictionary *)btnDic{
+    return @{
+             _JOSN_A:@"我是A push的",
+             _JOSN_Present:@"我在present呢",
+             };
+}
 @end

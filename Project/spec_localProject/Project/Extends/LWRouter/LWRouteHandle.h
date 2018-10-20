@@ -17,7 +17,7 @@ typedef id LWParameters;
 + (NSString *)routePath;
 + (void)handleRequest:(LWParameters)parameters
     topViewController:(UIViewController *)topViewController
-     completionHandle:(LWRouteHandler)completionHandle;
+     optionHandle:(LWRouteHandler)optionHandle;
 @end
 
 #endif /* LWRouterHandle_h */

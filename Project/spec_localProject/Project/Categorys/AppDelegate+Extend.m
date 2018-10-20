@@ -13,7 +13,7 @@
 + (UINavigationController *)appRootVC{
      return (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
 }
-+ (void)currentVC:(Class)currentVC Exec:(void (^)(UIViewController *vc))option{
++ (void)currentVC:(Class)currentVC exec:(void (^)(UIViewController *vc))option{
     for (UIViewController *vc in [AppDelegate appRootVC].viewControllers) {
         if ([[vc className] isEqualToString:[currentVC className]]) {
             option(vc);

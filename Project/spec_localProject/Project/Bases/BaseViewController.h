@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseViewController : UIViewController
+@interface BaseViewController : UIViewController <LWRouterDelegate>
 @property (nonatomic,copy) NSString *indexTitle;
 @end

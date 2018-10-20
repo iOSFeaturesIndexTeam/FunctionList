@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LWRouteRequest : NSObject
 - (instancetype _Nullable )initWithPath:(nonnull NSString *)routePath
                               paramters:(LWParameters _Nullable )paramters;
-
++ (LWRouteRequest *)requestWithPath:(NSString *)routePath
+                           andParam:(LWParameters)param;
 @property(nonatomic,copy,readonly)NSString *routePath;
 @property(nonatomic,strong,readonly)LWParameters paramters;
 @end

@@ -50,8 +50,8 @@ static UIViewController *_lwGetTopVC(){
         unsigned int img_count = 0;
         //获取加载objc中的框架和动态库的名称
         const char **imgs = objc_copyImageNames(&img_count);
-        const char *main = [[[NSBundle mainBundle] bundlePath] UTF8String];
-        for (unsigned int i = 0; i < img_count; i++) {
+        const char *main = NSBundle.mainBundle.bundlePath.UTF8String;
+        for (unsigned int i = 0; i < img_count; ++i) {
             const char *img = imgs[i];
             //跳过没有使用到项目中的 框架 和动态库
             if (!strstr(img, main)) {
@@ -61,24 +61,22 @@ static UIViewController *_lwGetTopVC(){
             //获取指定库或者框架中所有类的类名
             const char **classes = objc_copyClassNamesForImage(img, &cls_count);
             Protocol *p_hander = @protocol(LWRouterDelegate);
-            for (unsigned int i = 0; i < cls_count; i++) {
+            for (unsigned int i = 0; i < cls_count; ++i) {
                 const char *cls_name = classes[i];
                 NSString *cls_str =[NSString stringWithUTF8String:cls_name];
+                
                 Class cls = NSClassFromString(cls_str);
-                if (![cls conformsToProtocol:p_hander]) {
-                    continue;
-                }
                 
-                if (![cls respondsToSelector:@selector(routePath)]) {
-                    continue;
-                }
+                if (![cls conformsToProtocol:p_hander]) continue;
+                if (![(id)cls respondsToSelector:@selector(routePath)]) continue;
+                if (![(id)cls respondsToSelector:@selector(handleRequest:topViewController:optionHandle:)]) continue;
                 
-                if (![cls respondsToSelector:@selector(handlerRequest:optionHandle:)]) {
-                    continue;
-                }
                 [_handlesM setValue:cls forKey:[(id<LWRouterDelegate>)cls routePath]];
             }
+            if (classes) free(classes);
         }
+        
+        if (imgs) free(imgs);
     }
     return self;
 }
@@ -90,7 +88,7 @@ static UIViewController *_lwGetTopVC(){
     if (handler) {
         [handler handleRequest:request
              topViewController:_top_viewController
-              completionHandle:optionHandle];
+              optionHandle:optionHandle];
     } else {
         NSLog(@"执行失败 未遵守路由协议");
         if (_unHandlerCallback) {
