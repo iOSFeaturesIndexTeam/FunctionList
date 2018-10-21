@@ -61,6 +61,22 @@ NSString * const JSOcModel = @"OCModel";
         _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
         _webView.scalesPageToFit = YES;
         NSURL *url = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"];
+        if (_remoteURL) {
+            url = _remoteURL;
+            [UIButton lw_createView:^(__kindof UIButton *btn) {
+                [UIButton defaultType:btn];
+                [btn setTitle:@"dissmis" forState:UIControlStateNormal];
+                [self.webView addSubview:btn];
+                [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.center.mas_equalTo(0);
+                    make.size.mas_equalTo(CGSizeMake(100, 40));
+                }];
+                [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                }];
+            }];
+        }
+        
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         [_webView loadRequest:request];
         _webView.delegate = self;

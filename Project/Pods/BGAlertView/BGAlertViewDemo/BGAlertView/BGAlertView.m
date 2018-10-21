@@ -543,12 +543,11 @@
         {
             return nil;
         }
-        __weak typeof(self) weakSelf = self;
-        _autoHideTimer = [NSTimer scheduledTimerWithTimeInterval:_autoHideTimeInterval repeats:NO block:^(NSTimer * _Nonnull timer) {
-            __strong typeof(weakSelf) strongSelf = weakSelf;
-            [strongSelf closeAlertView];
-        }];
+        _autoHideTimer = [NSTimer scheduledTimerWithTimeInterval:_autoHideTimeInterval target:self selector:@selector(autoHide:) userInfo:nil repeats:NO];
     }
     return _autoHideTimer;
+}
+- (void)autoHide:(NSTimer *)timer{
+    [self closeAlertView];
 }
 @end

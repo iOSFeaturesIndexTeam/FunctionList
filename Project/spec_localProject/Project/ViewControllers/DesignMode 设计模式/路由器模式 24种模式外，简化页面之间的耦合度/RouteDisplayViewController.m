@@ -7,7 +7,7 @@
 //
 
 #import "RouteDisplayViewController.h"
-
+#import "WebBrigdeObjcViewController.h"
 @interface RouteDisplayViewController ()
 
 @end
@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initSubviews];
+    LWRoute.manager.unHandlerCallback = ^(LWRouteRequest *request, UIViewController *topViewController) {
+        WebBrigdeObjcViewController *webVC = [WebBrigdeObjcViewController new];
+        webVC.remoteURL = request.paramters;
+        [topViewController presentViewController:webVC animated:YES completion:nil];
+    };
 }
 
 - (void)initSubviews{
@@ -44,13 +49,14 @@
 }
 
 - (NSArray <NSString *>*)btnData{
-    return @[_JOSN_A,_JOSN_Present];
+    return @[_JOSN_A,_JOSN_Present,_JOSN_RemotURL];
 }
 
 - (NSDictionary *)btnDic{
     return @{
              _JOSN_A:@"我是A push的",
              _JOSN_Present:@"我在present呢",
+             _JOSN_RemotURL:[NSURL URLWithString:@"http://theo2life.com"]
              };
 }
 @end

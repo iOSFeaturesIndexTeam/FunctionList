@@ -15,6 +15,7 @@
     NSString * const _JOSN_A = @"PushAViewController";
     NSString * const _JOSN_B = @"PushBViewController";
     NSString * const _JOSN_Present = @"PresntViewController";
+    NSString * const _JOSN_RemotURL = @"WebBrigdeObjcViewController";
 //@end
 
 

@@ -27,5 +27,5 @@
 
 
 @interface WebBrigdeObjcViewController : BaseViewController
-
+@property(nonatomic,strong)NSURL *remoteURL;
 @end
