@@ -131,7 +131,15 @@ static NSString * CELLID = @"cell_Id";
     self.view.backgroundColor = [UIColor whiteColor];
     [self configureSubViews];
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+}
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+}
 - (void)configureSubViews{
     [self.view addSubview:self.tableV];
     [_tableV mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -143,7 +151,7 @@ static NSString * CELLID = @"cell_Id";
     [BGAlertView showSheetViewLevelWithEditingChangedHandler:^(NSString *a) {
         
     } actionTapedHandler:^(NSInteger index) {
-    
+       
     }];
 }
 - (IBAction)sheetV:(id)sender {

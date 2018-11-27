@@ -12,7 +12,7 @@
 #import "LiveCell.h"
 #import "UITableView+Extend.h"
 @interface ComponentViewController ()<kBaseTabViewDelegate>
-@property (nonatomic, strong) UITableView * tableView;
+@property (nonatomic, strong) SUTableView * tableView;
 @end
 
 @implementation ComponentViewController
@@ -55,7 +55,7 @@
 
 #pragma mark - custome Method
 - (void)displayForeverScroTableView{
-    _tableView = [UITableView tabvWithTarget:self];
+    _tableView = [SUTableView tabvWithTarget:self];
     _tableView.rowHeight = 150.0;
     [_tableView registerNib:[UINib nibWithNibName:@"LiveCell" bundle:nil] forCellReuseIdentifier:[LiveCell cellID]];
     [self.view addSubview:_tableView];

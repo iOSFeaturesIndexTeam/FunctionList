@@ -9,11 +9,11 @@
 #import "UITableView+Extend.h"
 
 @implementation UITableView (Extend)
-+ (UITableView *)tabvWithTarget:(id)target {
-    return [UITableView tabvWithTarget:target type:UITableViewStylePlain];
++ (instancetype)tabvWithTarget:(id)target {
+    return [self tabvWithTarget:target type:UITableViewStylePlain];
 }
-+ (UITableView *)tabvWithTarget:(id)target type:(UITableViewStyle)type{
-    UITableView *tabV = [[UITableView alloc] initWithFrame:CGRectZero style:type];
++ (instancetype)tabvWithTarget:(id)target type:(UITableViewStyle)type{
+    __kindof UITableView *tabV = [[self alloc] initWithFrame:CGRectZero style:type];
     tabV.delegate = target;
     tabV.dataSource = target;
     tabV.tableFooterView = [[UIView alloc] init];
@@ -26,7 +26,7 @@
     return tabV;
 }
 
-+ (UITableView *)tabvGroupWithTarget:(id)target {
-   return [UITableView tabvWithTarget:target type:UITableViewStyleGrouped];
++ (instancetype)tabvGroupWithTarget:(id)target {
+   return [self tabvWithTarget:target type:UITableViewStyleGrouped];
 }
 @end

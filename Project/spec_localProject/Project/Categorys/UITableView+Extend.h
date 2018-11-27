@@ -10,7 +10,7 @@
 
 @interface UITableView (Extend)
 /** plain type */
-+ (UITableView *)tabvWithTarget:(id)target;
++ (instancetype)tabvWithTarget:(id)target;
 /** group type */
-+ (UITableView *)tabvGroupWithTarget:(id)target;
++ (instancetype)tabvGroupWithTarget:(id)target;
 @end

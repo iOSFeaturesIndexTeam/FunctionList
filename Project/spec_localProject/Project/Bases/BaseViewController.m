@@ -24,10 +24,23 @@
          [viewController dataConfigure];
          [viewController viewWillRequest];
          [viewController viewWillConfigureNotifications];
+         [viewController layoutCustomNavigationBar];
      }];
     
     return viewController;
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:[self isHiddenNaviBar]?YES:NO animated:NO];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:[self isHiddenNaviBar]?YES:NO animated:NO];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -43,6 +56,16 @@
 - (void)dataConfigure{}
 - (void)viewWillRequest{}
 - (void)viewWillConfigureNotifications{}
+- (void)layoutCustomNavigationBar {
+    //防止pop的时候导航栏闪动
+    if ([self isHiddenNaviBar]) {
+//        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//        [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    }
+}
+- (BOOL)isHiddenNaviBar{
+    return YES;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
