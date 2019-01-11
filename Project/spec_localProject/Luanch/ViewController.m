@@ -129,6 +129,7 @@ static NSString * CELLID = @"cell_Id";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
     [self configureSubViews];
 }
 - (void)viewWillAppear:(BOOL)animated {
@@ -158,7 +159,7 @@ static NSString * CELLID = @"cell_Id";
     [BGAlertView showSheetViewWithEditingChangedHandler:^(NSString *a) {
         
     } actionTapedHandler:^(NSInteger index) {
-        
+       
     }];
 }
 - (IBAction)click:(id)sender {

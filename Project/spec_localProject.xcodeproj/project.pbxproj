@@ -1499,7 +1499,7 @@
 				GCC_PREFIX_HEADER = spec_localProject/PrefixHeader.pch;
 				INFOPLIST_FILE = spec_localProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fun.blackgold.spec-localProject";
+				PRODUCT_BUNDLE_IDENTIFIER = wangwz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1519,7 +1519,7 @@
 				GCC_PREFIX_HEADER = spec_localProject/PrefixHeader.pch;
 				INFOPLIST_FILE = spec_localProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fun.blackgold.spec-localProject";
+				PRODUCT_BUNDLE_IDENTIFIER = wangwz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
