@@ -34,7 +34,9 @@ typedef NS_ENUM(NSUInteger,DesignMode) {
     DesignModeVisitor,
     DesignModeInterpreter,
     
-    RouteDisplayMode
+    RouteDisplayMode,
+    
+    RACMode
 };
 
 @interface DesignModeViewController (Extend)

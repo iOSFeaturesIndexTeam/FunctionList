@@ -44,7 +44,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = _indexTitle;
+//    self.title = _indexTitle;
     self.edgesForExtendedLayout = UIRectEdgeNone;
     if (@available(iOS 11.0, *)) {
         [UIScrollView appearanceWhenContainedInInstancesOfClasses:@[self.class]].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -59,8 +59,8 @@
 - (void)layoutCustomNavigationBar {
     //防止pop的时候导航栏闪动
     if ([self isHiddenNaviBar]) {
-//        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-//        [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+        [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     }
 }
 - (BOOL)isHiddenNaviBar{
@@ -69,7 +69,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-+ (void)handleRequest:(LWParameters)parameters topViewController:(UIViewController *)topViewController optionHandle:(LWRouteHandler)optionHandle {}
++ (void)handleRequest:(LWParameters)parameters
+    topViewController:(UIViewController *)topViewController
+         optionHandle:(LWRouteHandler)optionHandle {}
 
 + (NSString *)routePath { return @"";}
 @end

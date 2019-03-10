@@ -37,7 +37,7 @@
 #import "ChairmanHandler.h"
 
 #import "RouteDisplayViewController.h"
-
+#import "RACModeViewController.h"
 static Receiver * receiver = nil;
 @implementation DesignModeViewController (Extend)
 + (void)runDesignModeType:(DesignMode)mode{
@@ -56,6 +56,9 @@ static Receiver * receiver = nil;
         case DesignModeChainOfResponsibility: [DesignModeViewController ChainOfResponsibility]; break;
         case RouteDisplayMode:
             [DesignModeViewController RouteDisplay];
+            break;
+        case RACMode:
+            [DesignModeViewController RACMode];
             break;
         default:
             break;
@@ -259,6 +262,13 @@ static Receiver * receiver = nil;
     RouteDisplayViewController *routeVC = [RouteDisplayViewController new];
     [AppDelegate currentVC:[self class] exec:^(UIViewController *vc) {
         [vc.navigationController pushViewController:routeVC animated:nil];
+    }];
+}
+
++ (void)RACMode{
+    RACModeViewController *racvc = [RACModeViewController new];
+    [AppDelegate currentVC:[self class] exec:^(UIViewController *vc) {
+        [vc.navigationController pushViewController:racvc animated:nil];
     }];
 }
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70074855220967EB00BBAE7F /* LDCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70074854220967EA00BBAE7F /* LDCarousel.m */; };
+		7008FD7E2234C2C900F26C03 /* RACModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7008FD7D2234C2C900F26C03 /* RACModeViewController.m */; };
 		C00E91322175E3F90004ED9F /* LiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E912C2175E3F90004ED9F /* LiveCell.m */; };
 		C00E91332175E3F90004ED9F /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00E912D2175E3F90004ED9F /* LiveCell.xib */; };
 		C00E91342175E3F90004ED9F /* SUTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E912F2175E3F90004ED9F /* SUTableView.m */; };
@@ -41,7 +43,6 @@
 		C0569D3720D501E8003BDCF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D3620D501E8003BDCF0 /* main.m */; };
 		C0569D4120D501E8003BDCF0 /* spec_localProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D4020D501E8003BDCF0 /* spec_localProjectTests.m */; };
 		C0569D4C20D501E8003BDCF0 /* spec_localProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569D4B20D501E8003BDCF0 /* spec_localProjectUITests.m */; };
-		C064F0C8216E05A8005BAB1B /* ProjectAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C064F0C7216E05A7005BAB1B /* ProjectAssets.xcassets */; };
 		C073DC4B214CABC800BE32B2 /* DesignModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DC4A214CABC800BE32B2 /* DesignModeViewController.m */; };
 		C073DC55214D463700BE32B2 /* UITableView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DC54214D463700BE32B2 /* UITableView+Extend.m */; };
 		C073DC75214D642F00BE32B2 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = C073DC74214D642F00BE32B2 /* Factory.m */; };
@@ -122,6 +123,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70074853220967EA00BBAE7F /* LDCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCarousel.h; sourceTree = "<group>"; };
+		70074854220967EA00BBAE7F /* LDCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCarousel.m; sourceTree = "<group>"; };
+		7008FD7B2234C1A500F26C03 /* ProjectAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProjectAssets.xcassets; sourceTree = "<group>"; };
+		7008FD7C2234C2C900F26C03 /* RACModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACModeViewController.h; sourceTree = "<group>"; };
+		7008FD7D2234C2C900F26C03 /* RACModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACModeViewController.m; sourceTree = "<group>"; };
 		A8B1BB9BCE500DE94CC45E19 /* libPods-spec_localProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-spec_localProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00E912B2175E3F90004ED9F /* LiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveCell.h; sourceTree = "<group>"; };
 		C00E912C2175E3F90004ED9F /* LiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveCell.m; sourceTree = "<group>"; };
@@ -190,7 +196,6 @@
 		C0569D4720D501E8003BDCF0 /* spec_localProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spec_localProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0569D4B20D501E8003BDCF0 /* spec_localProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spec_localProjectUITests.m; sourceTree = "<group>"; };
 		C0569D4D20D501E8003BDCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C064F0C7216E05A7005BAB1B /* ProjectAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProjectAssets.xcassets; sourceTree = "<group>"; };
 		C073DC49214CABC800BE32B2 /* DesignModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignModeViewController.h; sourceTree = "<group>"; };
 		C073DC4A214CABC800BE32B2 /* DesignModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignModeViewController.m; sourceTree = "<group>"; };
 		C073DC4C214CACF700BE32B2 /* BaseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDelegate.h; sourceTree = "<group>"; };
@@ -360,6 +365,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		70074852220967EA00BBAE7F /* LWScorView 无限滚动 */ = {
+			isa = PBXGroup;
+			children = (
+				70074853220967EA00BBAE7F /* LDCarousel.h */,
+				70074854220967EA00BBAE7F /* LDCarousel.m */,
+			);
+			path = "LWScorView 无限滚动";
+			sourceTree = "<group>";
+		};
 		C00E91272175E3750004ED9F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,7 +395,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C00E912A2175E3F90004ED9F /* SUTableView */ = {
+		C00E912A2175E3F90004ED9F /* SUTableView 无限滚动表单 */ = {
 			isa = PBXGroup;
 			children = (
 				C00E912B2175E3F90004ED9F /* LiveCell.h */,
@@ -392,10 +406,10 @@
 				C00E91302175E3F90004ED9F /* SUTableViewInterceptor.h */,
 				C00E91312175E3F90004ED9F /* SUTableViewInterceptor.m */,
 			);
-			path = SUTableView;
+			path = "SUTableView 无限滚动表单";
 			sourceTree = "<group>";
 		};
-		C01099582179DCBB0039BD1D /* LWRouter */ = {
+		C01099582179DCBB0039BD1D /* LWRouter 路由器 */ = {
 			isa = PBXGroup;
 			children = (
 				C01099592179DCEA0039BD1D /* LWRoute.h */,
@@ -404,7 +418,7 @@
 				C010995D2179DD0F0039BD1D /* LWRouteRequest.m */,
 				C010995F2179DF150039BD1D /* LWRouteHandle.h */,
 			);
-			path = LWRouter;
+			path = "LWRouter 路由器";
 			sourceTree = "<group>";
 		};
 		C0109964217A383B0039BD1D /* 路由器模式 24种模式外，简化页面之间的耦合度 */ = {
@@ -470,13 +484,13 @@
 			path = "Img&Animation 图形与动画";
 			sourceTree = "<group>";
 		};
-		C012F10B216CAD6E00E30DF5 /* Multithread */ = {
+		C012F10B216CAD6E00E30DF5 /* Multithread 多线程操作 */ = {
 			isa = PBXGroup;
 			children = (
 				C012F10C216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.h */,
 				C012F10D216CB06F00E30DF5 /* LWSerialQueueWaitsDownloadTask.m */,
 			);
-			path = Multithread;
+			path = "Multithread 多线程操作";
 			sourceTree = "<group>";
 		};
 		C019C8BE21145FA000C92750 /* OpenGLES */ = {
@@ -500,10 +514,11 @@
 		C019C8C421147EBD00C92750 /* Extends */ = {
 			isa = PBXGroup;
 			children = (
-				C01099582179DCBB0039BD1D /* LWRouter */,
-				C00E912A2175E3F90004ED9F /* SUTableView */,
-				C012F10B216CAD6E00E30DF5 /* Multithread */,
-				C095DF78216C586F0027A425 /* LWPageControl */,
+				70074852220967EA00BBAE7F /* LWScorView 无限滚动 */,
+				C01099582179DCBB0039BD1D /* LWRouter 路由器 */,
+				C00E912A2175E3F90004ED9F /* SUTableView 无限滚动表单 */,
+				C012F10B216CAD6E00E30DF5 /* Multithread 多线程操作 */,
+				C095DF78216C586F0027A425 /* LWPageControl 轮播指示器 */,
 				C019C8EE21153D5100C92750 /* OpenGLES */,
 			);
 			path = Extends;
@@ -563,10 +578,9 @@
 			isa = PBXGroup;
 			children = (
 				C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */,
-				C0569D2720D501E8003BDCF0 /* AppDelegate.h */,
-				C0569D2820D501E8003BDCF0 /* AppDelegate.m */,
+				C0569D3620D501E8003BDCF0 /* main.m */,
 				C0569D3520D501E8003BDCF0 /* Info.plist */,
-				C064F0C7216E05A7005BAB1B /* ProjectAssets.xcassets */,
+				7008FD7B2234C1A500F26C03 /* ProjectAssets.xcassets */,
 				C015FC272111862A009C8395 /* Resource */,
 				C0EE2856210E12C10077A345 /* Luanch */,
 				C0EE284A210E12780077A345 /* Project */,
@@ -602,6 +616,8 @@
 				C073DC56214D49FF00BE32B2 /* 创建型模式 */,
 				C073DC5C214D4A7600BE32B2 /* 结构型模式 */,
 				C073DC64214D4AE000BE32B2 /* 行为型模式 */,
+				7008FD7C2234C2C900F26C03 /* RACModeViewController.h */,
+				7008FD7D2234C2C900F26C03 /* RACModeViewController.m */,
 			);
 			path = "DesignMode 设计模式";
 			sourceTree = "<group>";
@@ -903,13 +919,13 @@
 			path = "Img&Animation";
 			sourceTree = "<group>";
 		};
-		C095DF78216C586F0027A425 /* LWPageControl */ = {
+		C095DF78216C586F0027A425 /* LWPageControl 轮播指示器 */ = {
 			isa = PBXGroup;
 			children = (
 				C095DF79216C58880027A425 /* LWPageControl.h */,
 				C095DF7A216C58880027A425 /* LWPageControl.m */,
 			);
-			path = LWPageControl;
+			path = "LWPageControl 轮播指示器";
 			sourceTree = "<group>";
 		};
 		C0B410A7214E274F00124F80 /* 空调 */ = {
@@ -1020,11 +1036,12 @@
 		C0EE2856210E12C10077A345 /* Luanch */ = {
 			isa = PBXGroup;
 			children = (
+				C0569D2720D501E8003BDCF0 /* AppDelegate.h */,
+				C0569D2820D501E8003BDCF0 /* AppDelegate.m */,
 				C0569D3220D501E8003BDCF0 /* LaunchScreen.storyboard */,
 				C0569D2D20D501E8003BDCF0 /* Main.storyboard */,
 				C0569D2A20D501E8003BDCF0 /* ViewController.h */,
 				C0569D2B20D501E8003BDCF0 /* ViewController.m */,
-				C0569D3620D501E8003BDCF0 /* main.m */,
 			);
 			path = Luanch;
 			sourceTree = "<group>";
@@ -1163,7 +1180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C012F104216CAC5C00E30DF5 /* test.html in Resources */,
-				C064F0C8216E05A8005BAB1B /* ProjectAssets.xcassets in Resources */,
 				C0360F482119A329006381AD /* Simple.frag in Resources */,
 				C015FC282111862A009C8395 /* Resource in Resources */,
 				C0569D3420D501E8003BDCF0 /* LaunchScreen.storyboard in Resources */,
@@ -1253,6 +1269,7 @@
 				C0EE2853210E12970077A345 /* AppDelegate.m in Sources */,
 				C00E913B2175EE5C0004ED9F /* UIButton+Add.m in Sources */,
 				C0B410A0214E150200124F80 /* FileViewController.m in Sources */,
+				70074855220967EB00BBAE7F /* LDCarousel.m in Sources */,
 				C073DC84214D6D8E00BE32B2 /* AbstractFactory.m in Sources */,
 				C073DC55214D463700BE32B2 /* UITableView+Extend.m in Sources */,
 				C0B410F5214E450700124F80 /* ManagerHandler.m in Sources */,
@@ -1320,6 +1337,7 @@
 				C073DC8A214D6EBD00BE32B2 /* MobilephoneFactory.m in Sources */,
 				C073DC9F214DED2600BE32B2 /* ViewAdapter.m in Sources */,
 				C0B410F6214E450700124F80 /* Handler.m in Sources */,
+				7008FD7E2234C2C900F26C03 /* RACModeViewController.m in Sources */,
 				C00E91342175E3F90004ED9F /* SUTableView.m in Sources */,
 				C0EE2867210E19350077A345 /* NSString+Extend.m in Sources */,
 				C0109973217A38950039BD1D /* RouteDisplayViewController.m in Sources */,
