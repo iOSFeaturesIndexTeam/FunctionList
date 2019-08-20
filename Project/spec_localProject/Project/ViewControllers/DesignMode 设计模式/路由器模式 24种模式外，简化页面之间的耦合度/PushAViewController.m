@@ -29,8 +29,13 @@
         }];
         
         [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-            [LWRoute.manager handlerRequest:[LWRouteRequest requestWithPath:key andParam:@{@"B":@"走你 我是B"}] optionHandle:^(id result, NSError *error) {
-                KCLog(@"%@",result);
+//            [LWRoute.manager handlerRequest:[LWRouteRequest requestWithPath:key andParam:@{@"B":@"走你 我是B"}] optionHandle:^(id result, NSError *error) {
+//                KCLog(@"%@",result);
+//            }];
+            
+            /** 测试路由服务模块 */
+            [LWRoute.manager handlerRequest:[LWRouteRequest requestServicePath:Router_Service_Demo andParam:@{@"B":@"走你 我是B"}] optionHandle:^(id result, NSError *error) {
+                
             }];
         }];
     }];

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		70074855220967EB00BBAE7F /* LDCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70074854220967EA00BBAE7F /* LDCarousel.m */; };
 		7008FD7E2234C2C900F26C03 /* RACModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7008FD7D2234C2C900F26C03 /* RACModeViewController.m */; };
+		70B4EB67230BEC7F001E6693 /* RouterServiceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B4EB66230BEC7F001E6693 /* RouterServiceDemo.m */; };
+		70B4EB6A230BF08A001E6693 /* LWRouterMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B4EB69230BF08A001E6693 /* LWRouterMsgSend.m */; };
 		C00E91322175E3F90004ED9F /* LiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E912C2175E3F90004ED9F /* LiveCell.m */; };
 		C00E91332175E3F90004ED9F /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00E912D2175E3F90004ED9F /* LiveCell.xib */; };
 		C00E91342175E3F90004ED9F /* SUTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E912F2175E3F90004ED9F /* SUTableView.m */; };
@@ -128,6 +130,11 @@
 		7008FD7B2234C1A500F26C03 /* ProjectAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProjectAssets.xcassets; sourceTree = "<group>"; };
 		7008FD7C2234C2C900F26C03 /* RACModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACModeViewController.h; sourceTree = "<group>"; };
 		7008FD7D2234C2C900F26C03 /* RACModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACModeViewController.m; sourceTree = "<group>"; };
+		70B4EB65230BEC7F001E6693 /* RouterServiceDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterServiceDemo.h; sourceTree = "<group>"; };
+		70B4EB66230BEC7F001E6693 /* RouterServiceDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterServiceDemo.m; sourceTree = "<group>"; };
+		70B4EB68230BF089001E6693 /* LWRouterMsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWRouterMsgSend.h; sourceTree = "<group>"; };
+		70B4EB69230BF08A001E6693 /* LWRouterMsgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWRouterMsgSend.m; sourceTree = "<group>"; };
+		70B4EB6B230BF2E1001E6693 /* RouterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterHeader.h; sourceTree = "<group>"; };
 		A8B1BB9BCE500DE94CC45E19 /* libPods-spec_localProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-spec_localProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00E912B2175E3F90004ED9F /* LiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveCell.h; sourceTree = "<group>"; };
 		C00E912C2175E3F90004ED9F /* LiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveCell.m; sourceTree = "<group>"; };
@@ -374,6 +381,15 @@
 			path = "LWScorView 无限滚动";
 			sourceTree = "<group>";
 		};
+		70B4EB64230BEC69001E6693 /* RouterService */ = {
+			isa = PBXGroup;
+			children = (
+				70B4EB65230BEC7F001E6693 /* RouterServiceDemo.h */,
+				70B4EB66230BEC7F001E6693 /* RouterServiceDemo.m */,
+			);
+			path = RouterService;
+			sourceTree = "<group>";
+		};
 		C00E91272175E3750004ED9F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +430,8 @@
 			children = (
 				C01099592179DCEA0039BD1D /* LWRoute.h */,
 				C010995A2179DCEA0039BD1D /* LWRoute.m */,
+				70B4EB68230BF089001E6693 /* LWRouterMsgSend.h */,
+				70B4EB69230BF08A001E6693 /* LWRouterMsgSend.m */,
 				C010995C2179DD0F0039BD1D /* LWRouteRequest.h */,
 				C010995D2179DD0F0039BD1D /* LWRouteRequest.m */,
 				C010995F2179DF150039BD1D /* LWRouteHandle.h */,
@@ -459,8 +477,8 @@
 			isa = PBXGroup;
 			children = (
 				C012F0FC216CAC5C00E30DF5 /* WebBrigdeObjcViewController.h */,
-				C012F0FD216CAC5C00E30DF5 /* test.html */,
 				C012F0FE216CAC5C00E30DF5 /* WebBrigdeObjcViewController.m */,
+				C012F0FD216CAC5C00E30DF5 /* test.html */,
 				C012F0FF216CAC5C00E30DF5 /* test1.html */,
 			);
 			path = "WebBrigdeObjc 网页和OC交互";
@@ -578,6 +596,7 @@
 			isa = PBXGroup;
 			children = (
 				C0E5FF6C211099CE00E12A50 /* PrefixHeader.pch */,
+				70B4EB6B230BF2E1001E6693 /* RouterHeader.h */,
 				C0569D3620D501E8003BDCF0 /* main.m */,
 				C0569D3520D501E8003BDCF0 /* Info.plist */,
 				7008FD7B2234C1A500F26C03 /* ProjectAssets.xcassets */,
@@ -982,6 +1001,7 @@
 		C0EE284A210E12780077A345 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				70B4EB64230BEC69001E6693 /* RouterService */,
 				C00E91292175E3800004ED9F /* Models */,
 				C00E91282175E37A0004ED9F /* Cells */,
 				C00E91272175E3750004ED9F /* ViewModels */,
@@ -1135,7 +1155,7 @@
 				TargetAttributes = {
 					C0569D2320D501E8003BDCF0 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -1287,6 +1307,8 @@
 				C073DC78214D64A600BE32B2 /* Pen.m in Sources */,
 				C0B410B6214E274F00124F80 /* GeliAirConditioner.m in Sources */,
 				C0B410B5214E274F00124F80 /* AirConditioner.m in Sources */,
+				70B4EB6A230BF08A001E6693 /* LWRouterMsgSend.m in Sources */,
+				70B4EB67230BEC7F001E6693 /* RouterServiceDemo.m in Sources */,
 				C0B410F2214E450700124F80 /* ChairmanHandler.m in Sources */,
 				C0B410B9214E274F00124F80 /* Remote.m in Sources */,
 				C00E913E2175F6510004ED9F /* NSObject+Add.m in Sources */,
@@ -1510,15 +1532,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NFW829A9F4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UD8FGJ687Y;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = spec_localProject/PrefixHeader.pch;
 				INFOPLIST_FILE = spec_localProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wangwz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondertek.miguaikaHZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "mgak-Dev-190429";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1530,15 +1553,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NFW829A9F4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UD8FGJ687Y;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = spec_localProject/PrefixHeader.pch;
 				INFOPLIST_FILE = spec_localProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wangwz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondertek.miguaikaHZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "mgak-Dev-190429";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

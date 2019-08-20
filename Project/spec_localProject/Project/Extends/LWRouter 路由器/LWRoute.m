@@ -81,21 +81,62 @@ static UIViewController *_lwGetTopVC(){
     return self;
 }
 
-- (void)handlerRequest:(LWRouteRequest *)request optionHandle:(LWRouteHandler)optionHandle{
+- (id)handlerRequest:(LWRouteRequest *)request optionHandle:(LWRouteHandler)optionHandle{
     NSParameterAssert(request);
-    Class<LWRouterDelegate> handler =_handlesM[request.routePath];
-    UIViewController *_top_viewController = _lwGetTopVC();
-    if (handler) {
-        [handler handleRequest:request
-             topViewController:_top_viewController
-              optionHandle:optionHandle];
-    } else {
-        NSLog(@"执行失败 未遵守路由协议");
-        if (_unHandlerCallback) {
-            _unHandlerCallback(request,_top_viewController);
+    if (request.routeType == LWRouteTypeJump) {
+        Class<LWRouterDelegate> handler =_handlesM[request.routePath];
+        UIViewController *_top_viewController = _lwGetTopVC();
+        if (handler) {
+           return [handler handleRequest:request
+                 topViewController:_top_viewController
+                      optionHandle:optionHandle];
+        } else {
+            NSLog(@"执行失败 未遵守路由协议");
+            if (_unHandlerCallback) {
+                _unHandlerCallback(request,_top_viewController);
+            }
         }
+    } else if (request.routeType == LWRouteTypeService) {
+        
+        
+        NSArray *args = request.paramters?@[request.paramters]:@[rt_nilObj()];
+        
+        if (optionHandle) {
+            args = @[args[0], optionHandle];
+        } else {
+            
+            LWRouteHandler tempBlock = ^(id result,NSError *error) {};
+            args = @[args[0], tempBlock];
+        }
+        
+        
+        NSArray *d = [request.routePath componentsSeparatedByString:@"/"];
+        NSString *target_url = d.firstObject;
+        NSString *servic_obj = d.lastObject;
+        NSString *final_selector = [NSString stringWithFormat:@"routerHandle_%@:optionHandle:",servic_obj];
+        Class handler = NSClassFromString(target_url);
+//        Class<LWRouterDelegate> handler =_handlesM[target_url];
+        
+        SEL sel = NSSelectorFromString(final_selector);
+        if (!sel) {
+            
+            NSString *eStr = [NSString stringWithFormat:@"*%@组件%@方法调用错误, 请检查调用的url", target_url, servic_obj];
+            NSLog(@"%@",eStr);
+            
+        } else if (![(id)handler respondsToSelector:sel]) {
+            
+            NSString *eStr = [NSString stringWithFormat:@"*%@组件%@方法调用错误, 请检查调用的url", target_url, servic_obj];
+            NSLog(@"%@",eStr);
+            
+        } else {
+            NSError *err = nil;
+            return [(id)handler RTCallSelectorWithArgArray:sel arg:args error:&err];
+        }
+        return nil;
     }
     
+
+    return nil;
 }
 
 - (BOOL)canHandleRoutePath:(NSString *)routePath{
@@ -104,4 +145,6 @@ static UIViewController *_lwGetTopVC(){
     }
     return _handlesM[routePath];
 }
+
+
 @end

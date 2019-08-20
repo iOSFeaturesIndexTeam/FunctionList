@@ -30,9 +30,9 @@
 //    [self takeUntil];
 //    [self ignore];
 //    [self zipWith];
-//    [self merge];
+    [self merge];
 //    [self then];
-    [self concat];
+//    [self concat];
 }
 /** 跳过 */
 -(void)skip{
@@ -171,7 +171,7 @@
     
     RACCommand *req_b = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [subscriber sendNext:@[@"1",@"2"]];
                 [subscriber sendCompleted];
             });
@@ -193,107 +193,215 @@
     
     //压缩信号 订阅
     [[[req_a.executionSignals.switchToLatest zipWith:req_b.executionSignals.switchToLatest] zipWith:req_c.executionSignals.switchToLatest] subscribeNext:^(RACTwoTuple *x) {
+        NSLog(@"end zip");
         NSDictionary * dic = [(RACTwoTuple *)x.first first];
         NSArray *d1 = [(RACTwoTuple *)x.first second];
         NSArray *d2 = x.second;
-        NSLog(@"....%@",x);
     }];
     
-    NSLog(@"...");
+    
     [req_a execute:nil];
     [req_b execute:nil];
     [req_c execute:nil];
+    NSLog(@"start zip");
     
     NSLog(@"不堵塞 主线程");
 }
 /** 多个信号合并成一个信号，任何一个信号有新值就会调用 ,任何一个信号请求完成都会被订阅到 ,合成后的信号，谁先回来执行谁 */
 -(void)merge{
     
-    RACSubject * signalA = [RACSubject subject];
+//    RACSubject * signalA = [RACSubject subject];
+//
+//    RACSubject * signalB = [RACSubject subject];
+//
+//    //组合信号
+//    RACSignal * mergeSignal = [signalA merge:signalB];
+//
+//    //
+//    [mergeSignal subscribeNext:^(id x) {
+//        NSLog(@"%@",x);
+//    }];
+//    // 发送信号---交换位置则数据结果顺序也会交换
+//    [signalB sendNext:@2];
+//    [signalA sendNext:@1];
     
-    RACSubject * signalB = [RACSubject subject];
-    
-    //组合信号
-    RACSignal * mergeSignal = [signalA merge:signalB];
-    
-    //
-    [mergeSignal subscribeNext:^(id x) {
-        NSLog(@"%@",x);
+    RACCommand *req_a = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [subscriber sendNext:@{@"1":@"www"}];
+                [subscriber sendCompleted];
+            });
+            return nil;
+        }];
     }];
-    // 发送信号---交换位置则数据结果顺序也会交换
-    [signalB sendNext:@2];
-    [signalA sendNext:@1];
+    
+    RACCommand *req_b = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [subscriber sendNext:@[@"1",@"2"]];
+                [subscriber sendCompleted];
+            });
+            
+            return nil;
+        }];
+    }];
+    RACSignal * _mergeSignal = [req_a.executionSignals.switchToLatest merge:req_b.executionSignals.switchToLatest];
+    [[_mergeSignal take:1] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"...");
+        
+    }];
+    [[_mergeSignal skip:1] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"...");
+    }];
+    
+//    [_mergeSignal subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"......");
+//    }];
+    
+    [req_a execute:nil];
+    [req_b execute:nil];
+    
 }
 /** 信号量是依赖 串行 ， 耗时 A+B请求
     但是不处理A 发送的结果
  */
 -(void)then{
     
-    RACSignal * signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSLog(@"----发送上部分请求---afn");
+//    RACSignal * signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+//
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            NSLog(@"----发送上部分请求---afn");
+//
+//            [subscriber sendNext:@"上部分数据"];
+//            [subscriber sendCompleted];
+//        });
+//        return nil;
+//    }];
+//
+//    RACSignal * signalB = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+//
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2. * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            NSLog(@"--发送下部分请求--afn");
+//
+//            [subscriber sendNext:@"下部分数据"];
+//            [subscriber sendCompleted];
+//        });
+//        return nil;
+//    }];
+//
+//    // 创建组合信号
+//    // then;忽略掉第一个信号的所有值
+//
+//    RACSignal * thenSignal = [signalA then:^RACSignal *{
+//        return signalB;// 返回的信号就是要组合的信号
+//    }];
+//
+//    NSLog(@"...");
+//    [thenSignal subscribeNext:^(id x) {
+//        NSLog(@"%@",x);
+//    }];
+    
+    RACCommand *req_a = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             
-            [subscriber sendNext:@"上部分数据"];
-            [subscriber sendCompleted];
-        });
-        return nil;
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                NSLog(@"上部分数据");
+                [subscriber sendNext:nil];
+                [subscriber sendCompleted];
+            });
+            return nil;
+        }];
     }];
     
-    RACSignal * signalB = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2. * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSLog(@"--发送下部分请求--afn");
+    RACCommand *req_b = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                NSLog(@"下部分数据");
+                [subscriber sendNext:nil];
+                [subscriber sendCompleted];
+            });
             
-            [subscriber sendNext:@"下部分数据"];
-            [subscriber sendCompleted];
-        });
-        return nil;
+            return nil;
+        }];
     }];
     
-    // 创建组合信号
-    // then;忽略掉第一个信号的所有值
-    
-    RACSignal * thenSignal = [signalA then:^RACSignal *{
-        return signalB;// 返回的信号就是要组合的信号
+    [[req_a.executionSignals.switchToLatest then:^RACSignal * _Nonnull{
+        return req_b.executionSignals.switchToLatest;
+    }] subscribeNext:^(id  _Nullable x) {
+        NSLog(@".");
     }];
-    
-    NSLog(@"...");
-    [thenSignal subscribeNext:^(id x) {
-        NSLog(@"%@",x);
-    }];
+    [req_a execute:nil];
+    [req_b execute:nil];
 }
 /**     信号量是依赖 串行 ， 耗时 A+B请求
-        和merge 不同的一点，两次信号均请求
+        和then 不同的一点，两次信号均请求
  */
 -(void)concat{
     
-    RACSignal * signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
-        NSLog(@"----发送上部分请求---afn");
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [subscriber sendNext:@"上部分数据"];
-            [subscriber sendCompleted];
-        });
-        return nil;
+//    RACSignal * signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+//
+////        NSLog(@"----发送上部分请求---afn");
+//
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [subscriber sendNext:@"上部分数据"];
+//            [subscriber sendCompleted];
+//        });
+//        return nil;
+//    }];
+//
+//    RACSignal * signalB = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+//
+////        NSLog(@"--发送下部分请求--afn");
+//
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [subscriber sendNext:@"下部分数据"];
+//            [subscriber sendCompleted];
+//        });
+//        return nil;
+//    }];
+//
+//    //**-注意-**：concat，第一个信号必须要调用sendCompleted
+//    RACSignal * concatSignal = [signalA concat:signalB];
+//
+//    [concatSignal subscribeNext:^(id x) {
+//        NSLog(@"%@",x);
+//    }];
+    RACCommand *req_a = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                
+                [subscriber sendNext:@"上部分数据"];
+                [subscriber sendCompleted];
+            });
+            return nil;
+        }];
     }];
     
-    RACSignal * signalB = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
-        NSLog(@"--发送下部分请求--afn");
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [subscriber sendNext:@"下部分数据"];
-            [subscriber sendCompleted];
-        });
-        return nil;
+    RACCommand *req_b = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                
+                [subscriber sendNext:@"下部分数据"];
+                [subscriber sendCompleted];
+            });
+            
+            return nil;
+        }];
     }];
     
-    //**-注意-**：concat，第一个信号必须要调用sendCompleted
-    RACSignal * concatSignal = [signalA concat:signalB];
+//    [[req_a.executionSignals.switchToLatest concat:req_b.executionSignals.switchToLatest] subscribeNext:^(id  _Nullable x) {
+//         NSLog(@"%@",x);
+//    }];
     
-    [concatSignal subscribeNext:^(id x) {
+    [req_a.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@",x);
+        [req_b execute:nil];
+    }];
+    [req_a execute:nil];
+    
+    [req_b.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         NSLog(@"%@",x);
     }];
     

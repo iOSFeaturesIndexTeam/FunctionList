@@ -13,9 +13,11 @@
 typedef void(^LWRouteHandler)(id result,NSError *error);
 typedef id LWParameters;
 
+#define LWROUTER_EXTERN_METHOD(i) + (id) routerHandle_##i:(NSDictionary*)arg optionHandle:(LWRouteHandler)optionHandle
+
 @protocol LWRouterDelegate
 + (NSString *)routePath;
-+ (void)handleRequest:(LWParameters)parameters
++ (id)handleRequest:(LWParameters)parameters
     topViewController:(UIViewController *)topViewController
      optionHandle:(LWRouteHandler)optionHandle;
 @end

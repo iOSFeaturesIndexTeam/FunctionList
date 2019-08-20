@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LWRouteRequest.h"
+#import "LWRouterMsgSend.h"
 //路由未正确执行回调
 typedef void(^LWRouteUnHandleCallback)(LWRouteRequest *request,UIViewController *topViewController);
 typedef id LWParameters;
@@ -20,10 +21,11 @@ typedef id LWParameters;
 /**
  处理路由跳转
 
- @param request 跳转请求
+ @param request 请求处理
  @param optionHandle 额外处理
+ @return 处理结果
  */
-- (void)handlerRequest:(LWRouteRequest *)request
+- (id)handlerRequest:(LWRouteRequest *)request
           optionHandle:(LWRouteHandler)optionHandle;
 
 /**

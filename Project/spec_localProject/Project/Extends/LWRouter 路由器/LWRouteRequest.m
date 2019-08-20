@@ -11,25 +11,31 @@
 NS_ASSUME_NONNULL_BEGIN
 @implementation LWRouteRequest
 - (instancetype _Nullable )initWithPath:(nonnull NSString *)routePath
+                              routeType:(LWRouteType)routeType
                               paramters:(LWParameters _Nullable )paramters{
     if (self = [super init]) {
         _routePath = routePath;
         _paramters = paramters;
+        _routeType = routeType;
     }
     return self;
 }
 
 + (LWRouteRequest *)requestWithPath:(NSString *)routePath
                            andParam:(LWParameters)param{
-    return [[LWRouteRequest alloc] initWithPath:routePath paramters:param];
+    return [[LWRouteRequest alloc] initWithPath:routePath routeType:LWRouteTypeJump paramters:param];
 }
 
++ (LWRouteRequest *)requestServicePath:(NSString *)routePath
+                              andParam:(LWParameters)param{
+    return [[LWRouteRequest alloc] initWithPath:routePath routeType:LWRouteTypeService paramters:param];
+}
 @end
 
 @implementation LWRouteRequest(CreateByURL)
 - (instancetype)initWithURL:(NSURL *)URL{
     if (self = [super init]) {
-        self = [self initWithPath:@"" paramters:nil];
+        self = [self initWithPath:@"" routeType:LWRouteTypeJump paramters:nil];
         self.originalURL = URL;
     }
     return self;

@@ -19,8 +19,12 @@
     [self initSubviews];
     LWRoute.manager.unHandlerCallback = ^(LWRouteRequest *request, UIViewController *topViewController) {
         WebBrigdeObjcViewController *webVC = [WebBrigdeObjcViewController new];
-        webVC.remoteURL = request.paramters;
-        [topViewController presentViewController:webVC animated:YES completion:nil];
+        if ([request.paramters hasPrefix:@"http"]) {
+            webVC.remoteURL = request.paramters;
+            [topViewController presentViewController:webVC animated:YES completion:nil];
+        } else {
+            /** 其余处理 */
+        }
     };
 }
 
