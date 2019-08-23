@@ -13,7 +13,7 @@
 typedef void(^LWRouteHandler)(id result,NSError *error);
 typedef id LWParameters;
 
-#define LWROUTER_EXTERN_METHOD(i) + (id) routerHandle_##i:(NSDictionary*)arg optionHandle:(LWRouteHandler)optionHandle
+#define LWROUTER_EXTERN_METHOD(mothod,arg,optionHandle) + (id) routerHandle_##mothod:(NSDictionary*)arg optionHandle:(LWRouteHandler)optionHandle
 
 @protocol LWRouterDelegate
 + (NSString *)routePath;

@@ -9,8 +9,9 @@
 #import "RouterServiceDemo.h"
 
 @implementation RouterServiceDemo
-LWROUTER_EXTERN_METHOD(demo) {
+LWROUTER_EXTERN_METHOD(demo, arg, optionHandle) {
     NSDictionary *dic = arg;
+    _lwGetTopVC();
     return nil;
 }
 @end

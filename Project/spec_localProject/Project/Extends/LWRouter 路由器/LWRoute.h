@@ -9,6 +9,26 @@
 #import <Foundation/Foundation.h>
 #import "LWRouteRequest.h"
 #import "LWRouterMsgSend.h"
+
+static UIViewController *_lwGetTopVC(){
+    UIViewController *vc = UIApplication.sharedApplication.keyWindow.rootViewController;
+    while ([vc isKindOfClass:[UINavigationController class]]
+           || [vc isKindOfClass:[UITabBarController class]]) {
+        if ([vc isKindOfClass:[UITabBarController class]]) {
+            vc = [(UITabBarController *)vc selectedViewController];
+        } else if ([vc isKindOfClass:[UINavigationController class]]) {
+            vc = [(UINavigationController *)vc topViewController];
+        } else if (vc.presentingViewController) {
+            /** .presentedViewController  A --- prestent --- B
+             A.presentedViewController 表示 是 B
+             B.presentingViewController 表示 是 A
+             */
+            vc = vc.presentedViewController;
+        }
+        break;
+    }
+    return vc;
+}
 //路由未正确执行回调
 typedef void(^LWRouteUnHandleCallback)(LWRouteRequest *request,UIViewController *topViewController);
 typedef id LWParameters;

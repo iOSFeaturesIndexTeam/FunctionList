@@ -8,25 +8,6 @@
 
 #import "LWRoute.h"
 #import <objc/message.h>
-static UIViewController *_lwGetTopVC(){
-    UIViewController *vc = UIApplication.sharedApplication.keyWindow.rootViewController;
-    while ([vc isKindOfClass:[UINavigationController class]]
-           || [vc isKindOfClass:[UITabBarController class]]) {
-        if ([vc isKindOfClass:[UITabBarController class]]) {
-            vc = [(UITabBarController *)vc selectedViewController];
-        } else if ([vc isKindOfClass:[UINavigationController class]]) {
-            vc = [(UINavigationController *)vc topViewController];
-        } else if (vc.presentingViewController) {
-            /** .presentedViewController  A --- prestent --- B
-                A.presentedViewController 表示 是 B
-                B.presentingViewController 表示 是 A
-             */
-            vc = vc.presentedViewController;
-        }
-        break;
-    }
-    return vc;
-}
 
 @interface LWRoute()
 //key:路由路径 value:路径映射VC

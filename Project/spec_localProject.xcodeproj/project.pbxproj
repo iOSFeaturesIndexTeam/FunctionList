@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700467EA230FBF71002FFB40 /* AppDelegate+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 700467E9230FBF71002FFB40 /* AppDelegate+Add.m */; };
+		700467F1230FC4F5002FFB40 /* Vip.m in Sources */ = {isa = PBXBuildFile; fileRef = 700467F0230FC4F5002FFB40 /* Vip.m */; };
 		70074855220967EB00BBAE7F /* LDCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70074854220967EA00BBAE7F /* LDCarousel.m */; };
 		7008FD7E2234C2C900F26C03 /* RACModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7008FD7D2234C2C900F26C03 /* RACModeViewController.m */; };
 		70B4EB67230BEC7F001E6693 /* RouterServiceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B4EB66230BEC7F001E6693 /* RouterServiceDemo.m */; };
@@ -125,6 +127,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		700467E8230FBF71002FFB40 /* AppDelegate+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Add.h"; sourceTree = "<group>"; };
+		700467E9230FBF71002FFB40 /* AppDelegate+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Add.m"; sourceTree = "<group>"; };
+		700467EF230FC4F5002FFB40 /* Vip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vip.h; sourceTree = "<group>"; };
+		700467F0230FC4F5002FFB40 /* Vip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vip.m; sourceTree = "<group>"; };
 		70074853220967EA00BBAE7F /* LDCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCarousel.h; sourceTree = "<group>"; };
 		70074854220967EA00BBAE7F /* LDCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCarousel.m; sourceTree = "<group>"; };
 		7008FD7B2234C1A500F26C03 /* ProjectAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProjectAssets.xcassets; sourceTree = "<group>"; };
@@ -1058,6 +1064,10 @@
 			children = (
 				C0569D2720D501E8003BDCF0 /* AppDelegate.h */,
 				C0569D2820D501E8003BDCF0 /* AppDelegate.m */,
+				700467EF230FC4F5002FFB40 /* Vip.h */,
+				700467F0230FC4F5002FFB40 /* Vip.m */,
+				700467E8230FBF71002FFB40 /* AppDelegate+Add.h */,
+				700467E9230FBF71002FFB40 /* AppDelegate+Add.m */,
 				C0569D3220D501E8003BDCF0 /* LaunchScreen.storyboard */,
 				C0569D2D20D501E8003BDCF0 /* Main.storyboard */,
 				C0569D2A20D501E8003BDCF0 /* ViewController.h */,
@@ -1308,6 +1318,7 @@
 				C0B410B6214E274F00124F80 /* GeliAirConditioner.m in Sources */,
 				C0B410B5214E274F00124F80 /* AirConditioner.m in Sources */,
 				70B4EB6A230BF08A001E6693 /* LWRouterMsgSend.m in Sources */,
+				700467EA230FBF71002FFB40 /* AppDelegate+Add.m in Sources */,
 				70B4EB67230BEC7F001E6693 /* RouterServiceDemo.m in Sources */,
 				C0B410F2214E450700124F80 /* ChairmanHandler.m in Sources */,
 				C0B410B9214E274F00124F80 /* Remote.m in Sources */,
@@ -1337,6 +1348,7 @@
 				C0B41098214E14D100124F80 /* CompositePatternViewController.m in Sources */,
 				C0B410D6214E2E8E00124F80 /* LighterCommand.m in Sources */,
 				C073DCAE214DF28500BE32B2 /* SmallView.m in Sources */,
+				700467F1230FC4F5002FFB40 /* Vip.m in Sources */,
 				C0B410B7214E274F00124F80 /* HaierAirConditioner.m in Sources */,
 				C07A09AB2122957900CD86CD /* CustomLayerBezierPath.m in Sources */,
 				C073DC7E214D653800BE32B2 /* BallpointPen.m in Sources */,

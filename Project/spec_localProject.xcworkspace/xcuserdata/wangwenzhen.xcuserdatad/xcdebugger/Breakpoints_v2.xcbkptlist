@@ -58,7 +58,7 @@
                   moduleName = "spec_localProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/PushAViewController.m"
-                  timestampString = "587987145.848991"
+                  timestampString = "588236423.532402"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -73,7 +73,7 @@
                   moduleName = "spec_localProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/PushAViewController.m"
-                  timestampString = "587987145.855227"
+                  timestampString = "588236423.53655"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "39"
@@ -89,188 +89,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "spec_localProject/Project/RouterService/RouterServiceDemo.m"
-            timestampString = "587987145.606079"
+            filePath = "spec_localProject/Luanch/AppDelegate+Vip.m"
+            timestampString = "588235826.720957"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "+application:didFinishLaunchingWithOptions:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spec_localProject/Luanch/AppDelegate.m"
+            timestampString = "588235826.721024"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spec_localProject/Project/RouterService/RouterServiceDemo.m"
+            timestampString = "588236423.742115"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "LWROUTER_EXTERN_METHOD"
             landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "spec_localProject/Project/ViewControllers/DesignMode &#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;/&#x8def;&#x7531;&#x5668;&#x6a21;&#x5f0f; 24&#x79cd;&#x6a21;&#x5f0f;&#x5916;&#xff0c;&#x7b80;&#x5316;&#x9875;&#x9762;&#x4e4b;&#x95f4;&#x7684;&#x8026;&#x5408;&#x5ea6;/RouteDisplayViewController.m"
-            timestampString = "587987145.606174"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-initSubviews"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[RouteDisplayViewController initSubviews]_block_invoke.58"
-                  moduleName = "spec_localProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/RouteDisplayViewController.m"
-                  timestampString = "587987145.898339"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[RouteDisplayViewController initSubviews]_block_invoke_2.66"
-                  moduleName = "spec_localProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/RouteDisplayViewController.m"
-                  timestampString = "587987145.90167"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.81"
-                  moduleName = "spec_localProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/RouteDisplayViewController.m"
-                  timestampString = "587987145.904222"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "spec_localProject/Project/ViewControllers/DesignMode &#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;/&#x8def;&#x7531;&#x5668;&#x6a21;&#x5f0f; 24&#x79cd;&#x6a21;&#x5f0f;&#x5916;&#xff0c;&#x7b80;&#x5316;&#x9875;&#x9762;&#x4e4b;&#x95f4;&#x7684;&#x8026;&#x5408;&#x5ea6;/RouteDisplayViewController.m"
-            timestampString = "587987145.6074491"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "-initSubviews"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "spec_localProject/Project/ViewControllers/DesignMode &#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;/&#x8def;&#x7531;&#x5668;&#x6a21;&#x5f0f; 24&#x79cd;&#x6a21;&#x5f0f;&#x5916;&#xff0c;&#x7b80;&#x5316;&#x9875;&#x9762;&#x4e4b;&#x95f4;&#x7684;&#x8026;&#x5408;&#x5ea6;/RouteDisplayViewController.m"
-            timestampString = "587987160.988593"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-initSubviews"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[RouteDisplayViewController initSubviews]_block_invoke"
-                  moduleName = "spec_localProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/RouteDisplayViewController.m"
-                  timestampString = "587987161.327247"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "508">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[RouteDisplayViewController initSubviews]_block_invoke.58"
-                  moduleName = "spec_localProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/RouteDisplayViewController.m"
-                  timestampString = "587987161.331246"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.87"
-                  moduleName = "spec_localProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/RouteDisplayViewController.m"
-                  timestampString = "587987161.333287"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "spec_localProject/Project/Extends/LWRouter &#x8def;&#x7531;&#x5668;/LWRoute.m"
-            timestampString = "587987216.3365099"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "-handlerRequest:optionHandle:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "spec_localProject/Project/Extends/LWRouter &#x8def;&#x7531;&#x5668;/LWRoute.m"
-            timestampString = "587987219.131014"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-handlerRequest:optionHandle:"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
