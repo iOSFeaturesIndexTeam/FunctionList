@@ -11,6 +11,8 @@
 		700467F1230FC4F5002FFB40 /* Vip.m in Sources */ = {isa = PBXBuildFile; fileRef = 700467F0230FC4F5002FFB40 /* Vip.m */; };
 		70074855220967EB00BBAE7F /* LDCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70074854220967EA00BBAE7F /* LDCarousel.m */; };
 		7008FD7E2234C2C900F26C03 /* RACModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7008FD7D2234C2C900F26C03 /* RACModeViewController.m */; };
+		706DCE0323EEB78C0038FF7A /* RemoteControlLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 706DCE0223EEB78C0038FF7A /* RemoteControlLayer.m */; };
+		706DCE0423EECA0D0038FF7A /* ProjectAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7008FD7B2234C1A500F26C03 /* ProjectAssets.xcassets */; };
 		70B4EB67230BEC7F001E6693 /* RouterServiceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B4EB66230BEC7F001E6693 /* RouterServiceDemo.m */; };
 		70B4EB6A230BF08A001E6693 /* LWRouterMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B4EB69230BF08A001E6693 /* LWRouterMsgSend.m */; };
 		C00E91322175E3F90004ED9F /* LiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E912C2175E3F90004ED9F /* LiveCell.m */; };
@@ -136,6 +138,8 @@
 		7008FD7B2234C1A500F26C03 /* ProjectAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProjectAssets.xcassets; sourceTree = "<group>"; };
 		7008FD7C2234C2C900F26C03 /* RACModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACModeViewController.h; sourceTree = "<group>"; };
 		7008FD7D2234C2C900F26C03 /* RACModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACModeViewController.m; sourceTree = "<group>"; };
+		706DCE0123EEB78C0038FF7A /* RemoteControlLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteControlLayer.h; sourceTree = "<group>"; };
+		706DCE0223EEB78C0038FF7A /* RemoteControlLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteControlLayer.m; sourceTree = "<group>"; };
 		70B4EB65230BEC7F001E6693 /* RouterServiceDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterServiceDemo.h; sourceTree = "<group>"; };
 		70B4EB66230BEC7F001E6693 /* RouterServiceDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterServiceDemo.m; sourceTree = "<group>"; };
 		70B4EB68230BF089001E6693 /* LWRouterMsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWRouterMsgSend.h; sourceTree = "<group>"; };
@@ -940,6 +944,8 @@
 				C07A09A7212160D200CD86CD /* CustomLayer.m */,
 				C07A09A92122957900CD86CD /* CustomLayerBezierPath.h */,
 				C07A09AA2122957900CD86CD /* CustomLayerBezierPath.m */,
+				706DCE0123EEB78C0038FF7A /* RemoteControlLayer.h */,
+				706DCE0223EEB78C0038FF7A /* RemoteControlLayer.m */,
 			);
 			path = "Img&Animation";
 			sourceTree = "<group>";
@@ -1209,6 +1215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706DCE0423EECA0D0038FF7A /* ProjectAssets.xcassets in Resources */,
 				C012F104216CAC5C00E30DF5 /* test.html in Resources */,
 				C0360F482119A329006381AD /* Simple.frag in Resources */,
 				C015FC282111862A009C8395 /* Resource in Resources */,
@@ -1365,6 +1372,7 @@
 				C0B410E4214E432300124F80 /* Mediator.m in Sources */,
 				C019C8C121145FB200C92750 /* GLViewController.mm in Sources */,
 				C0B410B8214E274F00124F80 /* DirectionRemote.m in Sources */,
+				706DCE0323EEB78C0038FF7A /* RemoteControlLayer.m in Sources */,
 				C0EE284F210E12780077A345 /* BGAlertView+BGAdd.m in Sources */,
 				C010995B2179DCEA0039BD1D /* LWRoute.m in Sources */,
 				C073DCA5214DED6E00BE32B2 /* extModel.m in Sources */,

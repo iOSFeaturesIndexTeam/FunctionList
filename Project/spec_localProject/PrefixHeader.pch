@@ -8,6 +8,10 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+
+#define F(string, args...)                  [NSString stringWithFormat:string, args]
+
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 

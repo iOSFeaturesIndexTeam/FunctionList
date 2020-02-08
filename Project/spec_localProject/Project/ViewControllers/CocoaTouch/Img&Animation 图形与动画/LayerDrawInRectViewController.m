@@ -9,22 +9,32 @@
 #import "LayerDrawInRectViewController.h"
 #import "CustomLayer.h"
 #import "CustomLayerBezierPath.h"
+#import "RemoteControlLayer.h"
 static NSString * kLayerDes = @"";
 @class BGCustomLayerModel;
 @interface LayerDrawInRectViewController ()
 @property (nonatomic,strong) CustomLayer *customlayer;
+@property (nonatomic,strong) RemoteControlLayer *remoteControlLayer;
 @end
 
 @implementation LayerDrawInRectViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configureScreen];
-    {   //BezierPath 绘制图形
-        CustomLayerBezierPath *path = [[CustomLayerBezierPath alloc] initWithFrame:CGRectMake(0, 100, 120, 34)];
-        [self.view addSubview:path];
-        UIButton *btn;
-    }
+//    [self configureScreen];
+//    {   //BezierPath 绘制图形
+//        CustomLayerBezierPath *path = [[CustomLayerBezierPath alloc] initWithFrame:CGRectMake(0, 100, 120, 34)];
+//        [self.view addSubview:path];
+//    }
+    
+    [self demo3];
+    
+}
+
+- (void)demo3{
+    self.remoteControlLayer = [RemoteControlLayer new];
+    [self.view addSubview:_remoteControlLayer];
+    _remoteControlLayer.center = CGPointMake(200, 200);
 }
 
 - (void)configureScreen {

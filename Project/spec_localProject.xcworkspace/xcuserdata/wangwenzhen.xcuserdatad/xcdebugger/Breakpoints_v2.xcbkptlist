@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "73ECCA95-9AFF-497C-86A7-9CFEE10FC4FA"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "EFD9DDBB-AC83-4BEF-A92B-8E1643489A0F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -22,6 +24,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "161A28EF-89F1-4CA7-A477-39C4A47EC09C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -38,6 +41,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "08403C1D-7B07-4F47-B6FE-FB196A74FC3A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -51,6 +55,7 @@
             landmarkType = "7">
             <Locations>
                <Location
+                  uuid = "08403C1D-7B07-4F47-B6FE-FB196A74FC3A - 7c8fc6afc4eafaa2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -58,14 +63,14 @@
                   moduleName = "spec_localProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/PushAViewController.m"
-                  timestampString = "588236423.532402"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "64">
+                  offsetFromSymbolStart = "61">
                </Location>
                <Location
+                  uuid = "08403C1D-7B07-4F47-B6FE-FB196A74FC3A - 7c8fc6afc40afaa3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -73,12 +78,11 @@
                   moduleName = "spec_localProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/%E4%B8%80%E4%B8%96%E7%B9%81%E5%8D%8E/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/FunctionList/Project/spec_localProject/Project/ViewControllers/DesignMode%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2024%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%A4%96%EF%BC%8C%E7%AE%80%E5%8C%96%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88%E5%BA%A6/PushAViewController.m"
-                  timestampString = "588236423.53655"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "39"
                   endingLineNumber = "39"
-                  offsetFromSymbolStart = "88">
+                  offsetFromSymbolStart = "79">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -86,6 +90,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "A787BF7E-E0B9-408D-9D20-918BCD1FBD32"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -102,22 +107,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "spec_localProject/Luanch/AppDelegate.m"
-            timestampString = "588235826.721024"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
+            uuid = "E9765F9F-D304-4E94-887D-5A1C953F1A82"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -129,6 +119,86 @@
             endingLineNumber = "14"
             landmarkName = "LWROUTER_EXTERN_METHOD"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A867467D-388C-4A45-8DCE-89BB327AB027"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spec_localProject/Project/Views/Img&amp;Animation/RemoteControlLayer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "-press:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63ECC0B3-50F4-45C3-BBCB-3BB67C34B60D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spec_localProject/Project/Views/Img&amp;Animation/RemoteControlLayer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "-press:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE65A2AD-28DB-4B85-9478-889F914E4729"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spec_localProject/Project/Views/Img&amp;Animation/RemoteControlLayer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "-press:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DA91EC6-5797-4F0B-AA69-42BE8ECEF521"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spec_localProject/Project/Views/Img&amp;Animation/RemoteControlLayer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "-press:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E62C4FD8-A30D-4631-BAFF-8B43AA7D0E0B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "spec_localProject/Project/Views/Img&amp;Animation/RemoteControlLayer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "-press:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
