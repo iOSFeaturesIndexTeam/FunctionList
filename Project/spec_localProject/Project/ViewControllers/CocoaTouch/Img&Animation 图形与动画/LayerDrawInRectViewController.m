@@ -26,7 +26,7 @@ static NSString * kLayerDes = @"";
 //        CustomLayerBezierPath *path = [[CustomLayerBezierPath alloc] initWithFrame:CGRectMake(0, 100, 120, 34)];
 //        [self.view addSubview:path];
 //    }
-    
+    //CALayer 闭环绘制想要的图案，且设置点击特效
     [self demo3];
     
 }

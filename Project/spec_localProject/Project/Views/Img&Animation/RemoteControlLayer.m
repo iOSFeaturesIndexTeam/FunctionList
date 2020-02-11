@@ -7,7 +7,7 @@
 //
 
 #import "RemoteControlLayer.h"
-#define kRemoteSize 884/2.
+#define kRemoteSize 884/3
 @interface RemoteControlLayer()
 @property (nonatomic,strong)NSDictionary *layersData;
 @property (nonatomic,strong)UIImageView *bgImgv;
@@ -37,35 +37,35 @@
     void (^ b)(CGFloat startAngle, CGFloat endAngle,RemoteControlType t,BOOL clock) = ^ (CGFloat startAngle, CGFloat endAngle, RemoteControlType t,BOOL clock){
         
         UIBezierPath *p = [UIBezierPath bezierPath];
-        [p addArcWithCenter:center_p radius:okRadius startAngle:startAngle/180*M_PI endAngle:endAngle/180*M_PI clockwise:clock];
+        [p addArcWithCenter:center_p radius:okRadius startAngle:startAngle/180.*M_PI endAngle:endAngle/180.*M_PI clockwise:clock];
 
+        [p addArcWithCenter:center_p radius:okRadius*2 startAngle:(360+endAngle)/180.*M_PI endAngle:(360+startAngle)/180.*M_PI clockwise:!clock];
         if (t == RemoteControlTypeUp) {
-            [p addLineToPoint:CGPointZero];
-            [p addLineToPoint:CGPointMake(kRemoteSize, 0)];
+//            [p addLineToPoint:CGPointZero];
+//            [p addLineToPoint:CGPointMake(kRemoteSize, 0)];
             
         } else if (t == RemoteControlTypeLeft) {
-            [p addLineToPoint:CGPointZero];
-            [p addLineToPoint:CGPointMake(0, kRemoteSize)];
+//            [p addLineToPoint:CGPointZero];
+//            [p addLineToPoint:CGPointMake(0, kRemoteSize)];
         } else if ( t == RemoteControlTypeRight) {
-            [p addLineToPoint:CGPointMake(kRemoteSize, kRemoteSize)];
-            [p addLineToPoint:CGPointMake(kRemoteSize, 0)];
+//            [p addLineToPoint:CGPointMake(kRemoteSize, kRemoteSize)];
+//            [p addLineToPoint:CGPointMake(kRemoteSize, 0)];
         } else {
-            [p addLineToPoint:CGPointMake(0, kRemoteSize)];
-            [p addLineToPoint:CGPointMake(kRemoteSize, kRemoteSize)];
+//            [p addLineToPoint:CGPointMake(0, kRemoteSize)];
+//            [p addLineToPoint:CGPointMake(kRemoteSize, kRemoteSize)];
         }
          
         [p closePath];
         CAShapeLayer *layer = CAShapeLayer.layer;
         layer.path = p.CGPath;
-//        layer.fillColor = [UIColor union_colorWithR:15 *t G:15 *t B:15 *t].CGColor;
         layer.fillColor = [UIColor clearColor].CGColor;
-        layer.strokeColor = [UIColor clearColor].CGColor;
+        layer.strokeColor = [UIColor redColor].CGColor;
         layer.frame = self.bounds;
         [self.bgView.layer addSublayer:layer];;
         [temp setValue:layer forKey:F(@"%lu",(unsigned long)t)];
     };
     
-    // up   45 - 90  - 135
+    // up   45 - 90  - 135 逆时针
     b(-45,-135,RemoteControlTypeUp,NO);
     // legt 135 - 180 - 225
     b(135,-135,RemoteControlTypeLeft,YES);
@@ -170,11 +170,4 @@
             break;
     }
 }
-
-- (void)layoutSubviews{
-    [super layoutSubviews];
-    
-}
-
-
 @end
